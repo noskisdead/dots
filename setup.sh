@@ -72,7 +72,7 @@ necessary() {
 # Install packages
 install_packages() {
     echo "Installing packages..."
-    sudo pacman -Sy --needed ripgrep spotify jre17-openjdk jre8-openjdk jre21-openjdk ttf-jetbrains-mono-nerd fzf fisher eza udiskie mpc hyprlock libpulse librewolf obsidian grub-btrfs sof-firmware vesktop xdg-desktop-portal-gtk scdoc mailcap tealdeer cava fuse bluez fuse2 bmon pokemon-colorscripts-git pavucontrol blueman cargo noto-fonts-emoji hypridle pamixer unzip otf-font-awesome xdg-desktop-portal-hyprland dunst waybar fish hyprshot xdg-desktop-portal-gtk neovim starship wl-clipboard polkit-kde-agent slurp sddm kitty btop rofi-wayland hyprpaper hyprland bluez-utils flatpak qt5-wayland qt5-wayland brightnessctl bat grim ttf-cascadia-code-nerd --noconfirm
+    sudo pacman -Sy --needed ripgrep spicetify-cli spotify ttf-jetbrains-mono-nerd fzf fisher eza udiskie mpc hyprlock libpulse librewolf grub-btrfs sof-firmware vesktop xdg-desktop-portal-gtk scdoc mailcap tealdeer cava fuse bluez fuse2 bmon pokemon-colorscripts-git pavucontrol blueman noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland dunst waybar fish hyprshot xdg-desktop-portal-gtk neovim starship wl-clipboard polkit-kde-agent slurp sddm kitty btop rofi-wayland hyprpaper hyprland bluez-utils flatpak qt5-wayland qt5-wayland brightnessctl bat grim ttf-cascadia-code-nerd --noconfirm
     starship preset nerd-font-symbols -o ~/.config/starship.toml
     fish -c 'fisher install jorgebucaran/autopair.fish'
     fish -c 'fisher install patrickf1/fzf.fish'
@@ -80,6 +80,12 @@ install_packages() {
     fish -c 'fisher install fishingline/safe-rm'
     sudo systemctl enable sddm
     tldr --update
+    spicetify config sidebar_config 0
+    spicetify config inject_css 1
+    spicetify config replace_colors 1
+    spicetify config custom_apps lyrics-plus
+    spicetify config custom_apps marketplace
+    spicetify config current_theme marketplace
     mkdir -p ~/Documents
     mkdir -p ~/Pictures
     mkdir -p ~/Images
@@ -139,8 +145,9 @@ main() {
     chsh -s /usr/bin/fish
     sudo chsh -s /usr/bin/fish
     cd ..
-    mv dots .originaldots
+    mv dots .dots
     clear
+    echo "This folder has been renamed to .dots"
     echo "Script executed successfully. Reboot to apply any changes."
 }
 

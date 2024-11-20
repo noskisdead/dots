@@ -148,6 +148,8 @@ main() {
     sudo chsh -s /usr/bin/fish
     cd ..
     mv dots .dots
+    rm -f .local/share/fish/fish_history
+    bash -c 'history -c'
     clear
     echo "This folder has been renamed to .dots"
     echo "Script executed successfully. Reboot to apply any changes."

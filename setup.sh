@@ -98,6 +98,8 @@ install_packages() {
 move_files() {
     echo "Moving configuration..."
     cp -r config/. ~/.config || handle_error "Failed to move configuration files."
+    sudo mkdir -p /root/.config
+    sudo mv ~/dots/config/nvim /root/.config
     clear
 }
 

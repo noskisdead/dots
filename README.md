@@ -1,7 +1,6 @@
 # Welcome to noskisdead's Hyprland Dotfiles!
 
-This repository contains my personal **Hyprland** dotfiles. They are tailored for **Arch Linux**; however, they might work on other Arch-based distros as well. 
-
+This repository contains my personal **Hyprland** dotfiles. They are tailored for **Arch Linux**; however, they might work on other Arch-based distros as well.
 ### Disclaimer
 These configurations are heavily inspired by, and in some cases directly borrowed from, other repositories. 
 A few that I remember are:

@@ -25,7 +25,7 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-    wget ripgrep spicetify-cli spotify ttf-jetbrains-mono-nerd fzf fisher eza udiskie
+    unzip wget ripgrep spicetify-cli spotify ttf-jetbrains-mono-nerd fzf fisher eza udiskie
     mpc hyprlock libpulse librewolf grub-btrfs sof-firmware vesktop xdg-desktop-portal-gtk
     tealdeer cava fuse bluez fuse2 pokemon-colorscripts-git pavucontrol blueman
     noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland
@@ -37,7 +37,7 @@ pkglist=(
 # Backup and modify pacman configuration
 info_message "Backing up and updating pacman configuration..."
 sudo cp /etc/pacman.conf /etc/pacman.conf.bak || handle_error "Failed to backup pacman.conf"
-sudo tee /etc/pacman.conf >/dev/null <<EOF || handle_error "Failed to update pacman.conf"
+sudo tee /etc/pacman.conf >/dev/null 2>&1 <<EOF || handle_error "Failed to update pacman.conf"
 [options]
 HoldPkg = pacman glibc
 Architecture = auto
@@ -66,17 +66,25 @@ success_message "Pacman configuration updated."
 
 # Add chaotic-aur repository
 info_message "Adding Chaotic AUR repository..."
-sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com >/dev/null || handle_error "Failed to import key"
-sudo pacman-key --lsign-key 3056513887B78AEB >/dev/null || handle_error "Failed to sign key"
-sudo pacman -U --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm >/dev/null || handle_error "Failed to install chaotic-keyring"
-sudo pacman -U --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm >/dev/null || handle_error "Failed to install chaotic-mirrorlist"
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com >/dev/null 2>&1 || handle_error "Failed to import key"
+sudo pacman-key --lsign-key 3056513887B78AEB >/dev/null 2>&1 || handle_error "Failed to sign key"
+sudo pacman -U --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm >/dev/null 2>&1 || handle_error "Failed to install chaotic-keyring"
+sudo pacman -U --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm >/dev/null 2>&1 || handle_error "Failed to install chaotic-mirrorlist"
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf || handle_error "Failed to add chaotic-aur to pacman.conf"
 success_message "Chaotic AUR repository added."
 
 # Install packages
 info_message "Installing packages, this can take a lot of time..."
-sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm || handle_error "Failed to install packages"
+sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
 success_message "Packages installed successfully."
+
+#Configure BAT theme
+info_message "Configuring BAT theme"
+mkdir -p "$(bat --config-dir)/themes" || handle_error "Failed to make BAT's config directory"
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme >/dev/null 2>&1 || handle_error "Failed to download the BAT config"
+bat cache --build >/dev/null 2>&1 || handle_error "Failed to build BAT's cache"
+echo '--theme="Catppuccin Macchiato"' >~/.config/bat/config
+success_message "BAT configured successfully."
 
 # Configure Starship prompt
 info_message "Configuring Starship prompt..."
@@ -95,7 +103,7 @@ sudo systemctl enable sddm >/dev/null 2>&1 || handle_error "Failed to enable SDD
 sudo systemctl enable bluetooth >/dev/null 2>&1 || handle_error "Failed to enable Bluetooth"
 success_message "Services enabled."
 
-# Update tldr
+# Update TLDR
 info_message "Updating TLDR..."
 tldr --update >/dev/null 2>&1 || handle_error "Failed to update TLDR"
 
@@ -108,8 +116,8 @@ success_message "Directories created."
 info_message "Configuring GRUB theme..."
 git clone https://github.com/catppuccin/grub.git >/dev/null 2>&1 || handle_error "Failed to clone GRUB theme"
 sudo cp -r grub/src/catppuccin-macchiato-grub-theme /boot/themes || handle_error "Failed to copy GRUB theme"
-echo GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt" >/dev/null 2>&1 | sudo tee -a /etc/default/grub
-echo "GRUB_CMDLINE_LINUX_DEFAULT=\"loglevel=3 quiet nowatchdog mem_sleep_default=deep\"" >/dev/null 2>&1 | sudo tee -a /etc/default/grub
+echo GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt" | sudo tee -a /etc/default/grub
+echo "GRUB_CMDLINE_LINUX_DEFAULT=\"loglevel=3 quiet nowatchdog mem_sleep_default=deep\"" | sudo tee -a /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Failed to update GRUB config"
 rm -rf grub
 success_message "GRUB theme configured."
@@ -124,6 +132,9 @@ Current=catppuccin-macchiato
 EOF
 rm -f catppuccin-macchiato.zip
 success_message "SDDM theme configured."
+
+# Moving config files
+cp -r config/. ~/.config/
 
 # Install Bibata cursor theme
 info_message "Installing Bibata cursor theme..."

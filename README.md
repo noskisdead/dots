@@ -1,8 +1,8 @@
 # Welcome to noskisdead's Hyprland Dotfiles!
 
 This repository contains my personal **Hyprland** dotfiles. They are tailored for **Arch Linux**; however, they might work on other Arch-based distros as well.
-![alt text](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/home.png)
-![alt text](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/terminal.png)
+![Home!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/home.png)
+![Terminal!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/terminal.png)
 ### Disclaimer
 These configurations are heavily inspired by, and in some cases directly borrowed from, other repositories. 
 A few that I remember are:
@@ -32,6 +32,5 @@ To install the configuration, follow these steps:
 **Reboot to apply changes!**
 **Note:** You might not be able to login, if it's the case, select Hyprland in the sddm menu located in the down-right corner of your screen. 
 ## To do
-Restructure the setup.sh script
 Switch to bash or zsh
 Make a better rofi/wofi config

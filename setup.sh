@@ -25,7 +25,7 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-    ripgrep spicetify-cli spotify ttf-jetbrains-mono-nerd fzf fisher eza udiskie
+    pacman-contrib ripgrep spicetify-cli spotify ttf-jetbrains-mono-nerd fzf fisher eza udiskie
     mpc hyprlock libpulse librewolf grub-btrfs sof-firmware vesktop xdg-desktop-portal-gtk
     tealdeer cava fuse bluez fuse2 pokemon-colorscripts-git pavucontrol blueman
     noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland

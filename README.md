@@ -24,8 +24,8 @@ To install the configuration, follow these steps:
 
    ```
    sudo pacman -S --needed git
-   git clone https://github.com/noskisdead/Comfy
-   cd Comfy
+   git clone https://github.com/noskisdead/dots
+   cd dots
    chmod +x setup.sh
    ./setup.sh
    ```

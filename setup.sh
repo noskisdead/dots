@@ -1,35 +1,3 @@
-
-Navigation Menu
-
-Code
-Issues
-Pull requests
-Commit 4ebc7a4
-Preview
-Give feedback
-noskisdead
-noskisdead
-committed
-19 hours ago
-reorganized setup.sh
-master
-1 parent 
-f32d090
- commit 
-4ebc7a4
-2 files changed
-Search within code
- 
-‎README.md
-+2
--3
-
-
-‎setup.sh
-+161
--159
-Original file line number	Diff line number	Diff line change
-@@ -1,159 +1,161 @@
 #!/bin/bash
 set -e # Exit immediately on error
 # Check if a command exists

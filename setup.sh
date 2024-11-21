@@ -97,7 +97,7 @@ sudo systemctl enable bluetooth || handle_error "Failed to enable Bluetooth"
 success_message "Services enabled."
 
 # Update tldr
-info_message "Updating TLDR..."
+info_message "Creating the TLDR cache..."
 tldr --update || handle_error "Failed to update TLDR"
 
 # Configure Spicetify
@@ -153,9 +153,9 @@ success_message "Default shell changed to Fish."
 
 # Clean up
 info_message "Cleaning up..."
-rm -f .local/share/fish/fish_history
+bash -c 'history -c'
 success_message "Cleanup complete."
 
 # Final message and reboot
 success_message "Setup complete. Rebooting now..."
-reboot
+sleep 3 && reboot

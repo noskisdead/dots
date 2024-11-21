@@ -100,16 +100,6 @@ success_message "Services enabled."
 info_message "Updating TLDR..."
 tldr --update || handle_error "Failed to update TLDR"
 
-# Configure Spicetify
-info_message "Configuring Spicetify..."
-spicetify config sidebar_config 0
-spicetify config inject_css 1
-spicetify config replace_colors 1
-spicetify config custom_apps lyrics-plus
-spicetify config custom_apps marketplace
-spicetify config current_theme marketplace
-success_message "Spicetify configured."
-
 # Create directories
 info_message "Creating directories..."
 mkdir -p ~/Documents ~/Pictures ~/Images ~/Videos ~/Downloads || handle_error "Failed to create directories"

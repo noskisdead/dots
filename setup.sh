@@ -109,7 +109,7 @@ tldr --update >/dev/null 2>&1 || handle_error "Failed to update TLDR"
 
 # Create directories
 info_message "Creating directories..."
-mkdir -p ~/Documents ~/Pictures ~/Images ~/Videos ~/Downloads || handle_error "Failed to create directories"
+mkdir -p ~/Documents ~/Pictures ~/Videos ~/Downloads || handle_error "Failed to create directories"
 success_message "Directories created."
 
 # Configure GRUB theme

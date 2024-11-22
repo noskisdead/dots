@@ -25,7 +25,7 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-    unzip wget ripgrep ttf-jetbrains-mono-nerd fzf fisher eza udiskie
+    spotify spicetify-cli unzip wget ripgrep ttf-jetbrains-mono-nerd fzf fisher eza udiskie
     mpc hyprlock libpulse grub-btrfs sof-firmware xdg-desktop-portal-gtk
     tealdeer cava bluez pokemon-colorscripts-git pavucontrol blueman
     noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland
@@ -70,7 +70,7 @@ sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com >/d
 sudo pacman-key --lsign-key 3056513887B78AEB >/dev/null 2>&1 || handle_error "Failed to sign key"
 sudo pacman -U --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm >/dev/null 2>&1 || handle_error "Failed to install chaotic-keyring"
 sudo pacman -U --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm >/dev/null 2>&1 || handle_error "Failed to install chaotic-mirrorlist"
-echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf || handle_error "Failed to add chaotic-aur to pacman.conf"
+echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf >/dev/null 2>&1 || handle_error "Failed to add chaotic-aur to pacman.conf"
 success_message "Chaotic AUR repository added."
 
 # Install packages
@@ -78,7 +78,7 @@ info_message "Installing packages, this can take a lot of time..."
 sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
 success_message "Packages installed successfully."
 
-#Configure BAT theme
+# Configure BAT theme
 info_message "Configuring BAT theme"
 mkdir -p "$(bat --config-dir)/themes" || handle_error "Failed to make BAT's config directory"
 wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme >/dev/null 2>&1 || handle_error "Failed to download the BAT config"
@@ -116,8 +116,8 @@ success_message "Directories created."
 info_message "Configuring GRUB theme..."
 git clone https://github.com/catppuccin/grub.git >/dev/null 2>&1 || handle_error "Failed to clone GRUB theme"
 sudo cp -r grub/src/catppuccin-macchiato-grub-theme /boot/themes || handle_error "Failed to copy GRUB theme"
-echo GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt" | sudo tee -a /etc/default/grub
-echo "GRUB_CMDLINE_LINUX_DEFAULT=\"loglevel=3 quiet nowatchdog mem_sleep_default=deep\"" | sudo tee -a /etc/default/grub
+echo GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt" | sudo tee -a /etc/default/grub >/dev/null 2>&1
+echo "GRUB_CMDLINE_LINUX_DEFAULT=\"loglevel=3 quiet nowatchdog mem_sleep_default=deep\"" | sudo tee -a /etc/default/grub >/dev/null 2>&1
 sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Failed to update GRUB config"
 rm -rf grub
 success_message "GRUB theme configured."

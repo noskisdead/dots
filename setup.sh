@@ -9,29 +9,29 @@ NC='\033[0m' # No Color
 
 # Helper function for error handling
 function handle_error() {
-    echo -e "${RED}Error: $1${NC}"
-    exit 1
+	echo -e "${RED}Error: $1${NC}"
+	exit 1
 }
 
 # Informational message function
 function info_message() {
-    echo -e "${BLUE}$1${NC}"
+	echo -e "${BLUE}$1${NC}"
 }
 
 # Success message function
 function success_message() {
-    echo -e "${GREEN}$1${NC}"
+	echo -e "${GREEN}$1${NC}"
 }
 
 # Packages to be installed
 pkglist=(
-    spicetify-marketplace-bin yazi spotify pacman-contrib spicetify-cli unzip wget ripgrep ttf-jetbrains-mono-nerd fzf fisher eza udiskie
-    mpc hyprlock libpulse grub-btrfs sof-firmware xdg-desktop-portal-gtk
-    tealdeer cava bluez pokemon-colorscripts-git pavucontrol blueman
-    noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland
-    dunst waybar fish hyprshot xdg-desktop-portal-gtk neovim starship wl-clipboard
-    polkit-kde-agent sddm kitty btop rofi-wayland hyprpaper hyprland bluez-utils
-    flatpak qt5-wayland brightnessctl bat ttf-cascadia-code-nerd
+	spicetify-marketplace-bin yazi spotify pacman-contrib spicetify-cli unzip wget ripgrep ttf-jetbrains-mono-nerd fzf fisher eza udiskie
+	mpc hyprlock libpulse grub-btrfs sof-firmware xdg-desktop-portal-gtk
+	tealdeer cava bluez pokemon-colorscripts-git pavucontrol blueman
+	noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland
+	dunst waybar fish hyprshot xdg-desktop-portal-gtk neovim starship wl-clipboard
+	polkit-kde-agent sddm kitty btop rofi-wayland hyprpaper hyprland bluez-utils
+	flatpak qt5-wayland brightnessctl bat ttf-cascadia-code-nerd
 )
 
 # Backup and modify pacman configuration
@@ -114,10 +114,11 @@ success_message "Directories created."
 
 # Configure GRUB theme
 info_message "Configuring GRUB theme..."
+sudo mkdir -p /boot/themes/ >/dev/null 2>&1 || handle_error "Failed to make the /boot/themes/ directory"
 git clone https://github.com/catppuccin/grub.git >/dev/null 2>&1 || handle_error "Failed to clone GRUB theme"
-sudo cp -r grub/src/catppuccin-macchiato-grub-theme /boot/themes || handle_error "Failed to copy GRUB theme"
-echo GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt" | sudo tee -a /etc/default/grub >/dev/null 2>&1
-echo "GRUB_CMDLINE_LINUX_DEFAULT=\"loglevel=3 quiet nowatchdog mem_sleep_default=deep\"" | sudo tee -a /etc/default/grub >/dev/null 2>&1
+sudo cp -r grub/src/catppuccin-macchiato-grub-theme /boot/themes >/dev/null 2>&1 || handle_error "Failed to copy GRUB theme"
+echo 'GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt"' | sudo tee -a /etc/default/grub >/dev/null 2>&1
+echo 'GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nowatchdog mem_sleep_default=deep"' | sudo tee -a /etc/default/grub >/dev/null 2>&1
 sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Failed to update GRUB config"
 rm -rf grub
 success_message "GRUB theme configured."

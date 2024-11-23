@@ -25,7 +25,7 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-    spotify spicetify-cli unzip wget ripgrep ttf-jetbrains-mono-nerd fzf fisher eza udiskie
+    spicetify-marketplace-bin yazi spotify spicetify-cli unzip wget ripgrep ttf-jetbrains-mono-nerd fzf fisher eza udiskie
     mpc hyprlock libpulse grub-btrfs sof-firmware xdg-desktop-portal-gtk
     tealdeer cava bluez pokemon-colorscripts-git pavucontrol blueman
     noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland
@@ -122,11 +122,15 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Faile
 rm -rf grub
 success_message "GRUB theme configured."
 
+#Configure Spicetify
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
+
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."
 wget https://github.com/catppuccin/sddm/releases/download/v1.0.0/catppuccin-macchiato.zip >/dev/null 2>&1 || handle_error "Failed to download SDDM theme"
 sudo unzip catppuccin-macchiato.zip -d /usr/share/sddm/themes/ >/dev/null 2>&1 || handle_error "Failed to unzip the SDDM theme"
-sudo tee /etc/sddm.conf <<EOF || handle_error "Failed to configure SDDM"
+sudo tee /etc/sddm.conf >/dev/null 2>&1 <<EOF || handle_error "Failed to configure SDDM"
 [Theme]
 Current=catppuccin-macchiato
 EOF
@@ -138,11 +142,11 @@ cp -r config/. ~/.config/
 
 # Install Bibata cursor theme
 info_message "Installing Bibata cursor theme..."
-git clone https://aur.archlinux.org/bibata-cursor-theme-bin.git || handle_error "Failed to clone Bibata cursor theme"
+git clone https://aur.archlinux.org/bibata-cursor-theme-bin.git >/dev/null 2>&1 || handle_error "Failed to clone Bibata cursor theme"
 cd bibata-cursor-theme-bin || handle_error "Failed to enter Bibata directory"
-makepkg -si --noconfirm || handle_error "Failed to build Bibata cursor theme"
+makepkg -si --noconfirm >/dev/null 2>&1 || handle_error "Failed to build Bibata cursor theme"
 cd .. || handle_error "Failed to return to parent directory"
-rm -rf bibata-cursor-theme-bin
+rm -rf bibata-cursor-theme-bin >/dev/null 2>&1
 success_message "Bibata cursor theme installed."
 
 # Change default shell to Fish

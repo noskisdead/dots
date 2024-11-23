@@ -31,6 +31,3 @@ To install the configuration, follow these steps:
    ```
 **Reboot to apply changes!**
 **Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen. 
-
-# To do 
-Nothing bro go outside

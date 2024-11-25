@@ -25,13 +25,14 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-    spicetify-marketplace-bin yazi spotify pacman-contrib spicetify-cli unzip wget ripgrep ttf-jetbrains-mono-nerd fzf fisher eza udiskie
-    mpc hyprlock libpulse grub-btrfs sof-firmware xdg-desktop-portal-gtk
-    tealdeer cava bluez pokemon-colorscripts-git pavucontrol blueman
-    noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland
-    dunst waybar fish hyprshot xdg-desktop-portal-gtk neovim starship wl-clipboard
-    polkit-kde-agent sddm kitty rofi-wayland hyprpaper hyprland bluez-utils
-    flatpak qt5-wayland brightnessctl bat ttf-cascadia-code-nerd
+    pacman-contrib unzip wget ripgrep ttf-jetbrains-mono-nerd
+    fzf fisher eza udiskie hyprlock libpulse grub-btrfs
+    xdg-desktop-portal-gtk pokemon-colorscripts-git pavucontrol
+    noto-fonts-emoji hypridle pamixer otf-font-awesome
+    xdg-desktop-portal-hyprland dunst waybar fish hyprshot
+    xdg-desktop-portal-gtk starship wl-clipboard
+    polkit-kde-agent sddm kitty rofi-wayland hyprpaper
+    hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
 )
 
 # Backup and modify pacman configuration
@@ -78,18 +79,11 @@ info_message "Installing packages, this can take a lot of time..."
 sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
 success_message "Packages installed successfully."
 
-# Configure BAT theme
-info_message "Configuring BAT theme"
-mkdir -p "$(bat --config-dir)/themes" || handle_error "Failed to make BAT's config directory"
-wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme >/dev/null 2>&1 || handle_error "Failed to download the BAT config"
-bat cache --build >/dev/null 2>&1 || handle_error "Failed to build BAT's cache"
-echo '--theme="Catppuccin Macchiato"' >~/.config/bat/config
-success_message "BAT configured successfully."
-
 # Configure Starship prompt
 info_message "Configuring Starship prompt..."
 starship preset nerd-font-symbols -o ~/.config/starship.toml || handle_error "Failed to configure Starship"
 success_message "Starship configured successfully"
+
 # Install fish plugins
 info_message "Installing Fish plugins..."
 fish -c 'fisher install jorgebucaran/autopair.fish' >/dev/null 2>&1 || handle_error "Failed to install autopair plugin"
@@ -100,13 +94,8 @@ success_message "Fish plugins installed."
 # Enable services
 info_message "Enabling services..."
 sudo systemctl enable sddm >/dev/null 2>&1 || handle_error "Failed to enable SDDM"
-sudo systemctl enable bluetooth >/dev/null 2>&1 || handle_error "Failed to enable Bluetooth"
 success_message "Services enabled."
 
-# Update TLDR
-info_message "Building the TLDR cache..."
-tldr --update >/dev/null 2>&1 || handle_error "Failed to update TLDR"
-success_message "TLDR cache built successfully"
 # Create directories
 info_message "Creating directories..."
 mkdir -p ~/Documents ~/Pictures ~/Videos ~/Downloads || handle_error "Failed to create directories"
@@ -123,12 +112,6 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Faile
 rm -rf grub
 success_message "GRUB theme configured."
 
-# Configure Spicetify
-info_message "Setting write permissions for Spotify"
-sudo chmod a+wr /opt/spotify
-sudo chmod a+wr /opt/spotify/Apps -R
-success_message "Permissions changed successfully"
-
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."
 wget https://github.com/catppuccin/sddm/releases/download/v1.0.0/catppuccin-macchiato.zip >/dev/null 2>&1 || handle_error "Failed to download SDDM theme"
@@ -141,7 +124,9 @@ rm -f catppuccin-macchiato.zip
 success_message "SDDM theme configured."
 
 # Moving config files
+info_message "Moving config files..."
 cp -r config/. ~/.config/
+success_message "Config files moved successfully"
 
 # Install Bibata cursor theme
 info_message "Installing Bibata cursor theme..."

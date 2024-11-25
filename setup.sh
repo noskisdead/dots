@@ -30,7 +30,7 @@ pkglist=(
     tealdeer cava bluez pokemon-colorscripts-git pavucontrol blueman
     noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland
     dunst waybar fish hyprshot xdg-desktop-portal-gtk neovim starship wl-clipboard
-    polkit-kde-agent sddm kitty btop rofi-wayland hyprpaper hyprland bluez-utils
+    polkit-kde-agent sddm kitty rofi-wayland hyprpaper hyprland bluez-utils
     flatpak qt5-wayland brightnessctl bat ttf-cascadia-code-nerd
 )
 

@@ -13,4 +13,3 @@ vim.cmd.colorscheme("catppuccin-macchiato")
 
 -- Set the mapleader to space
 vim.g.mapleader = " "
-vim.cmd("TransparentEnable")

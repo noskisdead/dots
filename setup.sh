@@ -9,29 +9,29 @@ NC='\033[0m' # No Color
 
 # Helper function for error handling
 function handle_error() {
-	echo -e "${RED}Error: $1${NC}"
-	exit 1
+    echo -e "${RED}Error: $1${NC}"
+    exit 1
 }
 
 # Informational message function
 function info_message() {
-	echo -e "${BLUE}$1${NC}"
+    echo -e "${BLUE}$1${NC}"
 }
 
 # Success message function
 function success_message() {
-	echo -e "${GREEN}$1${NC}"
+    echo -e "${GREEN}$1${NC}"
 }
 
 # Packages to be installed
 pkglist=(
-	spicetify-marketplace-bin yazi spotify pacman-contrib spicetify-cli unzip wget ripgrep ttf-jetbrains-mono-nerd fzf fisher eza udiskie
-	mpc hyprlock libpulse grub-btrfs sof-firmware xdg-desktop-portal-gtk
-	tealdeer cava bluez pokemon-colorscripts-git pavucontrol blueman
-	noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland
-	dunst waybar fish hyprshot xdg-desktop-portal-gtk neovim starship wl-clipboard
-	polkit-kde-agent sddm kitty btop rofi-wayland hyprpaper hyprland bluez-utils
-	flatpak qt5-wayland brightnessctl bat ttf-cascadia-code-nerd
+    spicetify-marketplace-bin yazi spotify pacman-contrib spicetify-cli unzip wget ripgrep ttf-jetbrains-mono-nerd fzf fisher eza udiskie
+    mpc hyprlock libpulse grub-btrfs sof-firmware xdg-desktop-portal-gtk
+    tealdeer cava bluez pokemon-colorscripts-git pavucontrol blueman
+    noto-fonts-emoji hypridle pamixer otf-font-awesome xdg-desktop-portal-hyprland
+    dunst waybar fish hyprshot xdg-desktop-portal-gtk neovim starship wl-clipboard
+    polkit-kde-agent sddm kitty btop rofi-wayland hyprpaper hyprland bluez-utils
+    flatpak qt5-wayland brightnessctl bat ttf-cascadia-code-nerd
 )
 
 # Backup and modify pacman configuration
@@ -89,7 +89,7 @@ success_message "BAT configured successfully."
 # Configure Starship prompt
 info_message "Configuring Starship prompt..."
 starship preset nerd-font-symbols -o ~/.config/starship.toml || handle_error "Failed to configure Starship"
-
+success_message "Starship configured successfully"
 # Install fish plugins
 info_message "Installing Fish plugins..."
 fish -c 'fisher install jorgebucaran/autopair.fish' >/dev/null 2>&1 || handle_error "Failed to install autopair plugin"
@@ -104,9 +104,9 @@ sudo systemctl enable bluetooth >/dev/null 2>&1 || handle_error "Failed to enabl
 success_message "Services enabled."
 
 # Update TLDR
-info_message "Updating TLDR..."
+info_message "Building the TLDR cache..."
 tldr --update >/dev/null 2>&1 || handle_error "Failed to update TLDR"
-
+success_message "TLDR cache built successfully"
 # Create directories
 info_message "Creating directories..."
 mkdir -p ~/Documents ~/Pictures ~/Videos ~/Downloads || handle_error "Failed to create directories"
@@ -123,9 +123,11 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Faile
 rm -rf grub
 success_message "GRUB theme configured."
 
-#Configure Spicetify
+# Configure Spicetify
+info_message "Setting write permissions for Spotify"
 sudo chmod a+wr /opt/spotify
 sudo chmod a+wr /opt/spotify/Apps -R
+success_message "Permissions changed successfully"
 
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."

@@ -30,7 +30,7 @@ pkglist=(
     xdg-desktop-portal-gtk pokemon-colorscripts-git pavucontrol
     noto-fonts-emoji hypridle pamixer otf-font-awesome
     xdg-desktop-portal-hyprland dunst waybar fish hyprshot
-    xdg-desktop-portal-gtk starship wl-clipboard
+    xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
     polkit-kde-agent sddm kitty rofi-wayland hyprpaper
     hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
 )

@@ -4,7 +4,7 @@ This repository contains my personal **Hyprland** dotfiles. They are tailored fo
 ![Home!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/home.png)
 ![Terminal!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/terminal.png)
 ### Disclaimer
-These configurations are heavily inspired by, and in some cases directly borrowed from, other repositories. 
+These configurations are heavily inspired by, and in some cases directly borrowed from, other repositories.
 A few that I remember are:
 - [prasanthrangan/hyprdots](https://github.com/prasanthrangan/hyprdots)
 - [deathemonic/Cat-Dots](https://github.com/deathemonic/Cat-Dots) (Rofi config)
@@ -30,4 +30,4 @@ To install the configuration, follow these steps:
    ./setup.sh
    ```
 **Reboot to apply changes!**
-**Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen. 
+**Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen.

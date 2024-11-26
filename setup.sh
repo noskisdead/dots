@@ -25,8 +25,8 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-    pacman-contrib unzip wget ripgrep ttf-jetbrains-mono-nerd
-    fzf fisher eza udiskie hyprlock libpulse grub-btrfs
+    pacman-contrib unzip wget superfile ttf-jetbrains-mono-nerd
+    fisher eza udiskie hyprlock libpulse grub-btrfs
     xdg-desktop-portal-gtk pokemon-colorscripts-git pavucontrol
     noto-fonts-emoji hypridle pamixer otf-font-awesome
     xdg-desktop-portal-hyprland dunst waybar fish hyprshot

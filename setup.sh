@@ -27,13 +27,18 @@ function success_message() {
 pkglist=(
     pacman-contrib unzip wget superfile ttf-jetbrains-mono-nerd
     fisher eza udiskie hyprlock libpulse grub-btrfs
-    xdg-desktop-portal-gtk pokemon-colorscripts-git pavucontrol
+    xdg-desktop-portal-gtk pokemon-colorscripts-git
     noto-fonts-emoji hypridle pamixer otf-font-awesome
-    xdg-desktop-portal-hyprland dunst waybar fish hyprshot
+    xdg-desktop-portal-hyprland swaync waybar fish hyprshot
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
     polkit-kde-agent sddm kitty rofi-wayland hyprpaper
     hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
+    neovim zen-browser-bin spotify spicetify-cli obsidian
+    bat sof-firmware tealdeer ripgrep pavucontrol
 )
+
+# Clearing the terminal before starting the script
+clear
 
 # Backup and modify pacman configuration
 info_message "Backing up and updating pacman configuration..."
@@ -80,17 +85,14 @@ info_message "Installing packages, this can take a lot of time..."
 sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
 success_message "Packages installed successfully."
 
-# Configure Starship prompt
-info_message "Configuring Terminal..."
-kitty +kitten themes --reload-in=all catppuccin-macchiato
-starship preset nerd-font-symbols -o ~/.config/starship.toml || handle_error "Failed to configure Starship"
-success_message "Terminal configured successfully"
-
 # Install fish plugins
 info_message "Installing Fish plugins..."
+fish -c 'fisher install catppuccin/fish' >/dev/null 2>&1 || handle_error "Failed to install catppuccin plugin"
 fish -c 'fisher install jorgebucaran/autopair.fish' >/dev/null 2>&1 || handle_error "Failed to install autopair plugin"
 fish -c 'fisher install patrickf1/fzf.fish' >/dev/null 2>&1 || handle_error "Failed to install fzf plugin"
 fish -c 'fisher install fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install safe-rm plugin"
+echo "y" | fish -c 'fish_config theme save "Catppuccin Macchiato"' >/dev/null 2>&1 || handle_error "Failed to change the fish theme"
+
 success_message "Fish plugins installed."
 
 # Enable services
@@ -103,13 +105,31 @@ info_message "Creating directories..."
 mkdir -p ~/Documents ~/Pictures ~/Videos ~/Downloads || handle_error "Failed to create directories"
 success_message "Directories created."
 
+# Building the TLDR cache
+info_message "Building the TLDR cache..."
+tldr --update >/dev/null 2>&1 || handle_error "Failed to update TLDR"
+success_message "TLDR cache built successfully"
+
+# Configure BAT theme
+info_message "Configuring BAT theme"
+mkdir -p "$(bat --config-dir)/themes" || handle_error "Failed to make BAT's config directory"
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme >/dev/null 2>&1 || handle_error "Failed to download the BAT config"
+bat cache --build >/dev/null 2>&1 || handle_error "Failed to build BAT's cache"
+echo '--theme="Catppuccin Macchiato"' >~/.config/bat/config
+success_message "BAT configured successfully."
+
+# Configure Spicetify
+info_message "Setting write permissions for Spotify"
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
+success_message "Permissions changed successfully"
+
 # Configure GRUB theme
 info_message "Configuring GRUB theme..."
 sudo mkdir -p /boot/themes/ >/dev/null 2>&1 || handle_error "Failed to make the /boot/themes/ directory"
 git clone https://github.com/catppuccin/grub.git >/dev/null 2>&1 || handle_error "Failed to clone GRUB theme"
 sudo cp -r grub/src/catppuccin-macchiato-grub-theme /boot/themes >/dev/null 2>&1 || handle_error "Failed to copy GRUB theme"
-echo 'GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt"' | sudo tee -a /etc/default/grub >/dev/null 2>&1
-echo 'GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nowatchdog mem_sleep_default=deep"' | sudo tee -a /etc/default/grub >/dev/null 2>&1
+echo -e 'GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt"\nGRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nowatchdog mem_sleep_default=deep"' | sudo tee -a /etc/default/grub >/dev/null 2>&1
 sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Failed to update GRUB config"
 rm -rf grub
 success_message "GRUB theme configured."
@@ -128,6 +148,8 @@ success_message "SDDM theme configured."
 # Moving config files
 info_message "Moving config files..."
 cp -r config/. ~/.config/
+sudo mkdir -p /root/.config
+sudo cp -r config/nvim /root/.config
 success_message "Config files moved successfully"
 
 # Install Bibata cursor theme

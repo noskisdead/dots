@@ -19,7 +19,8 @@
         "custom/updates",
         "battery",
         "backlight",
-        "pulseaudio"
+        "pulseaudio",
+        "custom/notification"
     ],
 
     "hyprland/window": {
@@ -32,10 +33,10 @@
 
     "custom/updates": {
         "format": "󰚰  {}",
-        "interval": 300,
+        "interval": 3200,
         "exec": "checkupdates | wc -l",
         "exec-if": "exit 0",
-        "on-click": "kitty -e sudo pacman -Syyu --noconfirm",
+        "on-click": "hyprctl dispatch exec [float] 'kitty -e sudo pacman -Syyu --noconfirm' && checkupdates",
         "signal": 8
     },
 
@@ -81,8 +82,29 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
+    
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -103,4 +125,3 @@
         }
     }
 }
-

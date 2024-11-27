@@ -52,6 +52,7 @@ tooltip {
 #clock,
 #battery,
 #pulseaudio,
+#custom-notification,
 #workspaces,
 #tray,
 #backlight {
@@ -99,6 +100,9 @@ tooltip {
 
 #pulseaudio{
     color: #89b4fa;
+}
+#custom-notification{
+    color: #f5a97f;
     border-radius: 0px 10px 10px 0px;
     margin-right: 5px;
 }

@@ -24,6 +24,7 @@ abbr mkdir 'mkdir -p'
 abbr mv 'mv -i'
 abbr shred 'shred -vzu -n5'
 abbr wipe 'wipe -r'
+abbr ssh 'kitten ssh'
 abbr htop btop
 abbr top btop
 

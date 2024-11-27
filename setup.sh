@@ -40,6 +40,7 @@ info_message "Backing up and updating pacman configuration..."
 sudo cp /etc/pacman.conf /etc/pacman.conf.bak || handle_error "Failed to backup pacman.conf"
 sudo tee /etc/pacman.conf >/dev/null 2>&1 <<EOF || handle_error "Failed to update pacman.conf"
 [options]
+# NoUpgrade = 
 HoldPkg = pacman glibc
 Architecture = auto
 SigLevel = Required DatabaseOptional
@@ -80,9 +81,10 @@ sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_e
 success_message "Packages installed successfully."
 
 # Configure Starship prompt
-info_message "Configuring Starship prompt..."
+info_message "Configuring Terminal..."
+kitty +kitten themes --reload-in=all catppuccin-macchiato
 starship preset nerd-font-symbols -o ~/.config/starship.toml || handle_error "Failed to configure Starship"
-success_message "Starship configured successfully"
+success_message "Terminal configured successfully"
 
 # Install fish plugins
 info_message "Installing Fish plugins..."
@@ -114,7 +116,7 @@ success_message "GRUB theme configured."
 
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."
-wget https://github.com/catppuccin/sddm/releases/download/v1.0.0/catppuccin-macchiato.zip >/dev/null 2>&1 || handle_error "Failed to download SDDM theme"
+wget -nc https://github.com/catppuccin/sddm/releases/download/v1.0.0/catppuccin-macchiato.zip >/dev/null 2>&1 || handle_error "Failed to download SDDM theme"
 sudo unzip catppuccin-macchiato.zip -d /usr/share/sddm/themes/ >/dev/null 2>&1 || handle_error "Failed to unzip the SDDM theme"
 sudo tee /etc/sddm.conf >/dev/null 2>&1 <<EOF || handle_error "Failed to configure SDDM"
 [Theme]

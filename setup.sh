@@ -148,7 +148,9 @@ success_message "SDDM theme configured."
 info_message "Moving config files..."
 cp -r config/. ~/.config/
 sudo mkdir -p /root/.config
-sudo cp -r config/nvim /root/.config
+sudo cp -r config/nvim /root/.config # Move LazyVim to the root user incase you want to edit a system file
+sudo rm -rf ~/.zen/
+cp -r zen/ ~/.zen/
 success_message "Config files moved successfully"
 
 # Install Bibata cursor theme

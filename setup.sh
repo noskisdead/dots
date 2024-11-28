@@ -33,7 +33,7 @@ pkglist=(
   mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper
   hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
   yazi neovim zen-browser-bin spotify spicetify-cli
-  batsignal bat sof-firmware tealdeer ripgrep pavucontrol fzf
+  batsignal bat sof-firmware tealdeer ripgrep pavucontrol
 )
 
 # Clearing the terminal before starting the script
@@ -90,8 +90,8 @@ fish -c 'fisher install catppuccin/fish' >/dev/null 2>&1 || handle_error "Failed
 fish -c 'fisher install jorgebucaran/autopair.fish' >/dev/null 2>&1 || handle_error "Failed to install autopair plugin"
 fish -c 'fisher install patrickf1/fzf.fish' >/dev/null 2>&1 || handle_error "Failed to install fzf plugin"
 fish -c 'fisher install fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install safe-rm plugin"
+fish -c 'fish_vi_key_bindings' >/dev/null 2>&1 || handle_error "Failed to change the fish vi mode"
 echo "y" | fish -c 'fish_config theme save "Catppuccin Macchiato"' >/dev/null 2>&1 || handle_error "Failed to change the fish theme"
-echo "y" | fish -c 'fish_vi_key_bindings' >/dev/null 2>&1 || handle_error "Failed to change the fish vi mode"
 success_message "Fish config installed."
 
 # Enable services
@@ -146,11 +146,11 @@ success_message "SDDM theme configured."
 
 # Moving config files
 info_message "Moving config files..."
-cp -r config/. ~/.config/
-sudo mkdir -p /root/.config
-sudo cp -r config/nvim /root/.config # Move LazyVim to the root user incase you want to edit a system file
 sudo rm -rf ~/.zen/
-cp -r zen/ ~/.zen/
+cp -r config/dotconfig/. ~/.config/
+cp -r config/home/. ~/
+sudo mkdir -p /root/.config
+sudo cp -r config/dotconfig/nvim /root/.config # Move LazyVim to the root user incase you want to edit a system file
 success_message "Config files moved successfully"
 
 # Install Bibata cursor theme

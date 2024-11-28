@@ -71,6 +71,5 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) |
 
 # To do
-Theme Lazygit (catppuccin)
 Theme pavucontrol
 Theme Thunar

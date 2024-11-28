@@ -1,0 +1,5 @@
+[preview]
+image_quality = 90
+
+[opener]
+edit = [{ run = '${EDITOR:-nvim} "$@"', desc = "$EDITOR", block = true }]

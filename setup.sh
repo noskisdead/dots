@@ -30,9 +30,9 @@ pkglist=(
   noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
   xdg-desktop-portal-hyprland swaync waybar fish hyprshot
   xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
-  polkit-kde-agent sddm kitty rofi-wayland hyprpaper
+  mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper
   hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
-  neovim zen-browser-bin spotify spicetify-cli obsidian
+  yazi neovim zen-browser-bin spotify spicetify-cli
   batsignal bat sof-firmware tealdeer ripgrep pavucontrol fzf
 )
 

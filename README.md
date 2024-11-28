@@ -36,8 +36,8 @@ To install the configuration, follow these steps:
 # Keybindings
 | Keys | Action |
 | :--- | :--- |
-| <kbd>Super</kbd> + <kbd>Return</kbd> | Launch terminal (kitty) |
-| <kbd>Super</kbd> + <kbd>E</kbd> | Launch browser (zen-browser) |
+| <kbd>Super</kbd> + <kbd>Return</kbd> | Launch the terminal |
+| <kbd>Super</kbd> + <kbd>E</kbd> | Launch the web browser (Zen) |
 | <kbd>Super</kbd> + <kbd>Q</kbd> | Close focused window |
 | <kbd>Alt</kbd> + <kbd>F4</kbd> | Close focused window |
 | <kbd>Super</kbd> + <kbd>Space</kbd> | Launch Rofi (launcher) |

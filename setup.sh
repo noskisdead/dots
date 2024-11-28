@@ -27,13 +27,13 @@ pkglist=(
   pacman-contrib unzip wget superfile ttf-jetbrains-mono-nerd
   fisher eza udiskie hyprlock libpulse grub-btrfs npm ruby
   lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git
-  noto-fonts-emoji hypridle pamixer otf-font-awesome
+  noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
   xdg-desktop-portal-hyprland swaync waybar fish hyprshot
   xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
   polkit-kde-agent sddm kitty rofi-wayland hyprpaper
   hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
   neovim zen-browser-bin spotify spicetify-cli obsidian
-  bat sof-firmware tealdeer ripgrep pavucontrol
+  bat sof-firmware tealdeer ripgrep pavucontrol fzf
 )
 
 # Clearing the terminal before starting the script
@@ -85,14 +85,14 @@ sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_e
 success_message "Packages installed successfully."
 
 # Install fish plugins
-info_message "Installing Fish plugins..."
+info_message "Installing Fish config..."
 fish -c 'fisher install catppuccin/fish' >/dev/null 2>&1 || handle_error "Failed to install catppuccin plugin"
 fish -c 'fisher install jorgebucaran/autopair.fish' >/dev/null 2>&1 || handle_error "Failed to install autopair plugin"
 fish -c 'fisher install patrickf1/fzf.fish' >/dev/null 2>&1 || handle_error "Failed to install fzf plugin"
 fish -c 'fisher install fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install safe-rm plugin"
 echo "y" | fish -c 'fish_config theme save "Catppuccin Macchiato"' >/dev/null 2>&1 || handle_error "Failed to change the fish theme"
-
-success_message "Fish plugins installed."
+echo "y" | fish -c 'fish_vi_key_bindings' >/dev/null 2>&1 || handle_error "Failed to change the fish vi mode"
+success_message "Fish config installed."
 
 # Enable services
 info_message "Enabling services..."

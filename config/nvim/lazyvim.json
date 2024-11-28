@@ -8,8 +8,7 @@
     "lazyvim.plugins.extras.lang.ruby",
     "lazyvim.plugins.extras.lang.sql",
     "lazyvim.plugins.extras.lang.yaml",
-    "lazyvim.plugins.extras.lang.zig",
-    "lazyvim.plugins.extras.vscode"
+    "lazyvim.plugins.extras.lang.zig"
   ],
   "news": {
     "NEWS.md": "7429"

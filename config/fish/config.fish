@@ -14,6 +14,7 @@ alias lt='eza --icons=auto --tree' # list folder as tree
 alias grep rg
 alias cat bat
 alias emacs 'emacs -nw'
+alias vim nvim
 abbr mkdir 'mkdir -p'
 abbr sl ls
 abbr pdw pwd
@@ -31,7 +32,6 @@ abbr htop btop
 abbr top btop
 
 abbr n nvim
-abbr g 'git clone'
 abbr ranger yazi
 abbr ssh 'kitten ssh'
 

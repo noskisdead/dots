@@ -3,38 +3,37 @@
 # Define colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Helper function for error handling
 function handle_error() {
-    echo -e "${RED}Error: $1${NC}"
-    exit 1
+  echo -e "${RED}Error: $1${NC}"
+  exit 1
 }
 
 # Informational message function
 function info_message() {
-    echo -e "${BLUE}$1${NC}"
+  echo -e "${BLUE}$1${NC}"
 }
 
 # Success message function
 function success_message() {
-    echo -e "${GREEN}$1${NC}"
+  echo -e "${GREEN}$1${NC}"
 }
 
 # Packages to be installed
 pkglist=(
-    pacman-contrib unzip wget superfile ttf-jetbrains-mono-nerd
-    fisher eza udiskie hyprlock libpulse grub-btrfs
-    xdg-desktop-portal-gtk pokemon-colorscripts-git
-    noto-fonts-emoji hypridle pamixer otf-font-awesome
-    xdg-desktop-portal-hyprland swaync waybar fish hyprshot
-    xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
-    polkit-kde-agent sddm kitty rofi-wayland hyprpaper
-    hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
-    neovim zen-browser-bin spotify spicetify-cli obsidian
-    bat sof-firmware tealdeer ripgrep pavucontrol
+  pacman-contrib unzip wget superfile ttf-jetbrains-mono-nerd
+  fisher eza udiskie hyprlock libpulse grub-btrfs npm ruby
+  lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git
+  noto-fonts-emoji hypridle pamixer otf-font-awesome
+  xdg-desktop-portal-hyprland swaync waybar fish hyprshot
+  xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
+  polkit-kde-agent sddm kitty rofi-wayland hyprpaper
+  hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
+  neovim zen-browser-bin spotify spicetify-cli obsidian
+  bat sof-firmware tealdeer ripgrep pavucontrol
 )
 
 # Clearing the terminal before starting the script

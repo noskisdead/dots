@@ -8,6 +8,8 @@ These configurations are heavily inspired by, and in some cases directly borrowe
 A few that I remember are:
 - [prasanthrangan/hyprdots](https://github.com/prasanthrangan/hyprdots)
 - [deathemonic/Cat-Dots](https://github.com/deathemonic/Cat-Dots) (Rofi config)
+- [catppuccin/catppuccin](https://github.com/catppuccin/catppuccin) (Pretty much everything!)
+
 ## Requirements
 
 This setup assumes you have a **freshly installed Arch Linux** system with the following choices made during installation using **archinstall**:
@@ -15,7 +17,6 @@ This setup assumes you have a **freshly installed Arch Linux** system with the f
 - **Disk Configuration:** BTRFS
 - **Bootloader:** GRUB
 - **Profile:** Minimal
-- **Audio:** Pipewire
 - **Network configuration:** NetworkManager
 
 ## Installation
@@ -31,3 +32,8 @@ To install the configuration, follow these steps:
    ```
 **Reboot to apply changes!**
 **Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen.
+
+# To do
+Choose a file manager to install.
+Choose a video player to install.
+Choose an image viewer to install.

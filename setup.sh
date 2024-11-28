@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Define colors
 RED='\033[0;31m'
@@ -25,7 +25,7 @@ function success_message() {
 # Packages to be installed
 pkglist=(
   pacman-contrib unzip wget superfile ttf-jetbrains-mono-nerd
-  fisher eza udiskie hyprlock libpulse grub-btrfs npm ruby
+  fisher eza udiskie hyprlock grub-btrfs npm ruby
   lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git
   noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
   xdg-desktop-portal-hyprland swaync waybar fish hyprshot
@@ -33,7 +33,7 @@ pkglist=(
   polkit-kde-agent sddm kitty rofi-wayland hyprpaper
   hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
   neovim zen-browser-bin spotify spicetify-cli obsidian
-  bat sof-firmware tealdeer ripgrep pavucontrol fzf
+  batsignal bat sof-firmware tealdeer ripgrep pavucontrol fzf
 )
 
 # Clearing the terminal before starting the script

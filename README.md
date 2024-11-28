@@ -34,4 +34,4 @@ To install the configuration, follow these steps:
 **Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen.
 
 # To do
-Find a way to install a zen browser theme to the dotfiles
+Find a way to install a zen browser theme to the dotfiles and ublock origin

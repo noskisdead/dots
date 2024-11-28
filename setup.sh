@@ -24,16 +24,16 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-  pacman-contrib unzip wget superfile ttf-jetbrains-mono-nerd
-  fisher eza udiskie hyprlock grub-btrfs npm ruby
+  pacman-contrib unzip wget ttf-jetbrains-mono-nerd
+  fisher eza udiskie hyprlock grub-btrfs npm ruby thunar
   lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git
   noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
   xdg-desktop-portal-hyprland swaync waybar fish hyprshot
   xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
   mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper
   hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
-  yazi neovim zen-browser-bin spotify spicetify-cli
-  batsignal bat sof-firmware tealdeer ripgrep pavucontrol
+  yazi neovim zen-browser-bin batsignal bat sof-firmware tealdeer
+  ripgrep pavucontrol
 )
 
 # Clearing the terminal before starting the script
@@ -80,7 +80,7 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 success_message "Chaotic AUR repository added."
 
 # Install packages
-info_message "Installing packages, this can take a lot of time..."
+info_message "Installing packages, this could take a lot of time..."
 sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
 success_message "Packages installed successfully."
 
@@ -164,8 +164,8 @@ success_message "Bibata cursor theme installed."
 
 # Change default shell to Fish
 info_message "Changing default shell to Fish..."
-chsh -s /usr/bin/fish || handle_error "Failed to change user shell to Fish"
-sudo chsh -s /usr/bin/fish || handle_error "Failed to change root shell to Fish"
+chsh -s "$(which fish)" || handle_error "Failed to change user shell to Fish"
+sudo chsh -s "$(which fish)" || handle_error "Failed to change root shell to Fish"
 success_message "Default shell changed to Fish."
 
 # Clean up

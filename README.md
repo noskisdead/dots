@@ -3,6 +3,7 @@
 This repository contains my personal **Hyprland** dotfiles. They are tailored for **Arch Linux**; however, they might work on other Arch-based distros as well.
 ![Home!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/home.png)
 ![Terminal!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/terminal.png)
+
 ### Disclaimer
 These configurations are heavily inspired by, and in some cases directly borrowed from, other repositories.
 A few that I remember are:
@@ -24,7 +25,7 @@ This setup assumes you have a **freshly installed Arch Linux** system with the f
 To install the configuration, follow these steps:
 
    ```
-   sudo pacman -S --needed git
+   sudo pacman -S --needed git base-devel
    git clone https://github.com/noskisdead/dots
    cd dots
    chmod +x setup.sh
@@ -33,11 +34,24 @@ To install the configuration, follow these steps:
 **Reboot to apply changes!**
 **Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen.
 
+# Programs
+| Function | Program |
+| :--- | :--- |
+| Shell | Fish |
+| Terminal | Kitty |
+| CLI File Manager | Yazi |
+| GUI File Manager | Thunar |
+| Text Editor | Neovim (LazyVim) |
+| Web Browser | Zen Browser |
+| Media Player | mpv |
+| Image Viewer | feh |
+
 # Keybindings
 | Keys | Action |
 | :--- | :--- |
 | <kbd>Super</kbd> + <kbd>Return</kbd> | Launch the terminal |
 | <kbd>Super</kbd> + <kbd>E</kbd> | Launch the web browser (Zen) |
+| <kbd>Super</kbd> + <kbd>F</kbd> | Launch the file manager (Yazi) |
 | <kbd>Super</kbd> + <kbd>Q</kbd> | Close focused window |
 | <kbd>Alt</kbd> + <kbd>F4</kbd> | Close focused window |
 | <kbd>Super</kbd> + <kbd>Space</kbd> | Launch Rofi (launcher) |
@@ -55,6 +69,3 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows</kbd> | Resize active window |
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd> | Move window (drag) |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) |
-
-# To do
-Add the programs (example: **Web browser:** Zen Browser) to this file!

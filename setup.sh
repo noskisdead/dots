@@ -8,31 +8,31 @@ NC='\033[0m' # No Color
 
 # Helper function for error handling
 function handle_error() {
-  echo -e "${RED}Error: $1${NC}"
-  exit 1
+    echo -e "${RED}Error: $1${NC}"
+    exit 1
 }
 
 # Informational message function
 function info_message() {
-  echo -e "${BLUE}$1${NC}"
+    echo -e "${BLUE}$1${NC}"
 }
 
 # Success message function
 function success_message() {
-  echo -e "${GREEN}$1${NC}"
+    echo -e "${GREEN}$1${NC}"
 }
 
 # Packages to be installed
 pkglist=(
-  pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep
-  fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol
-  lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git
-  noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
-  xdg-desktop-portal-hyprland swaync waybar fish hyprshot
-  xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
-  mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper
-  hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
-  yazi neovim zen-browser-bin batsignal bat sof-firmware tealdeer
+    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep
+    fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol
+    lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git
+    noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
+    xdg-desktop-portal-hyprland swaync waybar fish hyprshot
+    xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
+    mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper
+    hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
+    yazi neovim zen-browser-bin batsignal bat sof-firmware tealdeer
 )
 
 # Clearing the terminal before starting the script
@@ -58,16 +58,6 @@ info_message "Installing packages, this could take a lot of time..."
 sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
 success_message "Packages installed successfully."
 
-# Install fish plugins
-info_message "Installing Fish config..."
-fish -c 'fisher install catppuccin/fish' >/dev/null 2>&1 || handle_error "Failed to install catppuccin plugin"
-fish -c 'fisher install jorgebucaran/autopair.fish' >/dev/null 2>&1 || handle_error "Failed to install autopair plugin"
-fish -c 'fisher install patrickf1/fzf.fish' >/dev/null 2>&1 || handle_error "Failed to install fzf plugin"
-fish -c 'fisher install fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install safe-rm plugin"
-fish -c 'fish_vi_key_bindings' >/dev/null 2>&1 || handle_error "Failed to change the fish vi mode"
-echo "y" | fish -c 'fish_config theme save "Catppuccin Macchiato"' >/dev/null 2>&1 || handle_error "Failed to change the fish theme"
-success_message "Fish config installed."
-
 # Enable services
 info_message "Enabling services..."
 sudo systemctl enable sddm >/dev/null 2>&1 || handle_error "Failed to enable SDDM"
@@ -77,6 +67,16 @@ success_message "Services enabled."
 info_message "Creating directories..."
 mkdir -p ~/Documents ~/Pictures ~/Videos ~/Downloads || handle_error "Failed to create directories"
 success_message "Directories created."
+
+# Install fish plugins
+info_message "Installing Fish config..."
+fish -c 'fisher install catppuccin/fish' >/dev/null 2>&1 || handle_error "Failed to install catppuccin plugin"
+fish -c 'fisher install jorgebucaran/autopair.fish' >/dev/null 2>&1 || handle_error "Failed to install autopair plugin"
+fish -c 'fisher install patrickf1/fzf.fish' >/dev/null 2>&1 || handle_error "Failed to install fzf plugin"
+fish -c 'fisher install fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install safe-rm plugin"
+fish -c 'fish_vi_key_bindings' >/dev/null 2>&1 || handle_error "Failed to change the fish vi mode"
+echo "y" | fish -c 'fish_config theme save "Catppuccin Macchiato"' >/dev/null 2>&1 || handle_error "Failed to change the fish theme"
+success_message "Fish config installed."
 
 # Building the TLDR cache
 info_message "Building the TLDR cache..."

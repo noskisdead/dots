@@ -26,9 +26,9 @@ function success_message() {
 pkglist=(
     pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep
     fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol
-    lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git
+    lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git openssh
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
-    xdg-desktop-portal-hyprland swaync waybar fish hyprshot
+    xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
     mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper
     hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
@@ -141,5 +141,14 @@ mv dots/ .dots/
 success_message "Cleanup complete."
 
 # Final message and reboot
-success_message "Setup complete. Rebooting now..."
-reboot
+success_message "Setup complete! Do you wish to install some extra programs? (y/n)"
+read -r response
+if [[ "$response" == "yes" || "$response" == "y" || "$response" == "yeah" || "$response" == "yep" || "$response" == "yup" ]]; then
+    # If yes, run another Bash script (e.g., "install_programs.sh")
+    echo "Running the script to install extra programs..."
+    clear
+    ./extra.sh
+else
+    echo "OK, you can always execute extra.sh if you want to!"
+    exit
+fi

@@ -58,6 +58,7 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Backspace</kbd> | Launch the power menu |
 | <kbd>Super</kbd> + <kbd>W</kbd> | Toggle Waybar |
 | <kbd>Super</kbd> + <kbd>V</kbd> | Toggle floating window |
+| <kbd>Super</kbd> + <kbd>F11</kbd> | Toggle fullscreen |
 | <kbd>Super</kbd> + <kbd>P</kbd> | Activate dwindle pseudo mode |
 | <kbd>Super</kbd> + <kbd>J</kbd> | Toggle dwindle split mode |
 | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Take a screenshot |
@@ -71,4 +72,4 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) |
 
 # To do
-Script to install other programs 
+Script to install the NVidia Drivers

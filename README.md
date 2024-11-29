@@ -72,4 +72,4 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) |
 
 # To do
-Script to install the NVidia Drivers
+Try it on a real machine i guess

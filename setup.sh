@@ -41,7 +41,8 @@ clear
 # Backup and modify pacman configuration
 info_message "Backing up and updating pacman configuration..."
 sudo cp /etc/pacman.conf /etc/pacman.conf.bak || handle_error "Failed to backup pacman.conf"
-sudo rm -f /etc/pacman.conf && cp config/etc/pacman.conf /etc >/dev/null 2>&1 | handle_error "Failed to update pacman.conf"
+sudo rm -f /etc/pacman.conf >/dev/null 2>&1 || handle_error "Failed to delete pacman.conf"
+sudo cp ~/dots/config/etc/pacman.conf /etc >/dev/null 2>&1 || handle_error "Failed to update pacman.conf"
 success_message "Pacman configuration updated."
 
 # Add chaotic-aur repository
@@ -74,7 +75,6 @@ fish -c 'fisher install catppuccin/fish' >/dev/null 2>&1 || handle_error "Failed
 fish -c 'fisher install jorgebucaran/autopair.fish' >/dev/null 2>&1 || handle_error "Failed to install autopair plugin"
 fish -c 'fisher install patrickf1/fzf.fish' >/dev/null 2>&1 || handle_error "Failed to install fzf plugin"
 fish -c 'fisher install fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install safe-rm plugin"
-fish -c 'fish_vi_key_bindings' >/dev/null 2>&1 || handle_error "Failed to change the fish vi mode"
 echo "y" | fish -c 'fish_config theme save "Catppuccin Macchiato"' >/dev/null 2>&1 || handle_error "Failed to change the fish theme"
 success_message "Fish config installed."
 
@@ -147,7 +147,7 @@ if [[ "$response" == "yes" || "$response" == "y" || "$response" == "yeah" || "$r
     # If yes, run another Bash script (e.g., "install_programs.sh")
     echo "Running the script to install extra programs..."
     clear
-    ./extra.sh
+    ./~/.dots/extra.sh
 else
     echo "OK, you can always execute extra.sh if you want to!"
     exit

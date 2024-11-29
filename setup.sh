@@ -42,32 +42,7 @@ clear
 # Backup and modify pacman configuration
 info_message "Backing up and updating pacman configuration..."
 sudo cp /etc/pacman.conf /etc/pacman.conf.bak || handle_error "Failed to backup pacman.conf"
-sudo tee /etc/pacman.conf >/dev/null 2>&1 <<EOF || handle_error "Failed to update pacman.conf"
-[options]
-# NoUpgrade = 
-HoldPkg = pacman glibc
-Architecture = auto
-SigLevel = Required DatabaseOptional
-LocalFileSigLevel = Optional
-
-ILoveCandy
-Color
-CheckSpace
-VerbosePkgLists
-ParallelDownloads = 5
-
-[core]
-Include = /etc/pacman.d/mirrorlist
-
-[extra]
-Include = /etc/pacman.d/mirrorlist
-
-[community]
-Include = /etc/pacman.d/mirrorlist
-
-[multilib]
-Include = /etc/pacman.d/mirrorlist
-EOF
+sudo rm -f /etc/pacman.conf && cp config/etc/pacman.conf /etc >/dev/null 2>&1 | handle_error "Failed to update pacman.conf"
 success_message "Pacman configuration updated."
 
 # Add chaotic-aur repository
@@ -116,12 +91,6 @@ wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/
 bat cache --build >/dev/null 2>&1 || handle_error "Failed to build BAT's cache"
 echo '--theme="Catppuccin Macchiato"' >~/.config/bat/config
 success_message "BAT configured successfully."
-
-# Configure Spicetify
-info_message "Setting write permissions for Spotify"
-sudo chmod a+wr /opt/spotify
-sudo chmod a+wr /opt/spotify/Apps -R
-success_message "Permissions changed successfully"
 
 # Configure GRUB theme
 info_message "Configuring GRUB theme..."

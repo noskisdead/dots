@@ -69,3 +69,6 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows</kbd> | Resize active window |
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd> | Move window (drag) |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) |
+
+# To do
+Script to install other programs 

@@ -24,8 +24,8 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-  pacman-contrib unzip wget ttf-jetbrains-mono-nerd
-  fisher eza udiskie hyprlock grub-btrfs npm ruby thunar
+  pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep
+  fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol
   lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git
   noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
   xdg-desktop-portal-hyprland swaync waybar fish hyprshot
@@ -33,7 +33,6 @@ pkglist=(
   mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper
   hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
   yazi neovim zen-browser-bin batsignal bat sof-firmware tealdeer
-  ripgrep pavucontrol
 )
 
 # Clearing the terminal before starting the script

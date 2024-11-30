@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Set the sudo timeout to 25 minutes
-sudo -v || handle_error "Failed to authenticate with sudo"
-
 # Define colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'

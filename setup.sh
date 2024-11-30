@@ -100,6 +100,13 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Faile
 rm -rf grub
 success_message "GRUB theme configured."
 
+# Set Default apps
+info_message "Configuring default apps"
+xdg-mime default feh.desktop image/jpeg || handle_error "Failed to set Feh as the default image opener."
+xdg-settings set default-web-browser zen-alpha.desktop || handle_error "Failed to set Zen Browser as the default web browser."
+xdg-mime default yazi.desktop inode/directory || handle_error "Failed to set Yazi as the default file manager."
+success_message "Default apps configured successfully"
+
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."
 wget -nc https://github.com/catppuccin/sddm/releases/download/v1.0.0/catppuccin-macchiato.zip >/dev/null 2>&1 || handle_error "Failed to download SDDM theme"

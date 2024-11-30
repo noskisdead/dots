@@ -3,7 +3,6 @@
     "lazyvim.plugins.extras.ai.codeium",
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.editor.fzf",
-    "lazyvim.plugins.extras.editor.harpoon2",
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.ruby",
     "lazyvim.plugins.extras.lang.sql",

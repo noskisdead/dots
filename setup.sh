@@ -40,8 +40,7 @@ clear
 
 # Backup and modify pacman configuration
 info_message "Backing up and updating pacman configuration..."
-sudo cp /etc/pacman.conf /etc/pacman.conf.bak || handle_error "Failed to backup pacman.conf"
-sudo rm -f /etc/pacman.conf >/dev/null 2>&1 || handle_error "Failed to delete pacman.conf"
+sudo mv /etc/pacman.conf /etc/pacman.conf.bak || handle_error "Failed to backup pacman.conf"
 sudo cp ~/dots/config/etc/pacman.conf /etc >/dev/null 2>&1 || handle_error "Failed to update pacman.conf"
 success_message "Pacman configuration updated."
 

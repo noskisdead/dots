@@ -10,6 +10,7 @@ declare -A program_map=(
     ["VSCodium"]="vscodium"
     ["Sublime Text"]="sublime-text-4"
     ["JetBrains Toolbox"]="jetbrains-toolbox"
+    ["LibreOffice"]="libreoffice-fresh"
     ["Brave Browser"]="brave-bin"
     ["Spotify"]="spotify"
     ["Spicetify"]="spicetify-cli"

@@ -118,15 +118,6 @@ sudo rm -rf ~/.zen/
 cp -r config/home/. ~/
 success_message "Config files moved successfully"
 
-# Install Bibata cursor theme
-info_message "Installing Bibata cursor theme..."
-git clone https://aur.archlinux.org/bibata-cursor-theme-bin.git >/dev/null 2>&1 || handle_error "Failed to clone Bibata cursor theme"
-cd bibata-cursor-theme-bin || handle_error "Failed to enter Bibata directory"
-makepkg -si --noconfirm >/dev/null 2>&1 || handle_error "Failed to build Bibata cursor theme"
-cd .. || handle_error "Failed to return to parent directory"
-rm -rf bibata-cursor-theme-bin >/dev/null 2>&1
-success_message "Bibata cursor theme installed."
-
 # Change default shell to Fish
 info_message "Changing default shell to Fish..."
 chsh -s "$(which fish)" || handle_error "Failed to change user shell to Fish"
@@ -143,7 +134,7 @@ success_message "Cleanup complete."
 # Final message and reboot
 success_message "Setup complete! Do you wish to install some extra programs? (y/n)"
 read -r response
-if [[ "$response" == "yes" || "$response" == "y" || "$response" == "yeah" || "$response" == "yep" || "$response" == "yup" ]]; then
+if [[ "$response" == "yes" || "$response" == "ye" || "$response" == "y"]]; then
     # If yes, run another Bash script (e.g., "install_programs.sh")
     echo "Running the script to install extra programs..."
     clear

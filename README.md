@@ -57,6 +57,7 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Space</kbd> | Launch Rofi (launcher) |
 | <kbd>Super</kbd> + <kbd>Backspace</kbd> | Launch the power menu |
 | <kbd>Super</kbd> + <kbd>W</kbd> | Toggle Waybar |
+| <kbd>Super</kbd> + <kbd>G</kbd> | Toggle Gamemode |
 | <kbd>Super</kbd> + <kbd>V</kbd> | Toggle floating window |
 | <kbd>Super</kbd> + <kbd>F11</kbd> | Toggle fullscreen |
 | <kbd>Super</kbd> + <kbd>P</kbd> | Activate dwindle pseudo mode |

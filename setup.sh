@@ -139,14 +139,4 @@ mv dots/ .dots/
 success_message "Cleanup complete."
 
 # Final message and reboot
-success_message "Setup complete, the dots directory has been renamed to .dots! \nDo you wish to install some extra programs? (y/n)"
-
-read -r response
-if [[ "$response" == "yes" || "$response" == "ye" || "$response" == "y" ]]; then
-    clear
-    ~/.dots/extra.sh
-else
-    clear
-    echo "OK, you can always execute extra.sh if you want to!"
-    exit
-fi
+success_message "Setup complete, the dots directory has been renamed to .dots!\nReboot the system to apply changes.\nYou can reboot the system by typing reboot or pressing the power button."

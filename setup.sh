@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Set the sudo timeout to 25 minutes
+sudo -v || handle_error "Failed to authenticate with sudo"
+
 # Define colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -70,10 +73,7 @@ success_message "Directories created."
 
 # Install fish plugins
 info_message "Installing Fish config..."
-fish -c 'fisher install catppuccin/fish' >/dev/null 2>&1 || handle_error "Failed to install catppuccin plugin"
-fish -c 'fisher install jorgebucaran/autopair.fish' >/dev/null 2>&1 || handle_error "Failed to install autopair plugin"
-fish -c 'fisher install patrickf1/fzf.fish' >/dev/null 2>&1 || handle_error "Failed to install fzf plugin"
-fish -c 'fisher install fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install safe-rm plugin"
+fish -c 'fisher install catppuccin/fish jorgebucaran/autopair.fish patrickf1/fzf.fish fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install fish plugins"
 echo "y" | fish -c 'fish_config theme save "Catppuccin Macchiato"' >/dev/null 2>&1 || handle_error "Failed to change the fish theme"
 success_message "Fish config installed."
 
@@ -95,7 +95,7 @@ info_message "Configuring GRUB theme..."
 sudo mkdir -p /boot/themes/ >/dev/null 2>&1 || handle_error "Failed to make the /boot/themes/ directory"
 git clone https://github.com/catppuccin/grub.git >/dev/null 2>&1 || handle_error "Failed to clone GRUB theme"
 sudo cp -r grub/src/catppuccin-macchiato-grub-theme /boot/themes >/dev/null 2>&1 || handle_error "Failed to copy GRUB theme"
-echo -e 'GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt"\nGRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nowatchdog mem_sleep_default=deep"' | sudo tee -a /etc/default/grub >/dev/null 2>&1
+echo -e 'GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt"\nGRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nowatchdog mem_sleep_default=deep"\nGRUB_TIMEOUT=1' | sudo tee -a /etc/default/grub >/dev/null 2>&1
 sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Failed to update GRUB config"
 rm -rf grub
 success_message "GRUB theme configured."
@@ -110,7 +110,7 @@ success_message "Default apps configured successfully"
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."
 wget -nc https://github.com/catppuccin/sddm/releases/download/v1.0.0/catppuccin-macchiato.zip >/dev/null 2>&1 || handle_error "Failed to download SDDM theme"
-sudo unzip catppuccin-macchiato.zip -d /usr/share/sddm/themes/ >/dev/null 2>&1 || handle_error "Failed to unzip the SDDM theme"
+echo "N" | sudo unzip catppuccin-macchiato.zip -d /usr/share/sddm/themes/ >/dev/null 2>&1 || handle_error "Failed to unzip the SDDM theme"
 sudo tee /etc/sddm.conf >/dev/null 2>&1 <<EOF || handle_error "Failed to configure SDDM"
 [Theme]
 Current=catppuccin-macchiato
@@ -121,13 +121,14 @@ success_message "SDDM theme configured."
 # Moving config files
 info_message "Moving config files..."
 sudo rm -rf ~/.zen/
-cp -r config/home/. ~/
+sudo cp -r ~/dots/config/opt/. /opt/
+cp -r ~/dots/config/home/. ~/
 success_message "Config files moved successfully"
 
 # Change default shell to Fish
-info_message "Changing default shell to Fish..."
-chsh -s "$(which fish)" || handle_error "Failed to change user shell to Fish"
-sudo chsh -s "$(which fish)" || handle_error "Failed to change root shell to Fish"
+info_message "Changing default shell to Fish, please enter yout password..."
+chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change user shell to Fish"
+sudo chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change root shell to Fish"
 success_message "Default shell changed to Fish."
 
 # Clean up
@@ -138,14 +139,14 @@ mv dots/ .dots/
 success_message "Cleanup complete."
 
 # Final message and reboot
-success_message "Setup complete! Do you wish to install some extra programs? (y/n)"
+success_message "Setup complete, the dots directory has been renamed to .dots! \nDo you wish to install some extra programs? (y/n)"
+
 read -r response
-if [[ "$response" == "yes" || "$response" == "ye" || "$response" == "y"]]; then
-    # If yes, run another Bash script (e.g., "install_programs.sh")
-    echo "Running the script to install extra programs..."
+if [[ "$response" == "yes" || "$response" == "ye" || "$response" == "y" ]]; then
     clear
-    ./~/.dots/extra.sh
+    ~/.dots/extra.sh
 else
+    clear
     echo "OK, you can always execute extra.sh if you want to!"
     exit
 fi

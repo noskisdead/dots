@@ -18,6 +18,7 @@ This setup assumes you have a **freshly installed Arch Linux** system with the f
 - **Disk Configuration:** BTRFS
 - **Bootloader:** GRUB
 - **Profile:** Minimal
+- **Sound Configuration:** PipeWire
 - **Network configuration:** NetworkManager
 
 ## Installation

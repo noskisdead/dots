@@ -1,0 +1,25 @@
+{
+    "policies": {
+        "AppAutoUpdate": false,
+        "AppAutoUpdate_comment": "Change to false to disable auto-updates.",
+        "DisableFirefoxStudies": true,
+        "DisableTelemetry": true,
+        "DisableFeedbackCommands": true,
+        "DisablePocket": true,
+        "DisableSetDesktopBackground": true,
+        "DisableDeveloperTools": false,
+        "DontCheckDefaultBrowser": true,
+        "DNSOverHTTPS": {
+            "Enabled": false,
+            "ProviderURL": "",
+            "Locked": false
+        },
+        "ManualAppUpdateOnly": true,
+        "NoDefaultBookmarks": true,
+        "Extensions": {
+            "Install": [
+                "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+            ]
+        }
+    }
+}

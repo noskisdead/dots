@@ -41,7 +41,7 @@ declare -A program_map=(
 program_names=("${!program_map[@]}")
 
 # Display the list of available programs and allow multi-selection using fzf
-selected_program_names=$(printf "%s\n" "${program_names[@]}" | sort -d | fzf --multi --prompt="Select programs to install (use TAB to select multiple, ENTER to confirm): ")
+selected_program_names=$(printf "%s\n" "${program_names[@]}" | sort -d | fzf --multi --prompt="Use TAB to select the programs you want to install: ")
 
 # Check if any programs were selected
 if [ -z "$selected_program_names" ]; then

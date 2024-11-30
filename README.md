@@ -62,13 +62,13 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>V</kbd> | Toggle floating window |
 | <kbd>Super</kbd> + <kbd>F11</kbd> | Toggle fullscreen |
 | <kbd>Super</kbd> + <kbd>P</kbd> | Activate dwindle pseudo mode |
-| <kbd>Super</kbd> + <kbd>J</kbd> | Toggle dwindle split mode |
+| <kbd>Super</kbd> + <kbd>B</kbd> | Toggle dwindle split mode |
 | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Take a screenshot |
-| <kbd>Super</kbd> + <kbd>Arrows</kbd> | Move focus to the selected direction |
+| <kbd>Super</kbd> + <kbd>Arrows/Vim Directions</kbd> | Move focus to the selected direction |
 | <kbd>Super</kbd> + <kbd>1-10</kbd> | Switch to workspace 1-10 |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>1-10</kbd> | Move active window to workspace 1-10 |
 | <kbd>Super</kbd> + <kbd>S</kbd> | Toggle special workspace |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Move window to special workspace |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows</kbd> | Resize active window |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows/Vim Directions</kbd> | Resize active window |
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd> | Move window (drag) |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) |

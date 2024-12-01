@@ -1,4 +1,4 @@
-# Funtion Definitions
+# Display a random pokemon when fish is started
 function fish_greeting
     pokemon-colorscripts -r 1-7 --no-title
 end
@@ -40,3 +40,10 @@ abbr ssh 'kitten ssh'
 if status is-interactive
     starship init fish | source
 end
+
+# Initialize Zoxide
+zoxide init fish --cmd cd | source
+
+# Misc options
+enable_transience # Sets starship to enable the Transience Prompt
+fish_vi_key_bindings # Sets fish to use vi bindings

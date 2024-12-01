@@ -30,8 +30,8 @@ pkglist=(
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
     xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
-    mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper
-    hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
+    mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper entr
+    zoxide hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
     yazi neovim zen-browser-bin batsignal bat sof-firmware tealdeer
 )
 
@@ -92,7 +92,7 @@ info_message "Configuring GRUB theme..."
 sudo mkdir -p /boot/themes/ >/dev/null 2>&1 || handle_error "Failed to make the /boot/themes/ directory"
 git clone https://github.com/catppuccin/grub.git >/dev/null 2>&1 || handle_error "Failed to clone GRUB theme"
 sudo cp -r grub/src/catppuccin-macchiato-grub-theme /boot/themes >/dev/null 2>&1 || handle_error "Failed to copy GRUB theme"
-echo -e 'GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt"\nGRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nowatchdog mem_sleep_default=deep"\nGRUB_TIMEOUT=1' | sudo tee -a /etc/default/grub >/dev/null 2>&1
+grep -q 'GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt"' /etc/default/grub || echo -e 'GRUB_THEME="/boot/themes/catppuccin-macchiato-grub-theme/theme.txt"\nGRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nowatchdog mem_sleep_default=deep"\nGRUB_TIMEOUT=1' | sudo tee -a /etc/default/grub >/dev/null 2>&1 || handle_error "Failed to configure GRUB"
 sudo grub-mkconfig -o /boot/grub/grub.cfg >/dev/null 2>&1 || handle_error "Failed to update GRUB config"
 rm -rf grub
 success_message "GRUB theme configured."

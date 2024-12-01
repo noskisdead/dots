@@ -24,7 +24,7 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep
+    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep man-db
     fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol
     lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git openssh
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin

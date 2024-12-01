@@ -76,3 +76,4 @@ To install the configuration, follow these steps:
 
 # To do
 Choose a terminal multiplexer
+Find a way to randomize the mac adress

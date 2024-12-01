@@ -56,6 +56,7 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Q</kbd> | Close focused window |
 | <kbd>Alt</kbd> + <kbd>F4</kbd> | Close focused window |
 | <kbd>Super</kbd> + <kbd>Space</kbd> | Launch Rofi (launcher) |
+| <kbd>Alt</kbd> + <kbd>Space</kbd> | Switch Keyboard Layout (You can set the second layout in the input.conf file in the hyprland config) |
 | <kbd>Super</kbd> + <kbd>Backspace</kbd> | Launch the power menu |
 | <kbd>Super</kbd> + <kbd>W</kbd> | Toggle Waybar |
 | <kbd>Super</kbd> + <kbd>G</kbd> | Toggle Gamemode |
@@ -64,11 +65,11 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>P</kbd> | Activate dwindle pseudo mode |
 | <kbd>Super</kbd> + <kbd>B</kbd> | Toggle dwindle split mode |
 | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Take a screenshot |
-| <kbd>Super</kbd> + <kbd>Arrows/Vim Directions</kbd> | Move focus to the selected direction |
+| <kbd>Super</kbd> + <kbd>Arrows / Vim Directions</kbd> | Move focus to the selected direction |
 | <kbd>Super</kbd> + <kbd>1-10</kbd> | Switch to workspace 1-10 |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>1-10</kbd> | Move active window to workspace 1-10 |
 | <kbd>Super</kbd> + <kbd>S</kbd> | Toggle special workspace |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Move window to special workspace |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows/Vim Directions</kbd> | Resize active window |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows / Vim Directions</kbd> | Resize active window |
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd> | Move window (drag) |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) |

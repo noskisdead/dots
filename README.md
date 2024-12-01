@@ -23,8 +23,9 @@ This setup assumes you have a **freshly installed Arch Linux** system with the f
 
 ## Installation
 
-To install the configuration, follow these steps:
+If you are not connected via Ethernet, use the nmtui-connect CLI tool to connect to your WiFi network.
 
+To install the configuration, follow these steps:
    ```
    sudo pacman -S --needed git base-devel
    git clone https://github.com/noskisdead/dots
@@ -35,6 +36,7 @@ To install the configuration, follow these steps:
 **Reboot to apply changes!**
 **Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen.
 **Other important note:** the Caps Lock key is swapped with the escape key. You can revert this change by removing the ", caps:swapescape" in the input.conf file in the hyprland config.
+
 # Programs
 | Function | Program |
 | :--- | :--- |
@@ -73,7 +75,3 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows / Vim Directions</kbd> | Resize active window |
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd> | Move window (drag) |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) |
-
-# To do
-Choose a terminal multiplexer
-Find a way to randomize the mac adress

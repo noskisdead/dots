@@ -43,7 +43,7 @@ end
 
 # Initialize Zoxide
 zoxide init fish --cmd cd | source
+enable_transience # Sets starship to enable the Transience Prompt
 
 # Misc options
-enable_transience # Sets starship to enable the Transience Prompt
 fish_vi_key_bindings # Sets fish to use vi bindings

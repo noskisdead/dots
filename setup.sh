@@ -40,8 +40,8 @@ clear
 
 # Backup and modify pacman configuration
 info_message "Backing up and updating pacman configuration..."
-sudo mv /etc/pacman.conf /etc/pacman.conf.bak || handle_error "Failed to backup pacman.conf"
-sudo cp ~/dots/config/etc/pacman.conf /etc >/dev/null 2>&1 || handle_error "Failed to update pacman.conf"
+# sudo cp -rb ~/.dots/config/etc/. /etc
+sudo cp -rb ~/dots/config/etc/. /etc
 success_message "Pacman configuration updated."
 
 # Add chaotic-aur repository
@@ -119,11 +119,13 @@ success_message "SDDM theme configured."
 info_message "Moving config files..."
 sudo rm -rf ~/.zen/
 sudo cp -r ~/dots/config/opt/. /opt/
+# sudo cp -rb ~/.dots/config/opt/. /opt/
 cp -r ~/dots/config/home/. ~/
+# cp -r ~/.dots/config/home/. ~/
 success_message "Config files moved successfully"
 
 # Change default shell to Fish
-info_message "Changing default shell to Fish, please enter yout password..."
+info_message "Changing default shell to Fish.\nPlease enter yout password..."
 chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change user shell to Fish"
 sudo chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change root shell to Fish"
 success_message "Default shell changed to Fish."
@@ -132,7 +134,7 @@ success_message "Default shell changed to Fish."
 info_message "Cleaning up..."
 history -c
 cd ..
-mv dots/ .dots/
+mv ~/dots/ ~/.dots/
 success_message "Cleanup complete."
 
 # Final message and reboot

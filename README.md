@@ -1,4 +1,4 @@
-# Welcome to noskisdead's Hyprland Dotfiles!
+# Welcome to noskisdead's Hyprland Configuration!
 
 This repository contains my personal **Hyprland** dotfiles. They are tailored for **Arch Linux**; however, they might work on other Arch-based distros as well.
 ![Home!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/home.png)
@@ -13,7 +13,7 @@ A few that I remember are:
 
 ## Requirements
 
-This setup assumes you have a **freshly installed Arch Linux** system with the following choices made during installation using **archinstall**:
+This setup assumes you have a **freshly installed Arch Linux** system with the following choices made during installation using **ArchInstall**:
 
 - **Disk Configuration:** BTRFS
 - **Bootloader:** GRUB
@@ -35,7 +35,7 @@ To install the configuration, follow these steps:
    ```
 **Reboot to apply changes!**
 **Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen.
-**Other important note:** the Caps Lock key is swapped with the escape key. You can revert this change by removing the ", caps:swapescape" in the input.conf file in the hyprland config.
+**Other important note:** the Caps Lock key is swapped with the escape key. You can revert this change by removing the ", caps:swapescape" in the input.conf file in the Hyprland dotfiles.
 
 # Programs
 | Function | Program |
@@ -49,12 +49,13 @@ To install the configuration, follow these steps:
 | Media Player | mpv |
 | Image Viewer | feh |
 
-# Keybindings
+# Hyprland Keybindings
 | Keys | Action |
 | :--- | :--- |
 | <kbd>Super</kbd> + <kbd>Return</kbd> | Launch the terminal |
-| <kbd>Super</kbd> + <kbd>E</kbd> | Launch the web browser (Zen) |
+| <kbd>Super</kbd> + <kbd>E</kbd> | Launch the code editor (Neovim) |
 | <kbd>Super</kbd> + <kbd>F</kbd> | Launch the file manager (Yazi) |
+| <kbd>Super</kbd> + <kbd>A</kbd> | Launch the web browser (Zen) |
 | <kbd>Super</kbd> + <kbd>Q</kbd> | Close focused window |
 | <kbd>Alt</kbd> + <kbd>F4</kbd> | Close focused window |
 | <kbd>Super</kbd> + <kbd>Space</kbd> | Launch Rofi (launcher) |

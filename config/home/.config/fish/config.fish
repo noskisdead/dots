@@ -1,5 +1,7 @@
 # Display a random pokemon when fish is started
 function fish_greeting
+    enable_transience
+    fish_vi_key_bindings
     pokemon-colorscripts -r 1-7 --no-title
 end
 
@@ -43,7 +45,3 @@ end
 
 # Initialize Zoxide
 zoxide init fish --cmd cd | source
-enable_transience # Sets starship to enable the Transience Prompt
-
-# Misc options
-fish_vi_key_bindings # Sets fish to use vi bindings

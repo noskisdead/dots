@@ -28,7 +28,7 @@ pkglist=(
     fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol
     lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git openssh
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
-    xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf
+    xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf noto-fonts-cjk
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard
     mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper entr
     zoxide hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
@@ -65,7 +65,7 @@ success_message "Services enabled."
 
 # Create directories
 info_message "Creating directories..."
-mkdir -p ~/Documents ~/Pictures ~/Videos ~/Downloads || handle_error "Failed to create directories"
+mkdir -p ~/Pictures ~/Downloads || handle_error "Failed to create directories"
 success_message "Directories created."
 
 # Install fish plugins

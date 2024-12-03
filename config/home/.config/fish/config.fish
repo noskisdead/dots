@@ -13,6 +13,7 @@ alias ld='eza -lhD --icons=auto' # long list dirs
 alias lt='eza --icons=auto --tree' # list folder as tree
 
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
+alias pyenv 'source env/bin/activate.fish'
 alias grep rg
 alias cat bat
 alias emacs 'emacs -nw'

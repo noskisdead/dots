@@ -42,6 +42,7 @@ To install the configuration, follow these steps:
 | :--- | :--- |
 | Shell | Fish |
 | Terminal | Kitty |
+| Multiplexer | Zellij |
 | CLI File Manager | Yazi |
 | GUI File Manager | Thunar |
 | Text Editor | Neovim (LazyVim) |

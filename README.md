@@ -49,6 +49,7 @@ To install the configuration, follow these steps:
 | Web Browser | Zen Browser |
 | Media Player | mpv |
 | Image Viewer | feh |
+| Archiver | Ark |
 
 # Hyprland Keybindings
 | Keys | Action |
@@ -80,6 +81,3 @@ To install the configuration, follow these steps:
 
 # To do
 Fix the update Waybar
-update readme to include new binds
-Set the catppuccin gtk 5 theme
-Set the catppuccin QT theme

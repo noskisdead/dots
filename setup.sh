@@ -31,8 +31,8 @@ pkglist=(
     xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf noto-fonts-cjk
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard python-pip
     mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper entr zellij
-    zoxide hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
-    yazi neovim zen-browser-bin batsignal bat sof-firmware tealdeer
+    zoxide hyprland qt5ct qt5-wayland brightnessctl ttf-cascadia-code-nerd
+    yazi neovim qt6ct zen-browser-bin batsignal bat sof-firmware tealdeer
 )
 
 # Clearing the terminal before starting the script

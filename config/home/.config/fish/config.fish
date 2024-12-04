@@ -2,7 +2,7 @@
 function fish_greeting
     enable_transience
     fish_vi_key_bindings
-    pokemon-colorscripts -r 1-7 --no-title
+    pokemon-colorscripts -r --no-title
 end
 
 # List Directory

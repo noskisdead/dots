@@ -26,8 +26,8 @@ function success_message() {
 pkglist=(
     pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep man-db
     fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol
-    lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git openssh
-    noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
+    lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git openssh impression
+    noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin mission-center
     xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf noto-fonts-cjk
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard python-pip
     mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper entr zellij

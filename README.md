@@ -54,12 +54,12 @@ To install the configuration, follow these steps:
 | Keys | Action |
 | :--- | :--- |
 | <kbd>Super</kbd> + <kbd>Return</kbd> | Launch the terminal |
+| <kbd>Super</kbd> + <kbd>Return</kbd> | Launch Zellij |
 | <kbd>Super</kbd> + <kbd>E</kbd> | Launch the code editor (Neovim) |
 | <kbd>Super</kbd> + <kbd>F</kbd> | Launch the file manager (Yazi) |
 | <kbd>Super</kbd> + <kbd>A</kbd> | Launch the web browser (Zen) |
-| <kbd>Super</kbd> + <kbd>Q</kbd> | Close focused window |
-| <kbd>Alt</kbd> + <kbd>F4</kbd> | Close focused window |
 | <kbd>Super</kbd> + <kbd>Space</kbd> | Launch Rofi (launcher) |
+| <kbd>Super</kbd> + <kbd>Q</kbd> | Close focused window |
 | <kbd>Alt</kbd> + <kbd>Space</kbd> | Switch Keyboard Layout (You can set the second layout in the input.conf file in the hyprland config) |
 | <kbd>Super</kbd> + <kbd>Backspace</kbd> | Launch the power menu |
 | <kbd>Super</kbd> + <kbd>W</kbd> | Toggle Waybar |
@@ -76,4 +76,10 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Move window to special workspace |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows / Vim Directions</kbd> | Resize active window |
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd> | Move window (drag) |
-| <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) |
+| <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) 
+
+# To do
+Fix the update Waybar
+update readme to include new binds
+Set the catppuccin gtk 5 theme
+Set the catppuccin QT theme

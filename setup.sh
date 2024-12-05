@@ -24,9 +24,9 @@ function success_message() {
 
 # Packages to be installed
 pkglist=(
-    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep man-db
-    fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol
-    lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git openssh
+    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep man-db thefuck
+    fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol qt6ct
+    lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git openssh kvantum
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin mission-center
     xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf noto-fonts-cjk
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard python-pip

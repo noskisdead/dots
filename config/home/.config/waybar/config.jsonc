@@ -16,7 +16,6 @@
   ],
   "modules-right": [
     "tray",
-    "custom/updates",
     "battery",
     "backlight",
     "pulseaudio",
@@ -27,14 +26,6 @@
   },
   "hyprland/workspaces": {
     "disable-scroll": true
-  },
-  "custom/updates": {
-    "format": "󰚰  {}",
-    "interval": 3200,
-    "exec": "checkupdates | wc -l",
-    "exec-if": "exit 0",
-    "on-click": "hyprctl dispatch exec [float] 'kitty -e sudo pacman -Syyu --noconfirm'",
-    "signal": 8
   },
   "tray": {
     "icon-size": 13,

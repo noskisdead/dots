@@ -80,4 +80,4 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) 
 
 # To do
-Fix the update Waybar
+Add a theme for the plymouth luks

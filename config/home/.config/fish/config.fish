@@ -1,7 +1,7 @@
 # Display a random pokemon when fish is started
 function fish_greeting
     enable_transience
-    fish_vi_key_bindings
+    fish_hybrid_key_bindings
     pokemon-colorscripts -r --no-title
 end
 
@@ -12,7 +12,7 @@ alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long li
 alias ld='eza -lhD --icons=auto' # long list dirs
 alias lt='eza --icons=auto --tree' # list folder as tree
 
-# Always mkdir a path (this doesn't inhibit functionality to make a single dir)
+alias vencord 'sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias pyenv 'source env/bin/activate.fish'
 alias grep rg
 alias cat bat

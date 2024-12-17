@@ -79,3 +79,4 @@ To install the configuration, follow these steps:
 
 # To do
 Add a theme for the plymouth luks
+Switch to ghostty terminal

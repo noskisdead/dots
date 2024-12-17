@@ -19,15 +19,15 @@ function info_message() {
 
 # Packages to be installed
 pkglist=(
-    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep man-db thefuck
+    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep
     fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol qt6ct
-    lazygit xdg-desktop-portal-gtk pokemon-colorscripts-git openssh kvantum
-    noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin mission-center
+    xdg-desktop-portal-gtk pokemon-colorscripts-git openssh kvantum
+    noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
     xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf noto-fonts-cjk
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard python-pip
-    mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper entr zellij
+    mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper zellij
     zoxide hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
-    yazi neovim zen-browser-bin batsignal bat sof-firmware tealdeer
+    yazi neovim zen-browser-bin batsignal bat sof-firmware
 )
 
 # Clearing the terminal before starting the script
@@ -62,10 +62,6 @@ mkdir -p ~/Pictures ~/Downloads || handle_error "Failed to create directories"
 info_message "Installing Fish config..."
 fish -c 'fisher install catppuccin/fish jorgebucaran/autopair.fish patrickf1/fzf.fish fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install fish plugins"
 echo "y" | fish -c 'fish_config theme save "Catppuccin Macchiato"' >/dev/null 2>&1 || handle_error "Failed to change the fish theme"
-
-# Building the TLDR cache
-info_message "Building the TLDR cache..."
-tldr --update >/dev/null 2>&1 || handle_error "Failed to update TLDR"
 
 # Configure BAT theme
 info_message "Configuring BAT theme"

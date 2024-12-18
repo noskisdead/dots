@@ -56,6 +56,7 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Z</kbd> | Launch Zellij |
 | <kbd>Super</kbd> + <kbd>E</kbd> | Launch the code editor (Neovim) |
 | <kbd>Super</kbd> + <kbd>F</kbd> | Launch the file manager (Yazi) |
+| <kbd>Super Shift</kbd> + <kbd>F</kbd> | Launch the GUI file manager (Thunar) |
 | <kbd>Super</kbd> + <kbd>A</kbd> | Launch the web browser (Zen) |
 | <kbd>Super</kbd> + <kbd>Space</kbd> | Launch Rofi (launcher) |
 | <kbd>Super</kbd> + <kbd>Q</kbd> | Close focused window |

@@ -53,10 +53,11 @@ To install the configuration, follow these steps:
 | Keys | Action |
 | :--- | :--- |
 | <kbd>Super</kbd> + <kbd>Return</kbd> | Launch the terminal |
-| <kbd>Super</kbd> + <kbd>Z</kbd> | Launch Zellij |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Return</kbd>| Launch Zellij |
 | <kbd>Super</kbd> + <kbd>E</kbd> | Launch the code editor (Neovim) |
 | <kbd>Super</kbd> + <kbd>F</kbd> | Launch the file manager (Yazi) |
-| <kbd>Super Shift</kbd> + <kbd>F</kbd> | Launch the GUI file manager (Thunar) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Launch the GUI file manager (Thunar) |
+| <kbd>Super</kbd> + <kbd>N</kbd> | Show Notifications (SwayNC) |
 | <kbd>Super</kbd> + <kbd>A</kbd> | Launch the web browser (Zen) |
 | <kbd>Super</kbd> + <kbd>Space</kbd> | Launch Rofi (launcher) |
 | <kbd>Super</kbd> + <kbd>Q</kbd> | Close focused window |
@@ -76,8 +77,8 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Move window to special workspace |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows / Vim Directions</kbd> | Resize active window |
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd> | Move window (drag) |
-| <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag) 
+| <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag)
 
 # To do
-Add a theme for the plymouth luks
-Switch to ghostty terminal
+Add a theme for the LUKS Authentication
+Switch to Ghostty Terminal

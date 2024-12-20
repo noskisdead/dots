@@ -101,6 +101,8 @@ sudo cp -r ~/dots/config/opt/. /opt/
 # sudo cp -rb ~/.dots/config/opt/. /opt/
 cp -r ~/dots/config/home/. ~/
 # cp -r ~/.dots/config/home/. ~/
+sudo git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git /usr/share/fonts/SFPro && sudo rm -rf /usr/share/fonts/SFPro/.git/ >/dev/null 2>&1 || handle_error "Failed to clone the SF Font"
+fc-cache -f >/dev/null 2>&1 || handle_error "Failed to rebuild the font cache"
 
 # Change default shell to Fish
 info_message "Changing default shell to Fish.\nPlease enter your password..."

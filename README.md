@@ -80,5 +80,4 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag)
 
 # To do
-Add a theme for the LUKS Authentication
 Switch to Ghostty Terminal

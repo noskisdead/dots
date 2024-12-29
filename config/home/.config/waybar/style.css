@@ -55,7 +55,7 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-    background: #1e2030;
+    background: transparent;
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 10px;
@@ -68,7 +68,7 @@ tooltip {
 }
 
 #workspaces {
-    background: #1e2030;
+    background: transparent;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
@@ -90,7 +90,7 @@ tooltip {
 }
 
 #clock {
-    background: #1e2030;
+    background: transparent;
     color: #fab387;
     border-radius: 10px 10px 10px 10px;
     margin-left: 5px;

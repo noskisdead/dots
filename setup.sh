@@ -25,7 +25,7 @@ pkglist=(
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
     xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf noto-fonts-cjk
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard python-pip
-    mpv feh polkit-kde-agent sddm kitty rofi-wayland hyprpaper zellij
+    mpv feh polkit-kde-agent sddm kitty rofi-wayland swww spotify zellij
     zoxide hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
     yazi neovim zen-browser-bin batsignal bat
 )

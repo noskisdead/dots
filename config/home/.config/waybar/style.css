@@ -47,7 +47,7 @@ tooltip {
     border-radius: 10px;
 }
 
-#window,
+#custom-spotify,
 #clock,
 #battery,
 #pulseaudio,
@@ -82,7 +82,7 @@ tooltip {
     border-right: 0px;
 }
 
-#window {
+#custom-spotify {
     border-radius: 10px;
     margin-left: 60px;
     margin-right: 60px;

@@ -14,9 +14,10 @@ alias lt='eza --icons=auto --tree' # list folder as tree
 
 alias vencord 'sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias pyenv 'source env/bin/activate.fish'
-alias grep rg
 alias cat bat
 alias emacs 'emacs -nw'
+
+abbr grep rg
 abbr vim nvim
 abbr mkdir 'mkdir -p'
 abbr sl ls

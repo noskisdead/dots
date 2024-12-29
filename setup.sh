@@ -21,7 +21,7 @@ function info_message() {
 pkglist=(
     pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep signal-desktop
     fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol qt6ct
-    xdg-desktop-portal-gtk pokemon-colorscripts-git openssh kvantum vesktop-bin
+    xdg-desktop-portal-gtk pokemon-colorscripts-git openssh kvantum vesktop
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
     xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf noto-fonts-cjk
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard python-pip
@@ -101,7 +101,7 @@ sudo cp -r ~/dots/config/opt/. /opt/
 # sudo cp -rb ~/.dots/config/opt/. /opt/
 cp -r ~/dots/config/home/. ~/
 # cp -r ~/.dots/config/home/. ~/
-sudo git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git /usr/share/fonts/SFPro && sudo rm -rf /usr/share/fonts/SFPro/.git/ >/dev/null 2>&1 || handle_error "Failed to clone the SF Font"
+sudo git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git /usr/share/fonts/SFPro >/dev/null 2>&1 && sudo rm -rf /usr/share/fonts/SFPro/.git/ >/dev/null 2>&1 || handle_error "Failed to clone the SF Font"
 fc-cache -f >/dev/null 2>&1 || handle_error "Failed to rebuild the font cache"
 
 # Change default shell to Fish

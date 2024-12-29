@@ -27,7 +27,7 @@ pkglist=(
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard python-pip
     mpv feh polkit-kde-agent sddm kitty rofi-wayland swww spotify zellij
     zoxide hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
-    yazi neovim zen-browser-bin batsignal bat
+    yazi neovim zen-browser-bin bat
 )
 
 # Clearing the terminal before starting the script

@@ -102,7 +102,8 @@ sudo git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git /usr
 fc-cache -f >/dev/null 2>&1 || handle_error "Failed to rebuild the font cache"
 
 # Change default shell to Fish
-info_message "Changing default shell to Fish.\nPlease enter your password..."
+info_message "Changing default shell to Fish."
+echo "Please enter your password..."
 chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change user shell to Fish"
 sudo chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change root shell to Fish"
 

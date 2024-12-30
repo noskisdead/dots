@@ -1,0 +1,13 @@
+theme = catppuccin-macchiato
+title = ">_"
+window-decoration = false
+
+font-family = Caskaydia Cove Nerd Font
+font-size = 11
+adjust-cursor-thickness = 1
+confirm-close-surface = false
+auto-update = off
+
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+macos-option-as-alt = true

@@ -34,7 +34,7 @@ To install the configuration, follow these steps:
 > You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen.
 **Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the down-right corner of your screen.
 > **Other important note:** the Caps Lock key is swapped with the escape key. You can revert this change by removing the ", caps:swapescape" in the input.conf file in the Hyprland dotfiles.
-
+> Final note lmfao: Don't forget to execute `spicetify upgrade` after logging into Spotify
 # Programs
 | Function | Program |
 | :--- | :--- |
@@ -81,4 +81,3 @@ To install the configuration, follow these steps:
 
 # To Do 
 Find a way to include the obsidian config in the dotfiles
-Theme Spotify

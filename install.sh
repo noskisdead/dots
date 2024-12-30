@@ -25,7 +25,7 @@ pkglist=(
     noto-fonts-emoji-flag-git hypridle-git pamixer otf-font-awesome zen-browser-bin
     swaync waybar-git fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme obsidian
     starship wl-clipboard-rs python-pip yazi-git neovim-git zen-browser-bin bat ark
-    mpv feh polkit-kde-agent sddm-git kitty-git rofi-wayland swww spotify zellij
+    mpv feh polkit-kde-agent sddm-git kitty-git rofi-wayland swww spicetify-cli spotify zellij
     zoxide hyprland-git qt5-wayland brightnessctl ttf-cascadia-code-nerd
 )
 
@@ -34,7 +34,7 @@ clear
 
 # Backup and modify pacman configuration
 info_message "Backing up and updating pacman configuration..."
-# sudo cp -rb ~/.dots/config/etc/. /etc
+# sudo cp -r ~/.dots/config/etc/. /etc
 sudo cp -rb ~/dots/config/etc/. /etc
 
 # Add chaotic-aur repository
@@ -69,6 +69,14 @@ wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/
 bat cache --build >/dev/null 2>&1 || handle_error "Failed to build BAT's cache"
 echo '--theme="Catppuccin Macchiato"' >~/.config/bat/config
 
+# Configure Spicetify
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
+spicetify config custom_apps marketplace
+spicetify config inject_css 1
+spicetify config replace_colors 1
+spicetify config current_theme marketplace
+
 # Configure GRUB theme
 info_message "Configuring GRUB theme..."
 sudo mkdir -p /boot/themes/ >/dev/null 2>&1 || handle_error "Failed to make the /boot/themes/ directory"
@@ -95,7 +103,7 @@ EOF
 info_message "Moving config files..."
 sudo rm -rf ~/.zen/
 sudo cp -r ~/dots/config/opt/. /opt/
-# sudo cp -rb ~/.dots/config/opt/. /opt/
+# sudo cp -r ~/.dots/config/opt/. /opt/
 cp -r ~/dots/config/home/. ~/
 # cp -r ~/.dots/config/home/. ~/
 sudo git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git /usr/share/fonts/SFPro >/dev/null 2>&1 && sudo rm -rf /usr/share/fonts/SFPro/.git/ >/dev/null 2>&1 || handle_error "Failed to clone the SF Font"

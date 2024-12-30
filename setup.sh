@@ -27,7 +27,7 @@ pkglist=(
     xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard python-pip
     mpv feh polkit-kde-agent sddm kitty rofi-wayland swww spotify zellij
     zoxide hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
-    yazi neovim zen-browser-bin bat
+    yazi neovim zen-browser-bin bat ark
 )
 
 # Clearing the terminal before starting the script
@@ -83,7 +83,7 @@ rm -rf grub
 info_message "Configuring default apps"
 xdg-mime default feh.desktop image/jpeg || handle_error "Failed to set Feh as the default image opener."
 xdg-mime default yazi.desktop inode/directory || handle_error "Failed to set Yazi as the default file manager."
-xdg-settings set default-web-browser zen-beta.desktop
+xdg-settings set default-web-browser zen-beta.desktop || handle_error "Failed to set Zen Browser as the default web browser"
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."
 wget -nc https://github.com/catppuccin/sddm/releases/download/v1.0.0/catppuccin-macchiato.zip >/dev/null 2>&1 || handle_error "Failed to download SDDM theme"

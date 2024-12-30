@@ -81,3 +81,4 @@ To install the configuration, follow these steps:
 
 # To Do 
 Find a way to include the obsidian config in the dotfiles
+Theme Spotify

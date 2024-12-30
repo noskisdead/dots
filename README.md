@@ -6,7 +6,7 @@
 > - **Profile:** Minimal
 > - **Sound Configuration:** PipeWire
 > - **Network configuration:** NetworkManager
-
+> - **Don't forget to set a password for disk encryption.**
 ![Home!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/home.png)
 ![Terminal!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/terminal.png)
 

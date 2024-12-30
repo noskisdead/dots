@@ -118,7 +118,7 @@
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": " Muted",
-    "on-click": "pavucontrol -t 3",
+    "on-click": "pavucontrol-qt -t 3",
     "on-click-right": "pamixer -t",
     "on-scroll-up": "pamixer -i 5",
     "on-scroll-down": "pamixer -d 5",

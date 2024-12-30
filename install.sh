@@ -19,15 +19,14 @@ function info_message() {
 
 # Packages to be installed
 pkglist=(
-    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep signal-desktop
-    fisher eza udiskie hyprlock grub-btrfs npm ruby thunar pavucontrol qt6ct
-    xdg-desktop-portal-gtk pokemon-colorscripts-git openssh kvantum vesktop
-    noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
-    xdg-desktop-portal-hyprland swaync waybar fish hyprshot fzf noto-fonts-cjk
-    xdg-desktop-portal-gtk starship wl-clipboard-x11 wl-clipboard python-pip
-    mpv feh polkit-kde-agent sddm kitty rofi-wayland swww spotify zellij
-    zoxide hyprland qt5-wayland brightnessctl ttf-cascadia-code-nerd
-    yazi neovim zen-browser-bin bat ark
+    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep signal-desktop-beta
+    fisher eza udiskie hyprlock-git grub-btrfs npm ruby thunar pavucontrol-qt qt6ct
+    xdg-desktop-portal-hyprland-git pokemon-colorscripts-git openssh kvantum-git vesktop-git
+    noto-fonts-emoji-flag-git hypridle-git pamixer otf-font-awesome zen-browser-bin
+    swaync waybar-git fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme obsidian
+    starship wl-clipboard-rs python-pip yazi-git neovim-git zen-browser-bin bat ark
+    mpv feh polkit-kde-agent sddm-git kitty-git rofi-wayland swww spotify zellij
+    zoxide hyprland-git qt5-wayland brightnessctl ttf-cascadia-code-nerd
 )
 
 # Clearing the terminal before starting the script
@@ -84,15 +83,13 @@ info_message "Configuring default apps"
 xdg-mime default feh.desktop image/jpeg || handle_error "Failed to set Feh as the default image opener."
 xdg-mime default yazi.desktop inode/directory || handle_error "Failed to set Yazi as the default file manager."
 xdg-settings set default-web-browser zen-beta.desktop || handle_error "Failed to set Zen Browser as the default web browser"
+
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."
-wget -nc https://github.com/catppuccin/sddm/releases/download/v1.0.0/catppuccin-macchiato.zip >/dev/null 2>&1 || handle_error "Failed to download SDDM theme"
-echo "N" | sudo unzip catppuccin-macchiato.zip -d /usr/share/sddm/themes/ >/dev/null 2>&1 || handle_error "Failed to unzip the SDDM theme"
 sudo tee /etc/sddm.conf >/dev/null 2>&1 <<EOF || handle_error "Failed to configure SDDM"
 [Theme]
-Current=catppuccin-macchiato
+Current=sddm-astronaut-theme
 EOF
-rm -f catppuccin-macchiato.zip
 
 # Moving config files
 info_message "Moving config files..."

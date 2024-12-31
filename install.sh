@@ -19,13 +19,13 @@ function info_message() {
 
 # Packages to be installed
 pkglist=(
-    pacman-contrib unzip wget ttf-jetbrains-mono-nerd ripgrep signal-desktop-beta
+    wget ttf-jetbrains-mono-nerd ripgrep signal-desktop-beta
     fisher eza udiskie hyprlock-git grub-btrfs npm ruby thunar pavucontrol-qt qt6ct
     xdg-desktop-portal-hyprland-git pokemon-colorscripts-git openssh kvantum-git vesktop-git
-    noto-fonts-emoji-flag-git hypridle-git pamixer otf-font-awesome zen-browser-bin
-    swaync waybar-git fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme obsidian
-    starship wl-clipboard-rs python-pip yazi-git neovim-git zen-browser-bin bat ark
-    mpv feh polkit-kde-agent sddm-git kitty-git rofi-wayland swww spicetify-cli spotify zellij
+    noto-fonts-emoji hypridle-git pamixer otf-font-awesome zen-browser-bin
+    swaync waybar-git fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme
+    starship wl-clipboard python-pip yazi-git neovim-git zen-browser-bin bat ark
+    mpv feh polkit-gnome sddm-git kitty-git rofi-wayland swww zellij
     zoxide hyprland-git qt5-wayland brightnessctl ttf-cascadia-code-nerd
 )
 

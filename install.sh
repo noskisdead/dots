@@ -69,14 +69,6 @@ wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/
 bat cache --build >/dev/null 2>&1 || handle_error "Failed to build BAT's cache"
 echo '--theme="Catppuccin Macchiato"' >~/.config/bat/config
 
-# Configure Spicetify
-sudo chmod a+wr /opt/spotify
-sudo chmod a+wr /opt/spotify/Apps -R
-spicetify config custom_apps marketplace
-spicetify config inject_css 1
-spicetify config replace_colors 1
-spicetify config current_theme marketplace
-
 # Configure GRUB theme
 info_message "Configuring GRUB theme..."
 sudo mkdir -p /boot/themes/ >/dev/null 2>&1 || handle_error "Failed to make the /boot/themes/ directory"

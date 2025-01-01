@@ -7,9 +7,10 @@
 > - **Sound Configuration:** PipeWire
 > - **Network configuration:** NetworkManager
 > - **Don't forget to set a password for disk encryption.**
+
+### Screenshots
 ![Home!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/home.png)
 ![Terminal!](https://raw.githubusercontent.com/noskisdead/dots/refs/heads/master/assets/terminal.png)
-
 ### Disclaimer
 These configurations are heavily inspired by, and in some cases directly borrowed from, other repositories.
 A few that I remember are:
@@ -17,7 +18,7 @@ A few that I remember are:
 - [deathemonic/Cat-Dots](https://github.com/deathemonic/Cat-Dots) (Rofi configuration)
 - [catppuccin/catppuccin](https://github.com/catppuccin/catppuccin) (Pretty much everything!)
 
-## Installation
+### Installation
 
 If you are not connected via Ethernet, use the nmtui-connect CLI tool to connect to your WiFi network.
 
@@ -36,7 +37,8 @@ To install the configuration, follow these steps:
 > **Other important note:** the Caps Lock key is swapped with the escape key. You can revert this change by removing the ", caps:swapescape" in the input.conf file in the Hyprland dotfiles.
 
 > **Final note lmfao:** Don't forget to execute `spicetify upgrade` after logging into Spotify
-# Programs
+
+### Programs
 | Function | Program |
 | :--- | :--- |
 | Shell | Fish |
@@ -82,4 +84,3 @@ To install the configuration, follow these steps:
 
 # To Do 
 Find a way to include the obsidian config in the dotfiles
-update check-battery.sh to the one i got

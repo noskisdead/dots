@@ -89,7 +89,7 @@ $suspend)
 $logout)
     ans=$(rdialog &)
     if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
-        pkill Hyprland
+        loginctl terminate-session ${XDG_SESSION_ID-}
     elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
         exit
     else

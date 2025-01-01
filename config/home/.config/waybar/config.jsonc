@@ -22,7 +22,7 @@
     "custom/notification"
   ],
     "custom/spotify": {
-    "exec": "/usr/bin/python3 ~/.config/waybar/media.py --player spotify",
+    "exec": "/usr/bin/python3 ~/.local/bin/media.py --player spotify",
     "format": "{}",
     "return-type": "json",
     "on-click": "playerctl play-pause",

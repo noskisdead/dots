@@ -17,6 +17,7 @@ A few that I remember are:
 - [prasanthrangan/hyprdots](https://github.com/prasanthrangan/hyprdots)
 - [deathemonic/Cat-Dots](https://github.com/deathemonic/Cat-Dots) (Rofi configuration)
 - [catppuccin/catppuccin](https://github.com/catppuccin/catppuccin) (Pretty much everything!)
+- [Klapptnot/low-battery-alert](https://github.com/Klapptnot/low-battery-alert) (Pretty much everything!)
 
 ### Installation
 
@@ -82,5 +83,5 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd> | Move window (drag) |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag)
 
-# To Do 
+# To Do
 Find a way to include the obsidian config in the dotfiles

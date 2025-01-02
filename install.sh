@@ -21,7 +21,7 @@ function info_message() {
 pkglist=(
     wget ttf-jetbrains-mono-nerd ripgrep signal-desktop-beta
     fisher eza udiskie hyprlock-git grub-btrfs npm ruby thunar pavucontrol-qt
-    xdg-desktop-portal-gtk xdg-desktop-portal-hyprland-git cbatticon
+    xdg-desktop-portal-gtk xdg-desktop-portal-hyprland-git
     openssh kvantum-git vesktop-git ark bat pokemon-colorscripts-git
     noto-fonts-emoji hypridle-git pamixer otf-font-awesome zen-browser-bin
     swaync waybar-git fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme

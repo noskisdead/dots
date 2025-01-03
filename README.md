@@ -48,6 +48,7 @@ To install the configuration, follow these steps:
 | CLI File Manager | Yazi |
 | GUI File Manager | Thunar |
 | Text Editor | Neovim (LazyVim) |
+| Note Editor | Obsidian |
 | Web Browser | Zen Browser |
 | Media Player | mpv |
 | Image Viewer | feh |

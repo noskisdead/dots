@@ -85,6 +85,6 @@ To install the configuration, follow these steps:
 
 > **Third note:** When you first open Obsidian, a prompt will appear asking if you trust this vault. This is necessary for the Catppuccin theme to work properly. Please accept it.
 
-> **Fourth note:** To use the Stylus extension in Firefox, you need to import the StylusExport.json file from your home directory. Once imported, click on the "Update All" button to apply the changes.
+> **Fourth note:** To use the Stylus extension in Firefox, you need to import the Stylus.json file from your home directory. Once imported, click on the "Update All" button to apply the changes.
 
 > **Final note LMFAO:** Don't forget to execute `spicetify upgrade` after logging into Spotify

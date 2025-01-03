@@ -83,6 +83,3 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows / Vim Directions</kbd> | Resize active window |
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd> | Move window (drag) |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd> | Resize window (drag)
-
-# To Do
-Find a way to include the obsidian config in the dotfiles

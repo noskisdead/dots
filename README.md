@@ -79,12 +79,25 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd>                                 | Move window (drag)                                                                                   |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd>                                | Resize window (drag)                                                                                 |
 
-> **Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the bottom-middle corner of your screen.
+## FAQ
 
-> **Other note:** the Caps Lock key is swapped with the escape key. You can revert this change by removing the ", caps:swapescape" in the input.conf file in the Hyprland dotfiles.
+### 1. I can't Log in
+If you're unable to log in, try selecting **Hyprland** from the SDDM menu located at the bottom-middle corner of your screen.
 
-> **Third note:** When you first open Obsidian, a prompt will appear asking if you trust this vault. This is necessary for the Catppuccin theme to work properly. Please accept it.
+### 2. Caps Lock and Escape keys are swapped
+By default, the **Caps Lock** key is swapped with the **Escape** key. To revert this change, open the `input.conf` file in the Hyprland configuration and remove the following line:
+`, caps:swapescape`
 
-> **Fourth note:** To use the Stylus themes in Zen, open the Stylus configuration page, import the Stylus.json file from your home directory. Once imported, click on the "Check all styles for updates" button, then the "Apply all updates" button to apply the changes.
+### 3. Why does Obsidian ask me if I trust this vault?
+When you first open **Obsidian**, a prompt will appear asking if you trust the vault. This is necessary for the **Catppuccin** theme to work properly. Please accept the prompt to enable the theme.
 
-> **Final note LMFAO:** Don't forget to execute `spicetify upgrade` after logging into Spotify
+### 4. How do I use the Stylus themes in the web browser?
+To use the **Stylus** themes in **Zen**, follow these steps:
+1. Open the **Stylus** configuration page.
+2. Import the `Stylus.json` file from your home directory.
+3. Once imported, click on the **"Check all styles for updates"** button.
+4. Then, click on **"Apply all updates"** to apply the changes.
+
+### 5. Spotify isn't themed
+After logging into **Spotify**, run the following command to ensure you have the latest updates:
+`spicetify upgrade`

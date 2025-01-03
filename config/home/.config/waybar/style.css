@@ -1,0 +1,114 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-size: 13px;
+    min-height: 0;
+    font-weight: bold ;
+}
+
+window#waybar {
+    background: transparent;
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #1e2030;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #313244;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #a6adc8;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #cdd6f4;
+    border-radius: 10px;
+}
+
+#custom-spotify,
+#clock,
+#battery,
+#pulseaudio,
+#custom-notification,
+#workspaces,
+#tray,
+#backlight {
+    background: transparent;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+}
+
+#tray {
+    background: transparent;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: transparent;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#custom-updates {
+    color: #f5c2e7;
+    border-radius: 10px 0px 0px 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#custom-spotify {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background: transparent;
+}
+
+#clock {
+    background: transparent;
+    color: #fab387;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 5px;
+    border-right: 0px;
+}
+
+#pulseaudio{
+    color: #89b4fa;
+}
+#custom-notification{
+    color: #f5a97f;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 5px;
+}
+
+#battery {
+    color: #a6e3a1;
+    border-radius: 10px 0px 0px 10px;
+    border-left: 0px;
+    border-right: 0px;
+}

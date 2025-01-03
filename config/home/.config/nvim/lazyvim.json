@@ -1,0 +1,9 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.editor.telescope"
+  ],
+  "news": {
+    "NEWS.md": "10960"
+  },
+  "version": 7
+}

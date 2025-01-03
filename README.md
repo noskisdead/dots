@@ -81,15 +81,15 @@ To install the configuration, follow these steps:
 
 ## FAQ
 
-### 1. I can't Log in
+### 1. I can't log in!
 If you're unable to log in, try selecting **Hyprland** from the SDDM menu located at the bottom-middle corner of your screen.
 
-### 2. Caps Lock and Escape keys are swapped
+### 2. The Caps Lock and the Escape key are swapped!
 By default, the **Caps Lock** key is swapped with the **Escape** key. To revert this change, open the `input.conf` file in the Hyprland configuration and remove the following line:
 `, caps:swapescape`
 
 ### 3. Why does Obsidian ask me if I trust this vault?
-When you first open **Obsidian**, a prompt will appear asking if you trust the vault. This is necessary for the **Catppuccin** theme to work properly. Please accept the prompt to enable the theme.
+When you first open **Obsidian**, a prompt will appear asking if you trust the vault. This is necessary for the **Catppuccin Macchiato** theme to work properly. Please accept the prompt to enable the theme.
 
 ### 4. How do I use the Stylus themes in the web browser?
 To use the **Stylus** themes in **Zen**, follow these steps:
@@ -101,3 +101,6 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 ### 5. Spotify isn't themed
 After logging into **Spotify**, run the following command to ensure you have the latest updates:
 `spicetify upgrade`
+
+# To Do
+Make an animation while the install script is working

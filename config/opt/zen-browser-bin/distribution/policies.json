@@ -19,6 +19,7 @@
         "OverridePostUpdatePage": "",
         "Extensions": {
             "Install": [
+                "https://addons.mozilla.org/firefox/downloads/latest/styl-us/latest.xpi",
                 "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
             ]
         }

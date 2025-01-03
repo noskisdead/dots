@@ -1,0 +1,3122 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "windowPosition": {},
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "newStyleAsUsercss": false,
+      "styleViaASS": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "urlInstaller": true,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popup.search.globals": false,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 4,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1735939927524,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Rentry.co Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/rentry.co\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/rentry.co\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/rentry.co/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Arentry.co\n@description Soothing pastel theme for Rentry.co\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Rentry.co Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/rentry.co",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/rentry.co",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/rentry.co/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Arentry.co",
+      "description": "Soothing pastel theme for Rentry.co",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Rentry.co",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/rentry.co",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/rentry.co/catppuccin.user.less",
+    "name": "Rentry.co Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "bbdac80de174dea50b51e3407eb38a1d893bf393",
+    "_id": "16300321-4517-4d10-87ba-3d4030652119",
+    "_rev": 1735939927526,
+    "id": 5
+  },
+  {
+    "enabled": true,
+    "installDate": 1735939949400,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name NameMC Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/namemc\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/namemc\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/namemc/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Anamemc\n@description Soothing pastel theme for NameMC\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "NameMC Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/namemc",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/namemc",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/namemc/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Anamemc",
+      "description": "Soothing pastel theme for NameMC",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for NameMC",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/namemc",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/namemc/catppuccin.user.less",
+    "name": "NameMC Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "a2ca6002c36dd9780ce07acdf06ec1092d1bf9fb",
+    "_id": "37126579-d1dd-48f8-92eb-65e9b1883000",
+    "_rev": 1735939949402,
+    "id": 6
+  },
+  {
+    "enabled": true,
+    "installDate": 1735939981260,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Gmail Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/gmail\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/gmail\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/gmail/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agmail\n@description Soothing pastel theme for Gmail\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Gmail Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/gmail",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/gmail",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/gmail/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agmail",
+      "description": "Soothing pastel theme for Gmail",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Gmail",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/gmail",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/gmail/catppuccin.user.less",
+    "name": "Gmail Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "38959821a618db561b05b50ed3fbba0e5e533716",
+    "_id": "3e5b2a3e-8fb1-42c8-b4d5-e6160be535f0",
+    "_rev": 1735939981261,
+    "id": 7
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940007665,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Bluesky Social Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/bsky\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/bsky\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/bsky/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Absky\n@description Soothing pastel theme for Bluesky Social\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Bluesky Social Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/bsky",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/bsky",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/bsky/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Absky",
+      "description": "Soothing pastel theme for Bluesky Social",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Bluesky Social",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/bsky",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/bsky/catppuccin.user.less",
+    "name": "Bluesky Social Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "0bfed91b9be3eba9684b07b826ca85a320005889",
+    "_id": "e3d46610-cb99-490d-bed2-0658d6d57f5c",
+    "_rev": 1735940007667,
+    "id": 8
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940032633,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Nitter Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/nitter\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/nitter\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/nitter/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Anitter\n@description Soothing pastel theme for Nitter\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Nitter Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/nitter",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/nitter",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/nitter/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Anitter",
+      "description": "Soothing pastel theme for Nitter",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Nitter",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/nitter",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/nitter/catppuccin.user.less",
+    "name": "Nitter Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "c81e61e7ab98be61a0836feca5980d1f67d154f2",
+    "_id": "a0a31548-21b8-4203-823e-58624cafdc6e",
+    "_rev": 1735940032635,
+    "id": 9
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940049872,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Snapchat Web Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/snapchat-web\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/snapchat-web\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/snapchat-web/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Asnapchat-web\n@description Soothing pastel theme for Snapchat Web\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Snapchat Web Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/snapchat-web",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/snapchat-web",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/snapchat-web/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Asnapchat-web",
+      "description": "Soothing pastel theme for Snapchat Web",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Snapchat Web",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/snapchat-web",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/snapchat-web/catppuccin.user.less",
+    "name": "Snapchat Web Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "ccf3dae4f87a0120b6277b1255be393be750da51",
+    "_id": "fd4358c6-0671-4b3f-83f9-cfb485b5c5b8",
+    "_rev": 1735940049874,
+    "id": 10
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940075452,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Twitter Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/twitter\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/twitter\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/twitter/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Atwitter\n@description Soothing pastel theme for Twitter\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n\n@var checkbox colorizeLogo \"Colorize Logo\" 0\n@var checkbox darkenShadows \"Darken Shadows on Dark Themes\" 1\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Twitter Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/twitter",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/twitter",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/twitter/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Atwitter",
+      "description": "Soothing pastel theme for Twitter",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        },
+        "colorizeLogo": {
+          "type": "checkbox",
+          "label": "Colorize Logo",
+          "name": "colorizeLogo",
+          "value": "1",
+          "default": "0",
+          "options": null
+        },
+        "darkenShadows": {
+          "type": "checkbox",
+          "label": "Darken Shadows on Dark Themes",
+          "name": "darkenShadows",
+          "value": null,
+          "default": "1",
+          "options": null
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Twitter",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/twitter",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/twitter/catppuccin.user.less",
+    "name": "Twitter Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "2af0e1e91e1acc2f827d5db50e17b3da0b40087c",
+    "_id": "2d8b6291-0cdb-4de2-a036-6e49077d7150",
+    "_rev": 1735940075453,
+    "id": 11
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940099301,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name WhatsApp Web Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/whatsapp-web\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/whatsapp-web\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/whatsapp-web/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Awhatsapp-web\n@description Soothing pastel theme for WhatsApp Web\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n\n@var checkbox lighterMessages \"Lighter incoming messages\" 0\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "WhatsApp Web Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/whatsapp-web",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/whatsapp-web",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/whatsapp-web/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Awhatsapp-web",
+      "description": "Soothing pastel theme for WhatsApp Web",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        },
+        "lighterMessages": {
+          "type": "checkbox",
+          "label": "Lighter incoming messages",
+          "name": "lighterMessages",
+          "value": "1",
+          "default": "0",
+          "options": null
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for WhatsApp Web",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/whatsapp-web",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/whatsapp-web/catppuccin.user.less",
+    "name": "WhatsApp Web Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "09681ecd20267f1bd4e664df393e99fb1bcb3037",
+    "_id": "8e10297b-b945-49c4-94ca-31df013d95d9",
+    "_rev": 1735940099303,
+    "id": 12
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940143765,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name YouTube Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/youtube\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/youtube\n@version 2024.12.29.1\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/youtube/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Ayoutube\n@description Soothing pastel theme for YouTube\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n\n@var checkbox logo \"Enable YouTube logo\" 1\n@var checkbox oled \"Enable black bars\" 0\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "YouTube Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/youtube",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/youtube",
+      "version": "2024.12.29.1",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/youtube/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Ayoutube",
+      "description": "Soothing pastel theme for YouTube",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        },
+        "logo": {
+          "type": "checkbox",
+          "label": "Enable YouTube logo",
+          "name": "logo",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "oled": {
+          "type": "checkbox",
+          "label": "Enable black bars",
+          "name": "oled",
+          "value": "1",
+          "default": "0",
+          "options": null
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for YouTube",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/youtube",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/youtube/catppuccin.user.less",
+    "name": "YouTube Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "f01b4d1e5683909990e10984adaba7ddf73c2c42",
+    "_id": "5f6327f8-a704-4ad8-9a18-ddfa7598f15a",
+    "_rev": 1735940143766,
+    "id": 14
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940171558,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Perplexity Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/perplexity\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/perplexity\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/perplexity/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Aperplexity\n@description Soothing pastel theme for Perplexity\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Perplexity Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/perplexity",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/perplexity",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/perplexity/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Aperplexity",
+      "description": "Soothing pastel theme for Perplexity",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Perplexity",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/perplexity",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/perplexity/catppuccin.user.less",
+    "name": "Perplexity Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "47df858b3974f04677987c46aa09c290ae1b0ea0",
+    "_id": "45fb1ac6-1bf2-4e9b-8409-f1be74cd01f9",
+    "_rev": 1735940171559,
+    "id": 15
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940190982,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Google Gemini Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/google-gemini\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/google-gemini\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/google-gemini/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agoogle-gemini\n@description Soothing pastel theme for Google Gemini\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Google Gemini Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/google-gemini",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/google-gemini",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/google-gemini/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agoogle-gemini",
+      "description": "Soothing pastel theme for Google Gemini",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Google Gemini",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/google-gemini",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/google-gemini/catppuccin.user.less",
+    "name": "Google Gemini Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "ca8decc93d816ae3f8e050381c414c9d7675fb20",
+    "_id": "4c6731c0-4adc-49ea-b313-59da0e30cde7",
+    "_rev": 1735940190984,
+    "id": 16
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940210330,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name ChatGPT Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/chatgpt\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/chatgpt\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/chatgpt/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Achatgpt\n@description Soothing pastel theme for ChatGPT\n@author Catppuccin\n@license MIT\n\n@preprocessor  less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "ChatGPT Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/chatgpt",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/chatgpt",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/chatgpt/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Achatgpt",
+      "description": "Soothing pastel theme for ChatGPT",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for ChatGPT",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/chatgpt",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/chatgpt/catppuccin.user.less",
+    "name": "ChatGPT Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "c5498110d7a7ad3cb17e031a98a9c38df287e801",
+    "_id": "3103c5f1-381d-4427-aa5a-3ab73a17bba3",
+    "_rev": 1735940210330,
+    "id": 17
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940226108,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Ghostty.org Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/ghostty.org\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/ghostty.org\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/ghostty.org/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Aghostty.org\n@description Soothing pastel theme for Ghostty.org\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Ghostty.org Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/ghostty.org",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/ghostty.org",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/ghostty.org/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Aghostty.org",
+      "description": "Soothing pastel theme for Ghostty.org",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Ghostty.org",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/ghostty.org",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/ghostty.org/catppuccin.user.less",
+    "name": "Ghostty.org Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "c5741a5f48da863a6e3868ec436b330328782135",
+    "_id": "dcd66752-ec45-4a02-848a-4164cadc8035",
+    "_rev": 1735940226109,
+    "id": 18
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940240335,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Vercel/Next.js Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/vercel\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/vercel\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/vercel/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Avercel\n@description Soothing pastel theme for Vercel and Next.js\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Vercel/Next.js Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/vercel",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/vercel",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/vercel/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Avercel",
+      "description": "Soothing pastel theme for Vercel and Next.js",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Vercel and Next.js",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/vercel",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/vercel/catppuccin.user.less",
+    "name": "Vercel/Next.js Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "94d7f6ce42ae4125acc6c65b349792b145a950ea",
+    "_id": "9fc1040b-e922-4135-bc70-9d030ba92db8",
+    "_rev": 1735940240336,
+    "id": 19
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940252855,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Learn X in Y Minutes Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/learn-x-in-y-minutes\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/learn-x-in-y-minutes\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/learn-x-in-y-minutes/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Alearn-x-in-y-minutes\n@description Soothing pastel theme for Learn X in Y Minutes\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Learn X in Y Minutes Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/learn-x-in-y-minutes",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/learn-x-in-y-minutes",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/learn-x-in-y-minutes/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Alearn-x-in-y-minutes",
+      "description": "Soothing pastel theme for Learn X in Y Minutes",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Learn X in Y Minutes",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/learn-x-in-y-minutes",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/learn-x-in-y-minutes/catppuccin.user.less",
+    "name": "Learn X in Y Minutes Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "57dbe59f064e2d10fc2f52d2ac6b7ee4bfd36d05",
+    "_id": "35cc9231-a7a5-4acf-9dda-e97102c45a14",
+    "_rev": 1735940252856,
+    "id": 20
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940270098,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name GitHub Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/github\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/github\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/github/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agithub\n@description Soothing pastel theme for GitHub\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "GitHub Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/github",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/github",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/github/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agithub",
+      "description": "Soothing pastel theme for GitHub",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for GitHub",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/github",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/github/catppuccin.user.less",
+    "name": "GitHub Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "c358b36b2a769e17c20bb4fed41678229b24fbd0",
+    "_id": "c549a7f5-bc54-4429-9120-3e5febc5f66f",
+    "_rev": 1735940270099,
+    "id": 21
+  },
+  {
+    "enabled": true,
+    "installDate": 1735940314141,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name Google Catppuccin [STUB | UPDATE REQUIRED]\n@namespace github.com/catppuccin/userstyles/styles/google\n@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/google\n@version 2024.12.29\n@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/google/catppuccin.user.less\n@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agoogle\n@description Soothing pastel theme for Google\n@author Catppuccin\n@license MIT\n\n@preprocessor less\n@var select lightFlavor \"Light Flavor\" [\"latte:Latte*\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha\"]\n@var select darkFlavor \"Dark Flavor\" [\"latte:Latte\", \"frappe:Frappé\", \"macchiato:Macchiato\", \"mocha:Mocha*\"]\n@var select accentColor \"Accent\" [\"rosewater:Rosewater\", \"flamingo:Flamingo\", \"pink:Pink\", \"mauve:Mauve*\", \"red:Red\", \"maroon:Maroon\", \"peach:Peach\", \"yellow:Yellow\", \"green:Green\", \"teal:Teal\", \"blue:Blue\", \"sapphire:Sapphire\", \"sky:Sky\", \"lavender:Lavender\", \"subtext0:Gray\"]\n==/UserStyle== */\n",
+    "usercssData": {
+      "name": "Google Catppuccin [STUB | UPDATE REQUIRED]",
+      "namespace": "github.com/catppuccin/userstyles/styles/google",
+      "homepageURL": "https://github.com/catppuccin/userstyles/tree/main/styles/google",
+      "version": "2024.12.29",
+      "updateURL": "https://github.com/catppuccin/userstyles/raw/main/styles/google/catppuccin.user.less",
+      "supportURL": "https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Agoogle",
+      "description": "Soothing pastel theme for Google",
+      "author": "Catppuccin",
+      "license": "MIT",
+      "preprocessor": "less",
+      "vars": {
+        "lightFlavor": {
+          "type": "select",
+          "label": "Light Flavor",
+          "name": "lightFlavor",
+          "value": "macchiato",
+          "default": "latte",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "darkFlavor": {
+          "type": "select",
+          "label": "Dark Flavor",
+          "name": "darkFlavor",
+          "value": "macchiato",
+          "default": "mocha",
+          "options": [
+            {
+              "name": "latte",
+              "label": "Latte",
+              "value": "latte"
+            },
+            {
+              "name": "frappe",
+              "label": "Frappé",
+              "value": "frappe"
+            },
+            {
+              "name": "macchiato",
+              "label": "Macchiato",
+              "value": "macchiato"
+            },
+            {
+              "name": "mocha",
+              "label": "Mocha",
+              "value": "mocha"
+            }
+          ]
+        },
+        "accentColor": {
+          "type": "select",
+          "label": "Accent",
+          "name": "accentColor",
+          "value": "lavender",
+          "default": "mauve",
+          "options": [
+            {
+              "name": "rosewater",
+              "label": "Rosewater",
+              "value": "rosewater"
+            },
+            {
+              "name": "flamingo",
+              "label": "Flamingo",
+              "value": "flamingo"
+            },
+            {
+              "name": "pink",
+              "label": "Pink",
+              "value": "pink"
+            },
+            {
+              "name": "mauve",
+              "label": "Mauve",
+              "value": "mauve"
+            },
+            {
+              "name": "red",
+              "label": "Red",
+              "value": "red"
+            },
+            {
+              "name": "maroon",
+              "label": "Maroon",
+              "value": "maroon"
+            },
+            {
+              "name": "peach",
+              "label": "Peach",
+              "value": "peach"
+            },
+            {
+              "name": "yellow",
+              "label": "Yellow",
+              "value": "yellow"
+            },
+            {
+              "name": "green",
+              "label": "Green",
+              "value": "green"
+            },
+            {
+              "name": "teal",
+              "label": "Teal",
+              "value": "teal"
+            },
+            {
+              "name": "blue",
+              "label": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "sapphire",
+              "label": "Sapphire",
+              "value": "sapphire"
+            },
+            {
+              "name": "sky",
+              "label": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "lavender",
+              "label": "Lavender",
+              "value": "lavender"
+            },
+            {
+              "name": "subtext0",
+              "label": "Gray",
+              "value": "subtext0"
+            }
+          ]
+        }
+      }
+    },
+    "author": "Catppuccin",
+    "description": "Soothing pastel theme for Google",
+    "url": "https://github.com/catppuccin/userstyles/tree/main/styles/google",
+    "updateUrl": "https://github.com/catppuccin/userstyles/raw/main/styles/google/catppuccin.user.less",
+    "name": "Google Catppuccin [STUB | UPDATE REQUIRED]",
+    "originalDigest": "0d1791a7693d2ea69ccb5ebdfcb07d5e80e45260",
+    "_id": "c31134ae-f048-4a56-9aba-58f86123b53a",
+    "_rev": 1735940314144,
+    "id": 22
+  }
+]

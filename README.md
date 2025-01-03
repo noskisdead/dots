@@ -79,12 +79,12 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd>                                 | Move window (drag)                                                                                   |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd>                                | Resize window (drag)                                                                                 |
 
-### FAQ
-
 > **Note:** You might not be able to login, if it's the case, select Hyprland in the SDDM menu located in the bottom-middle corner of your screen.
 
 > **Other note:** the Caps Lock key is swapped with the escape key. You can revert this change by removing the ", caps:swapescape" in the input.conf file in the Hyprland dotfiles.
 
 > **Third note:** When you first open Obsidian, a prompt will appear asking if you trust this vault. This is necessary for the Catppuccin theme to work properly. Please accept it.
+
+> **Fourth note:** To use the Stylus extension in Firefox, you need to import the StylusExport.json file from your home directory. Once imported, click on the "Update All" button to apply the changes.
 
 > **Final note LMFAO:** Don't forget to execute `spicetify upgrade` after logging into Spotify

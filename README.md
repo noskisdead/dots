@@ -91,16 +91,14 @@ By default, the **Caps Lock** key is swapped with the **Escape** key. To revert 
 ### 3. Why does Obsidian ask me if I trust this vault?
 When you first open **Obsidian**, a prompt will appear asking if you trust the vault. This is necessary for the **Catppuccin Macchiato** theme to work properly. Please accept the prompt to enable the theme.
 
-### 4. How do I use the Stylus themes in the web browser?
+### What is the stylus.json in the dots directory?
+The `Stylus.json` file in the **.dots directory** is a configuration file that contains the settings and preferences for **Stylus**, a browser extension. This file helps to import and update custom CSS themes, such as the **Catppuccin Macchiato** theme, for different websites.
+
 To use the **Stylus** themes in **Zen**, follow these steps:
 1. Open the **Stylus** configuration page.
 2. Import the `Stylus.json` file from your home directory.
 3. Once imported, click on the **"Check all styles for updates"** button.
 4. Then, click on **"Apply all updates"** to apply the changes.
-
-### 5. Spotify isn't themed
-After logging into **Spotify**, run the following command to ensure you have the latest updates:
-`spicetify upgrade`
 
 # To Do
 Make an animation while the install script is working

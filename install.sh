@@ -92,14 +92,8 @@ sudo tee /etc/sddm.conf >/dev/null 2>&1 <<EOF || handle_error "Failed to configu
 Current=sddm-astronaut-theme
 EOF
 
-# Moving config files
-info_message "Moving config files..."
-sudo rm -rf ~/.zen/
-sudo cp -r ~/dots/config/opt/. /opt/
-# sudo cp -r ~/.dots/config/opt/. /opt/
-cp -r ~/dots/config/home/. ~/
-# cp -r ~/.dots/config/home/. ~/
-sudo git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git /usr/share/fonts/SFPro >/dev/null 2>&1 && sudo rm -rf /usr/share/fonts/SFPro/.git/ >/dev/null 2>&1 || handle_error "Failed to clone the SF Font"
+# Install the SF Font
+sudo rm -rf /usr/share/fonts/SFPro/ >/dev/null 2>&1 && sudo git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git /usr/share/fonts/SFPro >/dev/null 2>&1 && sudo rm -rf /usr/share/fonts/SFPro/.git/ >/dev/null 2>&1 || handle_error "Failed to clone the SF Font"
 fc-cache -f >/dev/null 2>&1 || handle_error "Failed to rebuild the font cache"
 
 # Change default shell to Fish
@@ -107,6 +101,14 @@ info_message "Changing default shell to Fish."
 echo "Please enter your password..."
 chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change user shell to Fish"
 sudo chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change root shell to Fish"
+
+# Moving config files
+info_message "Moving config files..."
+sudo rm -rf ~/.zen/
+sudo cp -r ~/dots/config/opt/. /opt/
+# sudo cp -r ~/.dots/config/opt/. /opt/
+cp -r ~/dots/config/home/. ~/
+# cp -r ~/.dots/config/home/. ~/
 
 # Clean up
 info_message "Cleaning up..."

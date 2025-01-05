@@ -102,3 +102,4 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 
 # To Do
 Make an animation while the install script is working
+Find a spotlight-like app launcher

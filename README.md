@@ -39,7 +39,6 @@ To install the configuration, follow these steps:
 | :--------------- | :--------------- |
 | Shell            | Fish             |
 | Terminal         | Kitty            |
-| Multiplexer      | Zellij           |
 | CLI File Manager | Yazi             |
 | GUI File Manager | Thunar           |
 | Text Editor      | Neovim (LazyVim) |
@@ -50,48 +49,47 @@ To install the configuration, follow these steps:
 | Archiver         | Ark              |
 
 # Hyprland Keybindings
-| Keys                                                                     | Action                                                                                               |
-| :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| <kbd>Super</kbd> + <kbd>Return</kbd>                                     | Launch the terminal                                                                                  |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Return</kbd>                  | Launch Zellij                                                                                        |
-| <kbd>Super</kbd> + <kbd>E</kbd>                                          | Launch the code editor (Neovim)                                                                      |
-| <kbd>Super</kbd> + <kbd>F</kbd>                                          | Launch the file manager (Yazi)                                                                       |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>                       | Launch the GUI file manager (Thunar)                                                                 |
-| <kbd>Super</kbd> + <kbd>N</kbd>                                          | Show Notifications (SwayNC)                                                                          |
-| <kbd>Super</kbd> + <kbd>A</kbd>                                          | Launch the web browser (Zen)                                                                         |
-| <kbd>Super</kbd> + <kbd>Space</kbd>                                      | Launch Rofi (launcher)                                                                               |
-| <kbd>Super</kbd> + <kbd>Q</kbd>                                          | Close focused window                                                                                 |
-| <kbd>Alt</kbd> + <kbd>Space</kbd>                                        | Switch Keyboard Layout (You can set the second layout in the input.conf file in the hyprland config) |
-| <kbd>Super</kbd> + <kbd>Backspace</kbd>                                  | Launch the power menu                                                                                |
-| <kbd>Super</kbd> + <kbd>W</kbd>                                          | Toggle Waybar                                                                                        |
-| <kbd>Super</kbd> + <kbd>G</kbd>                                          | Toggle Gamemode                                                                                      |
-| <kbd>Super</kbd> + <kbd>V</kbd>                                          | Toggle floating window                                                                               |
-| <kbd>Super</kbd> + <kbd>F11</kbd>                                        | Toggle fullscreen                                                                                    |
-| <kbd>Super</kbd> + <kbd>P</kbd>                                          | Activate dwindle pseudo mode                                                                         |
-| <kbd>Super</kbd> + <kbd>B</kbd>                                          | Toggle dwindle split mode                                                                            |
-| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>                         | Take a screenshot                                                                                    |
-| <kbd>Super</kbd> + <kbd>Arrows / Vim Directions</kbd>                    | Move focus to the selected direction                                                                 |
-| <kbd>Super</kbd> + <kbd>1-10</kbd>                                       | Switch to workspace 1-10                                                                             |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>1-10</kbd>                    | Move active window to workspace 1-10                                                                 |
-| <kbd>Super</kbd> + <kbd>S</kbd>                                          | Toggle special workspace                                                                             |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>                       | Move window to special workspace                                                                     |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows / Vim Directions</kbd> | Resize active window                                                                                 |
-| <kbd>Super</kbd> + <kbd>Mouse Left</kbd>                                 | Move window (drag)                                                                                   |
-| <kbd>Super</kbd> + <kbd>Mouse Right</kbd>                                | Resize window (drag)                                                                                 |
+| Keys                                                                     | Action                                |
+| :----------------------------------------------------------------------- | :------------------------------------ |
+| <kbd>Super</kbd> + <kbd>Return</kbd>                                     | Launch the terminal                   |
+| <kbd>Super</kbd> + <kbd>E</kbd>                                          | Launch the code editor (Neovim)       |
+| <kbd>Super</kbd> + <kbd>F</kbd>                                          | Launch the file manager (Yazi)        |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>                       | Launch the GUI file manager (Thunar)  |
+| <kbd>Super</kbd> + <kbd>N</kbd>                                          | Show Notifications (SwayNC)           |
+| <kbd>Super</kbd> + <kbd>A</kbd>                                          | Launch the web browser (Zen)          |
+| <kbd>Super</kbd> + <kbd>Space</kbd>                                      | Launch Rofi (launcher)                |
+| <kbd>Super</kbd> + <kbd>Q</kbd>                                          | Close focused window                  |
+| <kbd>Alt</kbd> + <kbd>Space</kbd>                                        | Switch Keyboard Layouts               |
+| <kbd>Super</kbd> + <kbd>Backspace</kbd>                                  | Launch the power menu                 |
+| <kbd>Super</kbd> + <kbd>W</kbd>                                          | Toggle Waybar                         |
+| <kbd>Super</kbd> + <kbd>G</kbd>                                          | Toggle Gamemode                       |
+| <kbd>Super</kbd> + <kbd>V</kbd>                                          | Toggle floating window                |
+| <kbd>Super</kbd> + <kbd>F11</kbd>                                        | Toggle fullscreen                     |
+| <kbd>Super</kbd> + <kbd>P</kbd>                                          | Activate dwindle pseudo mode          |
+| <kbd>Super</kbd> + <kbd>B</kbd>                                          | Toggle dwindle split mode             |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>                         | Take a screenshot                     |
+| <kbd>Super</kbd> + <kbd>Arrows / Vim Directions</kbd>                    | Move focus to the selected direction  |
+| <kbd>Super</kbd> + <kbd>1-10</kbd>                                       | Switch to workspace 1-10              |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>1-10</kbd>                    | Move active window to workspace 1-10  |
+| <kbd>Super</kbd> + <kbd>S</kbd>                                          | Toggle special workspace              |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>                       | Move window to special workspace      |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Arrows / Vim Directions</kbd> | Resize active window                  |
+| <kbd>Super</kbd> + <kbd>Mouse Left</kbd>                                 | Move window (drag)                    |
+| <kbd>Super</kbd> + <kbd>Mouse Right</kbd>                                | Resize window (drag)                  |
 
-## FAQ
+### FAQ
 
-### 1. I can't log in!
+#### 1. I can't log in!
 If you're unable to log in, try selecting **Hyprland** from the SDDM menu located at the bottom-middle corner of your screen.
 
-### 2. The Caps Lock and the Escape key are swapped!
+#### 2. The Caps Lock and the Escape key are swapped!
 By default, the **Caps Lock** key is swapped with the **Escape** key. To revert this change, open the `input.conf` file in the Hyprland configuration and remove the following line:
 `, caps:swapescape`
 
-### 3. Why does Obsidian ask me if I trust this vault?
+#### 3. Why does Obsidian ask me if I trust this vault?
 When you first open **Obsidian**, a prompt will appear asking if you trust the vault. This is necessary for the **Catppuccin Macchiato** theme to work properly. Please accept the prompt to enable the theme.
 
-### What is the stylus.json in the dots directory?
+#### What is the stylus.json in the dots directory?
 The `Stylus.json` file in the **.dots directory** is a configuration file that contains the settings and preferences for **Stylus**, a browser extension. This file helps to import and update custom CSS themes, such as the **Catppuccin Macchiato** theme, for different websites.
 
 To use the **Stylus** themes in **Zen**, follow these steps:
@@ -100,6 +98,6 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 3. Once imported, click on the **"Check all styles for updates"** button.
 4. Then, click on **"Apply all updates"** to apply the changes.
 
-# To Do
+### To Do
 Make an animation while the install script is working
 Find a spotlight-like app launcher

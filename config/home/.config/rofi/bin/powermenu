@@ -89,7 +89,7 @@ $suspend)
 $logout)
     ans=$(rdialog &)
     if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
-        loginctl terminate-session ${XDG_SESSION_ID-}
+        uwsm stop
     elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
         exit
     else

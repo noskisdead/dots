@@ -79,17 +79,14 @@ To install the configuration, follow these steps:
 
 ### FAQ
 
-#### 1. I can't log in!
-If you're unable to log in, try selecting **Hyprland** from the SDDM menu located at the bottom-middle corner of your screen.
-
-#### 2. The Caps Lock and the Escape key are swapped!
+#### The Caps Lock and the Escape key are swapped!
 By default, the **Caps Lock** key is swapped with the **Escape** key. To revert this change, open the `input.conf` file in the Hyprland configuration and remove the following line:
 `, caps:swapescape`
 
-#### 3. Why does Obsidian ask me if I trust this vault?
+#### Why does Obsidian ask me if I trust this vault?
 When you first open **Obsidian**, a prompt will appear asking if you trust the vault. This is necessary for the **Catppuccin Macchiato** theme to work properly. Please accept the prompt to enable the theme.
 
-#### What is the stylus.json in the dots directory?
+#### What is the Stylus.json file in the dots directory?
 The `Stylus.json` file in the **.dots directory** is a configuration file that contains the settings and preferences for **Stylus**, a browser extension. This file helps to import and update custom CSS themes, such as the **Catppuccin Macchiato** theme, for different websites.
 
 To use the **Stylus** themes in **Zen**, follow these steps:

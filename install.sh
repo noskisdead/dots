@@ -22,10 +22,10 @@ pkglist=(
     wget ttf-jetbrains-mono-nerd signal-desktop-beta thunar-archive-plugin
     fisher eza udiskie hyprlock-git grub-btrfs thunar pavucontrol-qt
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland-git pokemon-colorscripts-git
-    openssh kvantum-git vesktop-git unzip p7zip unrar ark bat uwsm
+    kvantum-git vesktop-git unzip p7zip unrar ark bat uwsm
     noto-fonts-emoji hypridle-git pamixer otf-font-awesome zen-browser-bin
     swaync waybar-git fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme
-    starship wl-clipboard python-pip yazi-git neovim-git zen-browser-bin
+    starship wl-clipboard yazi-git neovim-git zen-browser-bin
     mpv feh polkit-gnome sddm-git kitty-git rofi-wayland swww
     zoxide hyprland-git qt6ct brightnessctl ttf-cascadia-code-nerd
 )

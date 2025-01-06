@@ -21,13 +21,13 @@ function info_message() {
 pkglist=(
     wget ttf-jetbrains-mono-nerd ripgrep signal-desktop-beta
     fisher eza udiskie hyprlock-git grub-btrfs npm ruby thunar pavucontrol-qt
-    xdg-desktop-portal-gtk xdg-desktop-portal-hyprland-git
-    openssh kvantum-git vesktop-git ark bat pokemon-colorscripts-git
+    xdg-desktop-portal-gtk xdg-desktop-portal-hyprland-git pokemon-colorscripts-git
+    openssh kvantum-git vesktop-git unzip p7zip unrar ark bat
     noto-fonts-emoji hypridle-git pamixer otf-font-awesome zen-browser-bin
     swaync waybar-git fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme
     starship wl-clipboard python-pip yazi-git neovim-git zen-browser-bin
     mpv feh polkit-gnome sddm-git kitty-git rofi-wayland swww
-    zoxide hyprland-git qt5-wayland brightnessctl ttf-cascadia-code-nerd
+    zoxide hyprland-git qt5-wayland qt6ct brightnessctl ttf-cascadia-code-nerd
 )
 
 # Clearing the terminal before starting the script

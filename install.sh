@@ -22,7 +22,7 @@ pkglist=(
     wget ttf-jetbrains-mono-nerd signal-desktop thunar-archive-plugin
     fisher eza udiskie hyprlock grub-btrfs thunar pavucontrol-qt
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland pokemon-colorscripts-git
-    kvantum vesktop unzip p7zip unrar ark bat uwsm
+    kvantum vesktop unzip p7zip unrar ark bat uwsm obsidian
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
     swaync waybar fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme
     starship wl-clipboard yazi neovim zen-browser-bin

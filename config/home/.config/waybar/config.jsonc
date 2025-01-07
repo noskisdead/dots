@@ -30,7 +30,9 @@
     "on-scroll-down": "playerctl next"
   },
   "hyprland/workspaces": {
-    "disable-scroll": true
+    "disable-scroll": true,
+    "all-outputs": false
+
   },
   "tray": {
     "icon-size": 13,

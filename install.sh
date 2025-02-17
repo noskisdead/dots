@@ -83,7 +83,6 @@ rm -rf grub
 info_message "Configuring default apps"
 xdg-mime default feh.desktop image/jpeg || handle_error "Failed to set Feh as the default image opener."
 xdg-mime default yazi.desktop inode/directory || handle_error "Failed to set Yazi as the default file manager."
-xdg-settings set default-web-browser zen-beta.desktop || handle_error "Failed to set Zen Browser as the default web browser"
 
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."

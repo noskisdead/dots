@@ -96,4 +96,4 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Stop this Linux shit and start getting a better life
+- [x] Stop this Linux shit and start getting a better life

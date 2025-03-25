@@ -126,12 +126,12 @@
     "on-scroll-down": "pamixer -d 5",
     "scroll-step": 5,
     "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
       "default": [
         "",
         " ",

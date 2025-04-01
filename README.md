@@ -1,7 +1,7 @@
 # Welcome to NoSk's Hyprland Configuration!
 
 > [!CAUTION]
-> The setup script assumes you have a **freshly installed Arch Linux** system with the following choices made during installation using **ArchInstall**:
+> The install script assumes you have a **freshly installed Arch Linux** system with the following choices made during installation using **ArchInstall**:
 > - **Disk Configuration:** BTRFS
 > - **Bootloader:** GRUB
 > - **Profile:** Minimal
@@ -16,9 +16,9 @@
 These configurations are heavily inspired by, and in some cases directly borrowed from, other repositories.
 A few that I remember are:
 - [prasanthrangan/hyprdots](https://github.com/prasanthrangan/hyprdots)
-- [deathemonic/Cat-Dots](https://github.com/deathemonic/Cat-Dots) (Rofi configuration)
-- [catppuccin/catppuccin](https://github.com/catppuccin/catppuccin) (Pretty much everything!)
-- [Klapptnot/low-battery-alert](https://github.com/Klapptnot/low-battery-alert) (Low battery alert (duh))
+- [deathemonic/Cat-Dots](https://github.com/deathemonic/Cat-Dots) - Rofi configuration
+- [catppuccin/catppuccin](https://github.com/catppuccin/catppuccin) - Pretty much everything!
+- [Klapptnot/low-battery-alert](https://github.com/Klapptnot/low-battery-alert) - Low battery alert (duh)
 
 ### Installation
 
@@ -29,8 +29,8 @@ To install the configuration, follow these steps:
    sudo pacman -S --needed git base-devel
    git clone https://github.com/noskisdead/dots
    cd dots
-   chmod +x setup.sh
-   ./setup.sh
+   chmod +x install.sh
+   ./install.sh
    ```
 **Reboot to apply changes!**
 

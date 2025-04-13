@@ -16,6 +16,7 @@ alias pyenv 'source env/bin/activate.fish'
 alias cat bat
 alias emacs 'emacs -nw'
 alias gcl 'git clone (wl-paste)'
+alias vencord 'sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 
 abbr grep rg
 abbr vim nvim

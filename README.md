@@ -26,7 +26,7 @@ If you are not connected via Ethernet, use the nmtui-connect CLI tool to connect
 
 To install the configuration, follow these steps:
    ```
-   sudo pacman -S --needed git base-devel
+   sudo pacman -Sy --needed git base-devel
    git clone https://github.com/noskisdead/dots
    cd dots
    chmod +x install.sh
@@ -96,4 +96,5 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [x] Stop this Linux shit and start getting a better life
+- [x] Switch to Discord
+- [ ] Stop this Linux shit and start getting a better life

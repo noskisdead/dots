@@ -15,6 +15,7 @@ alias lt='eza --icons=auto --tree' # list folder as tree
 alias pyenv 'source env/bin/activate.fish'
 alias cat bat
 alias emacs 'emacs -nw'
+alias gcl 'git clone (wl-paste)'
 
 abbr grep rg
 abbr vim nvim
@@ -31,6 +32,7 @@ abbr mkdir 'mkdir -p'
 abbr mv 'mv -i'
 abbr shred 'shred -vzu -n5'
 abbr wipe 'wipe -r'
+abbr copy wl-copy
 abbr htop btop
 abbr top btop
 

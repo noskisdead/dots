@@ -86,7 +86,7 @@ By default, the **Caps Lock** key is swapped with the **Escape** key. To revert 
 #### Why does Obsidian ask me if I trust this vault?
 When you first open **Obsidian**, a prompt will appear asking if you trust the vault. This is necessary for the **Catppuccin Macchiato** theme to work properly. Please accept the prompt to enable the theme.
 
-#### What is the Stylus.json file in the dots directory?
+#### What is the Stylus.json file in my **.config** directory?
 The `Stylus.json` file in the **.dots directory** is a configuration file that contains the settings and preferences for **Stylus**, a browser extension. This file helps to import and update custom CSS themes, such as the **Catppuccin Macchiato** theme, for different websites.
 
 To use the **Stylus** themes in **Zen**, follow these steps:

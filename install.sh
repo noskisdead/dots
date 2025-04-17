@@ -19,7 +19,7 @@ function info_message() {
 
 # Packages to be installed
 pkglist=(
-    wget ttf-jetbrains-mono-nerd signal-desktop thunar-archive-plugin
+    wget ttf-jetbrains-mono-nerd signal-desktop thunar-archive-plugin tealdeer
     fisher eza udiskie hyprlock grub-btrfs thunar pavucontrol-qt wl-clip-persist
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland pokemon-colorscripts-git
     kvantum discord unzip p7zip unrar ark bat uwsm obsidian ripgrep
@@ -27,7 +27,7 @@ pkglist=(
     swaync waybar fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme
     starship wl-clipboard yazi neovim zen-browser-bin qt6-wayland
     mpv feh polkit-gnome sddm kitty rofi-wayland swww qt5-wayland
-    zoxide hyprland qt6ct brightnessctl ttf-cascadia-code-nerd
+    zoxide hyprland qt6ct brightnessctl ttf-cascadia-code-nerd gvfs
 )
 
 # Clearing the terminal before starting the script

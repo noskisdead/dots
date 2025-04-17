@@ -12,7 +12,7 @@ window#waybar {
 }
 
 tooltip {
-    background: #24273a;
+    background: #181926;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
@@ -55,20 +55,20 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-    background: #24273a;
+    background: #181926;
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 10px;
 }
 
 #tray {
-    background: #24273a;
+    background: #181926;
     border-radius: 10px;
     margin-right: 10px;
 }
 
 #workspaces {
-    background: #24273a;
+    background: #181926;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
@@ -83,7 +83,7 @@ tooltip {
 }
 
 #clock {
-    background: #24273a;
+    background: #181926;
     color: #fab387;
     border-radius: 10px 10px 10px 10px;
     margin-left: 5px;

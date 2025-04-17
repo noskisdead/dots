@@ -20,7 +20,7 @@ function info_message() {
 # Packages to be installed
 pkglist=(
     wget ttf-jetbrains-mono-nerd signal-desktop thunar-archive-plugin
-    fisher eza udiskie hyprlock grub-btrfs thunar pavucontrol-qt
+    fisher eza udiskie hyprlock grub-btrfs thunar pavucontrol-qt wl-clip-persist
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland pokemon-colorscripts-git
     kvantum discord unzip p7zip unrar ark bat uwsm obsidian ripgrep
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin

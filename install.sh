@@ -60,7 +60,7 @@ mkdir -p ~/Pictures ~/Downloads || handle_error "Failed to create directories"
 
 # Install fish plugins
 info_message "Installing Fish config..."
-fish -c 'fisher install catppuccin/fish jorgebucaran/autopair.fish patrickf1/fzf.fish fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install fish plugins"
+fish -c 'fisher install catppuccin/fish jorgebucaran/autopair.fish icezyclon/zoxide.fish patrickf1/fzf.fish fishingline/safe-rm' >/dev/null 2>&1 || handle_error "Failed to install fish plugins"
 echo "y" | fish -c 'fish_config theme save "Catppuccin Macchiato"' >/dev/null 2>&1 || handle_error "Failed to change the fish theme"
 
 # Configure BAT theme

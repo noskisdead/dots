@@ -56,7 +56,7 @@ sudo systemctl enable sddm >/dev/null 2>&1 || handle_error "Failed to enable SDD
 
 # Create directories
 info_message "Creating directories..."
-mkdir -p ~/Pictures ~/Downloads || handle_error "Failed to create directories"
+mkdir -p ~/Pictures/Screenshots ~/Downloads || handle_error "Failed to create directories"
 
 # Install fish plugins
 info_message "Installing Fish config..."

@@ -12,11 +12,14 @@ alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long li
 alias ld='eza -lhD --icons=auto' # long list dirs
 alias lt='eza --icons=auto --tree' # list folder as tree
 
+alias snmpcheck snmpcheck-nothink
+alias snmp-check snmpcheck-nothink
 alias pyenv 'source env/bin/activate.fish'
 alias cat bat
 alias emacs 'emacs -nw'
 alias gcl 'git clone (wl-paste)'
 alias vencord 'sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
+alias wordlists " clear && echo 'Installing Kali Wordlists' && sudo git clone https://github.com/00xBAD/kali-wordlists.git /usr/share/wordlists && clear && echo 'Installing SecLists' && sudo git clone https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/seclists/ && clear && echo 'Unzipping rockyou.txt' && sudo gunzip /usr/share/wordlists/rockyou.txt.gz && clear && echo 'Wordlists Installed' "
 
 abbr grep rg
 abbr vim nvim

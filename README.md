@@ -97,8 +97,8 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Copy the package updater, the wallpaper script and some of the Waybar from Meowrch
+- [ ] Waybar from Meowrch
 - [ ] Better low battery alert
+- [ ] tela-circle-icon-theme-dracula
 - [ ] Modify the README to include new binds
 - [ ] Install Ubuntu and give up
-- [ ] tela-circle-icon-theme-dracula

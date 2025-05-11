@@ -62,7 +62,7 @@ tooltip {
 }
 
 #tray {
-    background: #181926;
+    background: transparent;
     border-radius: 10px;
     margin-right: 10px;
 }

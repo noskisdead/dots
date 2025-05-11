@@ -102,3 +102,4 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] Better low battery alert
 - [ ] Clipboard Manager
 - [ ] Localsend Config
+- [ ] Modify the README to include new binds

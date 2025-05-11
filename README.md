@@ -18,6 +18,7 @@ A few that I remember are:
 - [prasanthrangan/hyprdots](https://github.com/prasanthrangan/hyprdots)
 - [deathemonic/Cat-Dots](https://github.com/deathemonic/Cat-Dots) - Rofi configuration
 - [catppuccin/catppuccin](https://github.com/catppuccin/catppuccin) - Pretty much everything!
+- [meowrch/meowrch](https://github.com/meowrch/meowrch) - Some of the Rofi and Waybar configs!
 - [Klapptnot/low-battery-alert](https://github.com/Klapptnot/low-battery-alert) - Low battery alert (duh)
 
 ### Installation
@@ -97,3 +98,5 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 
 ### To Do
 - [ ] Stop this Linux shit and start getting a better life
+- [ ] Copy the rofi config and some of the Waybar from Meowrch
+- [ ] Install the Vim for Google Docs extension

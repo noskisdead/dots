@@ -21,6 +21,9 @@ alias gcl 'git clone (wl-paste)'
 alias vencord 'sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias wordlists " clear && echo 'Installing Kali Wordlists' && sudo git clone https://github.com/00xBAD/kali-wordlists.git /usr/share/wordlists && clear && echo 'Installing SecLists' && sudo git clone https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/seclists/ && clear && echo 'Unzipping rockyou.txt' && sudo gunzip /usr/share/wordlists/rockyou.txt.gz && clear && echo 'Wordlists Installed' "
 
+abbr n nvim
+abbr cls clear
+abbr g git
 abbr grep rg
 abbr vim nvim
 abbr mkdir 'mkdir -p'

@@ -97,9 +97,8 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Install Paru-Bin
-- [ ] Copy the rofi config, animations, package updater, the wallpaper script and some of the Waybar from Meowrch
+- [ ] Copy the package updater, the wallpaper script and some of the Waybar from Meowrch
 - [ ] Better low battery alert
-- [ ] Clipboard Manager
 - [ ] Modify the README to include new binds
 - [ ] Install Ubuntu and give up
+- [ ] tela-circle-icon-theme-dracula

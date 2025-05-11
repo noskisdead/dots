@@ -18,7 +18,7 @@ A few that I remember are:
 - [prasanthrangan/hyprdots](https://github.com/prasanthrangan/hyprdots)
 - [deathemonic/Cat-Dots](https://github.com/deathemonic/Cat-Dots) - Rofi configuration
 - [catppuccin/catppuccin](https://github.com/catppuccin/catppuccin) - Pretty much everything!
-- [meowrch/meowrch](https://github.com/meowrch/meowrch) - Some of the Rofi and Waybar configs!
+- [meowrch/meowrch](https://github.com/meowrch/meowrch) - Lotta things!
 - [Klapptnot/low-battery-alert](https://github.com/Klapptnot/low-battery-alert) - Low battery alert (duh)
 
 ### Installation

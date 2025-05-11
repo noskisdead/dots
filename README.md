@@ -101,3 +101,4 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] Copy the rofi config, animations, package updater, the wallpaper script and some of the Waybar from Meowrch
 - [ ] Better low battery alert
 - [ ] Clipboard Manager
+- [ ] Localsend Config

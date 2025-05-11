@@ -98,5 +98,6 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 
 ### To Do
 - [ ] Stop this Linux shit and start getting a better life
-- [ ] Copy the rofi config and some of the Waybar from Meowrch
-- [ ] Install the Vim for Google Docs extension
+- [ ] Copy the rofi config, animations, package updater, the wallpaper script and some of the Waybar from Meowrch
+- [ ] Better low battery alert
+- [ ] Clipboard Manager

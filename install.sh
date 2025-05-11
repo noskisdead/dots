@@ -22,10 +22,10 @@ pkglist=(
     wget ttf-jetbrains-mono-nerd signal-desktop thunar-archive-plugin tealdeer
     fisher eza udiskie hyprlock grub-btrfs thunar pavucontrol-qt wl-clip-persist
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland pokemon-colorscripts-git
-    kvantum discord unzip p7zip unrar ark bat uwsm obsidian ripgrep
+    kvantum discord unzip p7zip unrar ark bat uwsm obsidian ripgrep localsend-bin
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin
     swaync waybar fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme
-    starship wl-clipboard yazi neovim zen-browser-bin qt6-wayland
+    flatpak starship wl-clipboard yazi neovim zen-browser-bin qt6-wayland
     mpv feh polkit-gnome sddm kitty rofi-wayland swww qt5-wayland
     zoxide hyprland qt6ct brightnessctl ttf-cascadia-code-nerd gvfs
 )
@@ -38,17 +38,21 @@ info_message "Backing up and updating pacman configuration..."
 # sudo cp -r ~/.dots/config/etc/. /etc
 sudo cp -rb ~/dots/config/etc/. /etc
 
-# Add chaotic-aur repository
-info_message "Adding Chaotic AUR repository..."
-sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com >/dev/null 2>&1 || handle_error "Failed to import key"
-sudo pacman-key --lsign-key 3056513887B78AEB >/dev/null 2>&1 || handle_error "Failed to sign key"
-sudo pacman -U --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm >/dev/null 2>&1 || handle_error "Failed to install chaotic-keyring"
-sudo pacman -U --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm >/dev/null 2>&1 || handle_error "Failed to install chaotic-mirrorlist"
-echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf >/dev/null 2>&1 || handle_error "Failed to add chaotic-aur to pacman.conf"
+# Install Paru
+if command -v paru &>/dev/null; then
+    info_message "Paru is already installed, skipping paru installation"
+else
+    info_message "Installing Paru"
+    git clone https://aur.archlinux.org/paru-bin &>/dev/null || handle_error "Failed to clone paru-bin repository"
+    cd paru-bin &>/dev/null || handle_error "Failed to enter paru-bin directory"
+    makepkg -si --noconfirm &>/dev/null || handle_error "Failed to build and install paru"
+    cd .. &>/dev/null || handle_error "Failed to return to previous directory"
+    rm -rf paru-bin/ &>/dev/null || handle_error "Failed to delete the paru-bin/ directory"
+fi
 
 # Install packages
 info_message "Installing packages, this could take a lot of time..."
-sudo pacman -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
+paru -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
 
 # Enable services
 info_message "Enabling services..."

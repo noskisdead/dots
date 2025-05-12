@@ -78,7 +78,7 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd>                                 | Move window (drag)                    |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd>                                | Resize window (drag)                  |
 
-### FAQ
+### FAQWay
 
 #### The Caps Lock and the Escape key are swapped!
 By default, the **Caps Lock** key is swapped with the **Escape** key. To revert this change, open the `input.conf` file in the Hyprland configuration and remove the following line:
@@ -100,5 +100,5 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] Better low battery alert
 - [ ] tela-circle-icon-theme-dracula
 - [ ] Modify the README to include new binds
-- [ ] Install Ubuntu and give up
 - [ ] fix change color updated pacman
+- [ ] Waybar blink battery red

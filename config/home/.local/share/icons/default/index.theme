@@ -1,2 +1,5 @@
 [Icon Theme]
+Inherits=tela-circle-icon-theme-dracula
+
+[Cursor Theme]
 Inherits=Bibata-Modern-Ice

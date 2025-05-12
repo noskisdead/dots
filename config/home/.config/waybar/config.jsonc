@@ -30,9 +30,14 @@
     "on-scroll-down": "playerctl next"
   },
   "hyprland/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": false
-
+      "rotate": 0,
+      "all-outputs": true,
+      "active-only": false,
+      "on-click": "activate",
+      "disable-scroll": false,
+      "on-scroll-up": "hyprctl dispatch workspace -1",
+      "on-scroll-down": "hyprctl dispatch workspace +1",
+      "persistent-workspaces": {}
   },
   "tray": {
     "icon-size": 13,

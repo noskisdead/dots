@@ -97,9 +97,7 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Better low battery alert
-- [ ] tela-circle-icon-theme-dracula
 - [ ] Modify the README to include new binds
 - [ ] fix change color updated pacman
 - [ ] Waybar blink battery red
-- [ ] Wifi, VPN and battery From Meowrch
+- [ ] Wifi, VPN and battery icons on waybar From Meowrch

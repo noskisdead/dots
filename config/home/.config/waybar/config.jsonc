@@ -62,7 +62,7 @@
     }
   },
   "custom/system-update": {
-      "exec": "sh ~/.local/bin/system-update.sh --status --unupdated-color \"#fab387\" --updated-color \"#a6e3a1\" | cat",
+      "exec": "sh ~/.local/bin/system-update.sh --status --unupdated-color \"#fab387\" --updated-color \"#fab387\" | cat",
       "return-type": "raw",
       "format": "{} ",
       "rotate": 0,

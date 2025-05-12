@@ -16,6 +16,7 @@
   ],
   "modules-right": [
     "tray",
+    "custom/system-update",
     "battery",
     "backlight",
     "pulseaudio",
@@ -59,6 +60,15 @@
         "today": "<span color='#ff6699'><b>{}</b></span>"
       }
     }
+  },
+  "custom/system-update": {
+      "exec": "sh ~/.local/bin/system-update.sh --status --unupdated-color \"#fab387\" --updated-color \"#a6e3a1\" | cat",
+      "return-type": "raw",
+      "format": "{} ",
+      "rotate": 0,
+      "on-click": "CHECKUPDATES_DB=\"/tmp/checkup-db-${UID}-$$\" sh ~/.local/bin/system-update.sh",
+      "interval": 86400,
+      "tooltip": false   
   },
   "backlight": {
     "device": "intel_backlight",

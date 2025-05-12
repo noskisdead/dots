@@ -74,6 +74,13 @@ tooltip {
     margin-left: 5px;
 }
 
+#custom-system-update {
+    background: #181926;
+    padding: 0 10px;
+    margin: 10px 0 3px;
+    border-radius: 10px 0 0 10px;
+}
+
 #pulseaudio {
     color: #89b4fa;
 }
@@ -86,5 +93,4 @@ tooltip {
 
 #battery {
     color: #a6e3a1;
-    border-radius: 10px 0 0 10px;
 }

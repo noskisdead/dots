@@ -102,3 +102,4 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] tela-circle-icon-theme-dracula
 - [ ] Modify the README to include new binds
 - [ ] Install Ubuntu and give up
+fix style pacman

@@ -9,12 +9,10 @@
 # The program was created by DIMFLIX
 # Github: https://github.com/DIMFLIX-OFFICIAL
 
-
 SESSION_TYPE=$XDG_SESSION_TYPE
 DEFAULT_UPDATED_COLOR="#a6e3a1"
 DEFAULT_UNUPDATED_COLOR="#fab387"
 DEFAULT_TERMINAL="kitty"
-
 
 show_help() {
     echo "Usage: $0 [OPTIONS]"
@@ -60,7 +58,7 @@ check_aur_updates() {
 }
 
 check_official_updates() {
-    (while pgrep -x checkupdates > /dev/null; do sleep 1; done)
+    (while pgrep -x checkupdates >/dev/null; do sleep 1; done)
     echo $(checkupdates | wc -l)
 }
 
@@ -86,7 +84,7 @@ print_status() {
     color=${2:-$DEFAULT_UNUPDATED_COLOR}
 
     if [ "$updates" -eq 0 ]; then
-        updates=""
+        updates=" 0"
         color=${1:-$DEFAULT_UPDATED_COLOR}
     fi
 
@@ -98,8 +96,8 @@ print_status() {
 }
 
 trigger_upgrade() {
-    local aurhlpr=$(get_aurhlpr)    
-	local terminal=${1:-$DEFAULT_TERMINAL}
+    local aurhlpr=$(get_aurhlpr)
+    local terminal=${1:-$DEFAULT_TERMINAL}
     local command="echo 'Official packages to update: \$(checkupdates | wc -l)'; \
                    echo 'AUR packages to update: \$(${aurhlpr} -Qua | wc -l)'; \
                    echo 'Flatpak packages to update: \$(flatpak remote-ls --updates | wc -l)'; \
@@ -107,22 +105,22 @@ trigger_upgrade() {
                    sudo ${aurhlpr} -Syu && sudo flatpak update"
 
     case $terminal in
-        alacritty)
-            alacritty -e bash -c "bash -c \"$command\""
-            ;;
-        kitty)
-            kitty -e bash -c "bash -c \"$command\""
-            ;;
-        gnome-terminal)
-            gnome-terminal -- bash -c "$command; exec bash"
-            ;;
-        xterm)
-            xterm -e bash -c "bash -c \"$command\""
-            ;;
-        *)
-            echo "Unsupported terminal: $terminal. Please run the command manually."
-            exit 1
-            ;;
+    alacritty)
+        alacritty -e bash -c "bash -c \"$command\""
+        ;;
+    kitty)
+        kitty -e bash -c "bash -c \"$command\""
+        ;;
+    gnome-terminal)
+        gnome-terminal -- bash -c "$command; exec bash"
+        ;;
+    xterm)
+        xterm -e bash -c "bash -c \"$command\""
+        ;;
+    *)
+        echo "Unsupported terminal: $terminal. Please run the command manually."
+        exit 1
+        ;;
     esac
 }
 
@@ -136,30 +134,30 @@ main() {
 
     while [[ $# -gt 0 ]]; do
         case $1 in
-            --status)
-                status=1
-                ;;
-            --updated-color)
-                shift
-                updated_color="$1"
-                ;;
-            --unupdated-color)
-                shift
-                unupdated_color="$1"
-                ;;
-            --terminal)
-                shift
-                terminal="$1"
-                ;;
-            --help)
-                show_help
-                exit 0
-                ;;
-            *)
-                echo "Unknown argument: $1"
-                show_help
-                exit 1
-                ;;
+        --status)
+            status=1
+            ;;
+        --updated-color)
+            shift
+            updated_color="$1"
+            ;;
+        --unupdated-color)
+            shift
+            unupdated_color="$1"
+            ;;
+        --terminal)
+            shift
+            terminal="$1"
+            ;;
+        --help)
+            show_help
+            exit 0
+            ;;
+        *)
+            echo "Unknown argument: $1"
+            show_help
+            exit 1
+            ;;
         esac
         shift
     done

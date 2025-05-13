@@ -97,9 +97,9 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Make Zen Browser default
-- [ ] try to make a spicetify iinstall script
 - [ ] Decide MPV or VLC and a more bloated alternative than feh
+- [ ] Default audio viewer
+- [ ] Better MPV Config
 - [ ] Better SDDM Theme
 - [ ] Better battery alert
 - [ ] Dark reader, proton pass

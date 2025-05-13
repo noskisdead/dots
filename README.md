@@ -97,7 +97,10 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Modify the README to include new binds
-- [ ] Waybar blink battery red
+- [ ] Make Zen Browser default
+- [ ] try to make a spicetify iinstall script
+- [ ] Better SDDM Theme
+- [ ] Better battery alert
 - [ ] Dark reader
+- [ ] Modify the README to include new binds
 - [ ] make a nice github profile

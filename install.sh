@@ -52,7 +52,7 @@ fi
 
 # Install packages
 info_message "Installing packages, this could take a lot of time..."
-paru -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
+paru -Sy --needed "${pkglist[@]}" --noconfirm #>/dev/null 2>&1 || handle_error "Failed to install packages"
 
 # Enable services
 info_message "Enabling services..."

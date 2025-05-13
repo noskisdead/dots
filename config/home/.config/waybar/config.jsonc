@@ -89,10 +89,11 @@
     "on-scroll-down": "brightnessctl set 5%-"
   },
   "battery": {
+    "interval": 10,
     "states": {
       "good": 95,
       "warning": 30,
-      "critical": 20
+      "critical": 20,
     },
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",

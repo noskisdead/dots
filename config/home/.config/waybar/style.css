@@ -1,3 +1,5 @@
+@import "macchiato.css";
+
 * {
     border: none;
     border-radius: 0;
@@ -8,11 +10,11 @@
 
 window#waybar {
     background: transparent;
-    color: #cdd6f4;
+    color: @text;
 }
 
 tooltip {
-    background: #181926;
+    background: @crust;
     border: 2px solid #11111b;
     border-radius: 10px;
 }
@@ -25,7 +27,7 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-    background: #181926;
+    background: @crust;
     padding: 0 10px;
     margin: 10px 0 3px;
 }
@@ -69,28 +71,45 @@ tooltip {
 }
 
 #clock {
-    color: #fab387;
+    color: @peach;
     border-radius: 10px;
     margin-left: 5px;
 }
 
 #custom-system-update {
-    background: #181926;
+    background: @crust;
     padding: 0 10px;
     margin: 10px 0 3px;
     border-radius: 10px 0 0 10px;
 }
 
 #pulseaudio {
-    color: #89b4fa;
+    color: @blue;
 }
 
 #custom-notification {
-    color: #f5a97f;
+    color: @peach;
     border-radius: 0 10px 10px 0;
     margin-right: 5px;
 }
 
 #battery {
-    color: #a6e3a1;
+    color: @green;
+}
+
+#battery.critical:not(.charging){
+  color                     : @red;
+  animation-name            : blink;
+  animation-duration        : 1s;
+  animation-timing-function : linear;
+  animation-iteration-count : infinite;
+  animation-direction       : alternate;
+}
+@keyframes blink {
+  from {
+    color: @red; /* starting color (red-ish) */
+  }
+  to {
+    color: @sapphire; /* ending color (blue-ish) */
+  }
 }

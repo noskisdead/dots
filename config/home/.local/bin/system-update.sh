@@ -1,14 +1,5 @@
 #!/usr/bin/env bash
 
-# ┏━━━┳━━┳━┓┏━┳━━━┳┓╋╋┏━━┳━┓┏━┓
-# ┗┓┏┓┣┫┣┫┃┗┛┃┃┏━━┫┃╋╋┗┫┣┻┓┗┛┏┛
-# ╋┃┃┃┃┃┃┃┏┓┏┓┃┗━━┫┃╋╋╋┃┃╋┗┓┏┛
-# ╋┃┃┃┃┃┃┃┃┃┃┃┃┏━━┫┃╋┏┓┃┃╋┏┛┗┓
-# ┏┛┗┛┣┫┣┫┃┃┃┃┃┃╋╋┃┗━┛┣┫┣┳┛┏┓┗┓
-# ┗━━━┻━━┻┛┗┛┗┻┛╋╋┗━━━┻━━┻━┛┗━┛
-# The program was created by DIMFLIX
-# Github: https://github.com/DIMFLIX-OFFICIAL
-
 SESSION_TYPE=$XDG_SESSION_TYPE
 DEFAULT_UPDATED_COLOR="#a6e3a1"
 DEFAULT_UNUPDATED_COLOR="#fab387"
@@ -84,7 +75,7 @@ print_status() {
     color=${2:-$DEFAULT_UNUPDATED_COLOR}
 
     if [ "$updates" -eq 0 ]; then
-        updates=" 0"
+        updates=""
         color=${1:-$DEFAULT_UPDATED_COLOR}
     fi
 
@@ -102,7 +93,7 @@ trigger_upgrade() {
                    echo 'AUR packages to update: \$(${aurhlpr} -Qua | wc -l)'; \
                    echo 'Flatpak packages to update: \$(flatpak remote-ls --updates | wc -l)'; \
                    echo; \
-                   sudo ${aurhlpr} -Syu && sudo flatpak update"
+                   sudo ${aurhlpr} -Syu --noconfirm && sudo flatpak update --noninteractive"
 
     case $terminal in
     alacritty)

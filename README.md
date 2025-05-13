@@ -97,8 +97,7 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Decide MPV or VLC and a more bloated alternative than feh
-- [ ] Better MPV Config
+- [ ] MPV HomePage
 - [ ] Better SDDM Theme
 - [ ] Better battery alert
 - [ ] Dark reader, proton pass

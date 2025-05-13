@@ -26,7 +26,7 @@ pkglist=(
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin rofimoji
     pacman-contrib swaync waybar fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme spotify
     flatpak starship wl-clipboard yazi neovim zen-browser-bin qt6-wayland zenity
-    mpv feh polkit-gnome sddm kitty rofi-wayland swww qt5-wayland cliphist
+    mpv feh polkit-gnome sddm kitty rofi-wayland swww qt5-wayland cliphist mpv-thumbfast-git mpv-modernx-git
     zoxide hyprland qt6ct brightnessctl ttf-cascadia-code-nerd gvfs tela-circle-icon-theme-dracula
 )
 

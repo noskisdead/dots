@@ -98,8 +98,6 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 
 ### To Do
 - [ ] Modify the README to include new binds
-- [ ] fix change color updated pacman
 - [ ] Waybar blink battery red
-- [ ] Wifi, VPN and battery icons on waybar From Meowrch
 - [ ] Dark reader
 - [ ] make a nice github profile

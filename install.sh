@@ -85,8 +85,12 @@ rm -rf grub
 
 # Set Default apps
 info_message "Configuring default apps"
-xdg-mime default feh.desktop image/jpeg || handle_error "Failed to set Feh as the default image opener."
-xdg-mime default yazi.desktop inode/directory || handle_error "Failed to set Yazi as the default file manager."
+xdg-mime default feh.desktop image/jpeg || handle_error "Failed to set Feh as the default jpeg opener."
+xdg-mime default feh.desktop image/png || handle_error "Failed to set Feh as the default png opener."
+xdg-mime default feh.desktop image/gif || handle_error "Failed to set Feh as the default gif opener."
+xdg-mime default feh.desktop image/bmp || handle_error "Failed to set Feh as the default bmp opener."
+xdg-mime default feh.desktop image/webp || handle_error "Failed to set Feh as the default webp opener."
+xdg-mime default thunar.desktop inode/directory || handle_error "Failed to set Thunar as the default file manager."
 
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."

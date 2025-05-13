@@ -98,7 +98,6 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 
 ### To Do
 - [ ] Decide MPV or VLC and a more bloated alternative than feh
-- [ ] Default audio viewer
 - [ ] Better MPV Config
 - [ ] Better SDDM Theme
 - [ ] Better battery alert

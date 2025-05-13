@@ -101,6 +101,6 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] try to make a spicetify iinstall script
 - [ ] Better SDDM Theme
 - [ ] Better battery alert
-- [ ] Dark reader
+- [ ] Dark reader, proton pass
 - [ ] Modify the README to include new binds
 - [ ] make a nice github profile

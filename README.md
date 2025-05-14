@@ -101,6 +101,6 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] Image Viewer config / change to loupe/qview/mpv-image
 - [ ] Better SDDM Theme
 - [ ] Better battery alert
-- [ ] Dark reader, proton pass
+- [ ] Disable Password storing Zen
 - [ ] Modify the README to include new binds
 - [ ] make a nice Github profile

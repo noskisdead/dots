@@ -97,9 +97,9 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] MPV HomePage
+- [ ] Image Viewer config / change to loupe/qview/mpv-image
 - [ ] Better SDDM Theme
 - [ ] Better battery alert
 - [ ] Dark reader, proton pass
 - [ ] Modify the README to include new binds
-- [ ] make a nice github profile
+- [ ] make a nice Github profile

@@ -97,6 +97,7 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
+- [ ] Sound viewer
 - [ ] Image Viewer config / change to loupe/qview/mpv-image
 - [ ] Better SDDM Theme
 - [ ] Better battery alert

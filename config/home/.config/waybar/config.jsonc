@@ -22,14 +22,6 @@
     "pulseaudio",
     "custom/notification"
   ],
-    "custom/spotify": {
-    "exec": "/usr/bin/python3 ~/.local/bin/media.py --player spotify",
-    "format": "{}",
-    "return-type": "json",
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl previous",
-    "on-scroll-down": "playerctl next"
-  },
   "hyprland/workspaces": {
       "rotate": 0,
       "all-outputs": true,
@@ -69,6 +61,13 @@
       "on-click": "CHECKUPDATES_DB=\"/tmp/checkup-db-${UID}-$$\" sh ~/.local/bin/system-update.sh",
       "interval": 86400,
       "tooltip": false   
+  },
+  "custom/spotify": {
+    "format": "{}",
+    "exec": "sh ~/.local/bin/spotifyd-status.sh",
+    "on-click": "playerctl play-pause",
+    "interval": 5,
+    "return-type": "json"
   },
   "backlight": {
     "device": "intel_backlight",

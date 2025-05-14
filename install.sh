@@ -24,7 +24,7 @@ pkglist=(
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland pokemon-colorscripts-git
     kvantum discord unzip p7zip unrar ark bat uwsm obsidian ripgrep localsend-bin
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin rofimoji
-    pacman-contrib swaync waybar fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme spotify
+    pacman-contrib swaync waybar fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme spotifyd
     flatpak starship wl-clipboard yazi neovim zen-browser-bin qt6-wayland zenity
     mpv feh polkit-gnome sddm kitty rofi-wayland swww qt5-wayland cliphist mpv-thumbfast-git mpv-modernx-git
     zoxide hyprland qt6ct brightnessctl ttf-cascadia-code-nerd gvfs tela-circle-icon-theme-dracula
@@ -57,6 +57,7 @@ paru -Sy --needed "${pkglist[@]}" --noconfirm #>/dev/null 2>&1 || handle_error "
 # Enable services
 info_message "Enabling services..."
 sudo systemctl enable sddm >/dev/null 2>&1 || handle_error "Failed to enable SDDM"
+systemctl --user enable spotifyd >/dev/null 2>&1 || handle_error "Failed to enable SDDM"
 
 # Create directories
 info_message "Creating directories..."
@@ -87,7 +88,6 @@ rm -rf grub
 info_message "Configuring default apps"
 xdg-mime default feh.desktop image/* || handle_error "Failed to set Feh as the default image viewer."
 xdg-mime default mpv.desktop video/* || handle_error "Failed to set MPV as the default video viewer."
-xdg-mime default spotify.desktop audio/* || handle_error "Failed to set Spotify as the default audio player"
 xdg-mime default thunar.desktop inode/directory || handle_error "Failed to set Thunar as the default file manager."
 
 # Configure SDDM theme

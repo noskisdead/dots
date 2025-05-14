@@ -22,6 +22,7 @@ alias vencord 'sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/Ve
 alias wordlists " clear && echo 'Installing Kali Wordlists' && sudo git clone https://github.com/00xBAD/kali-wordlists.git /usr/share/wordlists && clear && echo 'Installing SecLists' && sudo git clone https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/seclists/ && clear && echo 'Unzipping rockyou.txt' && sudo gunzip /usr/share/wordlists/rockyou.txt.gz && clear && echo 'Wordlists Installed' "
 
 abbr g git
+abbr push "git add . && git commit -m 'idk fr' && git push"
 abbr n nvim
 abbr cls clear
 abbr g git

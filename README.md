@@ -97,7 +97,7 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Sound viewer / config mpv to be a good one
+- [ ] Sound viewer / config mpd/ncmppcp to be a good one
 - [ ] PDF Reader
 - [ ] Feh window rules (reduce the image size by like 50% idk just fit the fkin screen)
 - [ ] Better SDDM Theme

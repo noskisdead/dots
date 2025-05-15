@@ -19,9 +19,10 @@ tooltip {
     border-radius: 10px;
 }
 
+
+#custom-battery,
 #custom-spotify,
 #clock,
-#battery,
 #pulseaudio,
 #custom-notification,
 #workspaces,
@@ -91,25 +92,4 @@ tooltip {
     color: @peach;
     border-radius: 0 10px 10px 0;
     margin-right: 5px;
-}
-
-#battery {
-    color: @green;
-}
-
-#battery.critical:not(.charging){
-  color                     : @red;
-  animation-name            : blink;
-  animation-duration        : 1s;
-  animation-timing-function : linear;
-  animation-iteration-count : infinite;
-  animation-direction       : alternate;
-}
-@keyframes blink {
-  from {
-    color: @red; /* starting color (red-ish) */
-  }
-  to {
-    color: @sapphire; /* ending color (blue-ish) */
-  }
 }

@@ -17,7 +17,7 @@
   "modules-right": [
     "tray",
     "custom/system-update",
-    "battery",
+    "custom/battery",
     "backlight",
     "pulseaudio",
     "custom/notification"
@@ -87,30 +87,14 @@
     "on-scroll-up": "brightnessctl set 5%+",
     "on-scroll-down": "brightnessctl set 5%-"
   },
-  "battery": {
-    "interval": 10,
-    "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 20,
-    },
-    "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-alt": "{time} {icon}",
-    "format-icons": [
-      "󰂎",
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
-    ]
+  "custom/battery": {
+     "exec": "sh ~/.local/bin/battery.sh --status --discharged-color \"#f38ba8\" --charged-color \"#a6e3a1\" | cat",
+     "return-type": "raw",
+     "format": "{}  ",
+     "interval": 3,
+     "rotate": 0,
+     "on-click": "sh ~/.local/bin/battery.sh --notify",
+     "tooltip": false
   },
   "custom/notification": {
     "tooltip": false,

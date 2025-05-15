@@ -101,7 +101,6 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] PDF Reader
 - [ ] Feh window rules (reduce the image size by like 50% idk just fit the fkin screen)
 - [ ] Better SDDM Theme
-- [ ] Better battery alert
 - [ ] Zen Browser HomePage
 - [ ] Laptop only TLP
 - [ ] Modify the README to include new binds

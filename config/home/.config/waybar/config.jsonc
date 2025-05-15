@@ -56,7 +56,7 @@
   "custom/system-update": {
       "exec": "sh ~/.local/bin/system-update.sh --status | cat",
       "return-type": "raw",
-      "format": "{} ",
+      "format": "{}",
       "rotate": 0,
       "on-click": "CHECKUPDATES_DB=\"/tmp/checkup-db-${UID}-$$\" sh ~/.local/bin/system-update.sh",
       "interval": 86400,

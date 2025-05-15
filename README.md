@@ -97,10 +97,12 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Sound viewer
-- [ ] Image Viewer config / change to loupe/qview/mpv-image
+- [ ] Sound viewer / config mpv to be a good one
+- [ ] PDF Reader
+- [ ] Feh window rules (reduce the image size by like 50% idk just fit the fkin screen)
 - [ ] Better SDDM Theme
 - [ ] Better battery alert
-- [ ] Disable Password storing Zen
+- [ ] Zen Browser HomePage
+- [ ] Laptop only TLP
 - [ ] Modify the README to include new binds
 - [ ] make a nice Github profile

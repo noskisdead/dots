@@ -93,7 +93,7 @@ trigger_upgrade() {
                    echo 'AUR packages to update: \$(${aurhlpr} -Qua | wc -l)'; \
                    echo 'Flatpak packages to update: \$(flatpak remote-ls --updates | wc -l)'; \
                    echo; \
-                   sudo ${aurhlpr} -Syu --noconfirm && sudo flatpak update --noninteractive"
+                   sudo ${aurhlpr} -Syu --noconfirm && sudo flatpak update"
 
     case $terminal in
     alacritty)

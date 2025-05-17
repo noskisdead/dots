@@ -78,7 +78,7 @@ To install the configuration, follow these steps:
 | <kbd>Super</kbd> + <kbd>Mouse Left</kbd>                                 | Move window (drag)                    |
 | <kbd>Super</kbd> + <kbd>Mouse Right</kbd>                                | Resize window (drag)                  |
 
-### FAQWay
+### FAQ
 
 #### The Caps Lock and the Escape key are swapped!
 By default, the **Caps Lock** key is swapped with the **Escape** key. To revert this change, open the `input.conf` file in the Hyprland configuration and remove the following line:
@@ -97,7 +97,7 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 4. Then, click on **"Apply all updates"** to apply the changes.
 
 ### To Do
-- [ ] Sound viewer / config mpd/ncmppcp to be a good one
+- [ ] Sound viewer / config mpd to be a good one
 - [ ] PDF Reader
 - [ ] Feh window rules (reduce the image size by like 50% idk just fit the fkin screen)
 - [ ] Better SDDM Theme

@@ -55,6 +55,10 @@ set adjust-open width
 " Zathura mappings
 " -----------------------------------------------------------------------------
 
+" Vi Keybinds with Smooth Scroll
+map j feedkeys "<C-Down>"
+map k feedkeys "<C-Up>"
+
 " Zoom in/out
 map [normal]     z zoom in
 map [normal]     Z zoom out

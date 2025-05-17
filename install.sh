@@ -90,6 +90,9 @@ xdg-mime default feh.desktop image/* || handle_error "Failed to set Feh as the d
 xdg-mime default mpv.desktop video/* || handle_error "Failed to set MPV as the default video viewer."
 xdg-mime default thunar.desktop inode/directory || handle_error "Failed to set Thunar as the default file manager."
 xdg-mime default io.bassi.Amberol.desktop audio/* || handle_error "Failed to set MPV as the default audio player."
+xdg-mime default org.pwmt.zathura.desktop application/pdf || handle_error "Failed to set Zathura as the default document reader."
+xdg-mime default org.pwmt.zathura.desktop application/epub+zip || handle_error "Failed to set Zathura as the default document reader."
+xdg-mime default org.pwmt.zathura.desktop application/oxps || handle_error "Failed to set Zathura as the default document reader."
 
 # Configure SDDM theme
 info_message "Configuring SDDM theme..."

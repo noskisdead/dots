@@ -102,5 +102,7 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] Better SDDM Theme
 - [ ] Zen Browser HomePage
 - [ ] Laptop only TLP
+- [ ] Return yt dislikes
+- [ ] Obsidian git
 - [ ] Modify the README to include new binds
 - [ ] make a nice Github profile

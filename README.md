@@ -100,9 +100,8 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] simple mp3 player
 - [ ] Feh window rules (reduce the image size by like 50% idk just fit the fkin screen)
 - [ ] Better SDDM Theme
-- [ ] Zen Browser HomePage
 - [ ] Laptop only TLP
 - [ ] Return yt dislikes
-- [ ] Obsidian git
+- [ ] Obsidian git, annupuccin
 - [ ] Modify the README to include new binds
 - [ ] make a nice Github profile

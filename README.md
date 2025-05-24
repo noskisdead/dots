@@ -102,6 +102,6 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] Better SDDM Theme
 - [ ] Laptop only TLP
 - [ ] Return yt dislikes
-- [ ] Obsidian git, annupuccin
+- [ ] Obsidian git, annupuccin, style settings, templater
 - [ ] Modify the README to include new binds
 - [ ] make a nice Github profile

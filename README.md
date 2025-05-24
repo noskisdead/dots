@@ -2,7 +2,6 @@
 
 > [!CAUTION]
 > The install script assumes you have a **freshly installed Arch Linux** system with the following choices made during installation using **ArchInstall**:
-> - **Disk Configuration:** BTRFS
 > - **Bootloader:** GRUB
 > - **Profile:** Minimal
 > - **Sound Configuration:** PipeWire

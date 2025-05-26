@@ -157,16 +157,16 @@ chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change user s
 sudo chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change root shell to Fish"
 
 # Moving config files
-#info_message "Moving config files..."
-#sudo rm -rf ~/.zen/
-#sudo cp -r ~/dots/config/opt/. /opt/
-#cp -r ~/dots/config/home/. ~/
+info_message "Moving config files..."
+sudo rm -rf ~/.zen/
+sudo cp -r ~/dots/config/opt/. /opt/
+cp -r ~/dots/config/home/. ~/
 
 # Clean up
 info_message "Cleaning up..."
 history -c
 cd ..
-#mv ~/dots/ ~/.dots/
+mv ~/dots/ ~/.dots/
 
 # Final message and reboot
 clear

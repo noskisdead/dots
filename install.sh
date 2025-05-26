@@ -92,7 +92,7 @@ if is_laptop; then
     if ! pacman -Qi tlp &>/dev/null; then
         paru -S --needed tlp --noconfirm >/dev/null 2>&1 || handle_error "Failed to install TLP with paru"
         if [ $? -eq 0 ]; then
-            sudo systemctl enable tlp --now
+            sudo systemctl enable tlp --now >/dev/null 2>&1 || handle_error "Failed to enable TLP"
         fi
     fi
 else

@@ -103,5 +103,5 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] Return yt dislikes
 - [ ] Obsidian git, annupuccin, style settings, templater
 - [ ] Anki config
-- [ ] Modify the README to include new binds
+- [ ] Modify the README to include new binds and new screenshots
 - [ ] make a nice Github profile

@@ -25,7 +25,7 @@ pkglist=(
     kvantum discord unzip p7zip unrar ark bat uwsm obsidian ripgrep localsend-bin
     noto-fonts-emoji hypridle pamixer otf-font-awesome zen-browser-bin rofimoji zathura-pdf-mupdf
     pacman-contrib swaync waybar fish hyprshot fzf noto-fonts-cjk sddm-astronaut-theme spotifyd
-    flatpak starship wl-clipboard yazi neovim zen-browser-bin qt6-wayland zenity zatuhra
+    flatpak starship wl-clipboard yazi neovim zen-browser-bin qt6-wayland zenity zathura
     mpv feh polkit-gnome sddm kitty rofi-wayland swww qt5-wayland cliphist mpv-thumbfast-git mpv-modernx-git
     zoxide hyprland qt6ct brightnessctl ttf-cascadia-code-nerd gvfs tela-circle-icon-theme-dracula
 )
@@ -52,7 +52,7 @@ fi
 
 # Install packages
 info_message "Installing packages, this could take a lot of time..."
-paru -Sy --needed "${pkglist[@]}" --noconfirm #>/dev/null 2>&1 || handle_error "Failed to install packages"
+paru -Sy --needed "${pkglist[@]}" --noconfirm >/dev/null 2>&1 || handle_error "Failed to install packages"
 
 # Function to check if the system is a laptop
 is_laptop() {
@@ -86,7 +86,7 @@ is_laptop() {
 
 # Main script
 if is_laptop; then
-    info_message "✅ This system is a laptop. Installing TLP for better power management..."
+    info_message "This system is a laptop. Installing TLP for better power management..."
 
     # Install TLP if not already installed
     if ! pacman -Qi tlp &>/dev/null; then
@@ -157,18 +157,16 @@ chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change user s
 sudo chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change root shell to Fish"
 
 # Moving config files
-info_message "Moving config files..."
-sudo rm -rf ~/.zen/
-sudo cp -r ~/dots/config/opt/. /opt/
-# sudo cp -r ~/.dots/config/opt/. /opt/
-cp -r ~/dots/config/home/. ~/
-# cp -r ~/.dots/config/home/. ~/
+#info_message "Moving config files..."
+#sudo rm -rf ~/.zen/
+#sudo cp -r ~/dots/config/opt/. /opt/
+#cp -r ~/dots/config/home/. ~/
 
 # Clean up
 info_message "Cleaning up..."
 history -c
 cd ..
-mv ~/dots/ ~/.dots/
+#mv ~/dots/ ~/.dots/
 
 # Final message and reboot
 clear

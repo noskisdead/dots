@@ -152,7 +152,7 @@ fc-cache -f >/dev/null 2>&1 || handle_error "Failed to rebuild the font cache"
 
 # Change default shell to Fish
 info_message "Changing default shell to Fish."
-echo "Please enter your password..."
+echo "[sudo] password for $USER:"
 chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change user shell to Fish"
 sudo chsh -s "$(which fish)" >/dev/null 2>&1 || handle_error "Failed to change root shell to Fish"
 

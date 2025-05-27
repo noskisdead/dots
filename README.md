@@ -100,6 +100,7 @@ To use the **Stylus** themes in **Zen**, follow these steps:
 - [ ] Feh window rules (reduce the image size by like 50% idk just fit the fkin screen)
 - [ ] Better SDDM Theme
 - [ ] Private browsing extensions
+- [ ] Yazi separate process from file manager
 - [ ] Obsidian git, annupuccin, style settings, templater
 - [ ] Anki config
 - [ ] Modify the README to include new binds and new screenshots

@@ -27,6 +27,7 @@ abbr push "git add . && git commit -m 'idk fr' && git push"
 abbr n nvim
 abbr cls clear
 abbr g git
+abbr yay paru
 abbr grep rg
 abbr vim nvim
 abbr mkdir 'mkdir -p'

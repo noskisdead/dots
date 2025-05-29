@@ -35,7 +35,6 @@ clear
 
 # Backup and modify pacman configuration
 info_message "Backing up and updating pacman configuration..."
-# sudo cp -r ~/.dots/config/etc/. /etc
 sudo cp -rb ~/dots/config/etc/. /etc
 
 # Install Paru
@@ -147,6 +146,7 @@ Current=sddm-astronaut-theme
 EOF
 
 # Install the SF Font
+info_message "Installing San Fransisco fonts"
 sudo rm -rf /usr/share/fonts/SFPro/ >/dev/null 2>&1 && sudo git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git /usr/share/fonts/SFPro >/dev/null 2>&1 && sudo rm -rf /usr/share/fonts/SFPro/.git/ >/dev/null 2>&1 || handle_error "Failed to clone the SF Font"
 fc-cache -f >/dev/null 2>&1 || handle_error "Failed to rebuild the font cache"
 

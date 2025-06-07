@@ -8,3 +8,4 @@ user_pref("signon.rememberSignons", false);user_pref("signon.management.page.bre
 user_pref("browser.search.suggest.enabled", true);
 user_pref("browser.search.suggest.enabled.private", true);
 user_pref("zen.workspaces.continue-where-left-off", true);
+user_pref("browser.tabs.fadeOutUnloadedTabs", true);

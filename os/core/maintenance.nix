@@ -4,8 +4,9 @@
   # Updating
   system.autoUpgrade = {
     enable = true;
+    randomizedDelaySec = "45min";
     dates = "daily";
-    flake = "github:noskisdead/flake";
+    flake = "github:noskisdead/dots";
     flags = [
       "--update-input"
       "nixpkgs"

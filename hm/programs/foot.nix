@@ -11,7 +11,7 @@
         font = "CaskaydiaMono Nerd Font Mono:size=12";
         letter-spacing = 0;
         dpi-aware = "no";
-        pad = "25x25";
+        # pad = "25x25";
         bold-text-in-bright = "no";
         gamma-correct-blending = "no";
       };
@@ -20,6 +20,7 @@
       };
       cursor = {
         style = "beam";
+	blink = "yes";
         beam-thickness = 1.5;
       };
       colors = {

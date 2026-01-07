@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  # # # - - - Use Caelestia - - - # # #
   programs.caelestia = {
     enable = true;
     systemd = {

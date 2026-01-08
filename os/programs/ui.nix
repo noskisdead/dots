@@ -8,6 +8,10 @@
   };
 
   environment.systemPackages = with pkgs; [
+    gammastep # night light
+    geoclue2-with-demo-agent # Geo for gammastep
     hyprpicker # color picker :3
+    trash-cli # trash
+    wl-clipboard # idk clipboard thingy
   ];
 }

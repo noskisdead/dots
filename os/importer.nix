@@ -11,7 +11,7 @@
     ./core/shell.nix
     ./core/time.nix
     ./core/users.nix
-    ./programs/hypr.nix
+    ./programs/ui.nix
     ./programs/sddm.nix
     # ./programs/cyber.nix
     # ./programs/gaming.nix

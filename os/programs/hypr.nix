@@ -1,10 +1,13 @@
 { config, pkgs, ... }:
 
 {
-  programs.hyprland.enable = true;
-  programs.hyprland.withUWSM = true;
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+    xwayland.enable = true; # Disable and become based gng <3
+  };
 
   environment.systemPackages = with pkgs; [
-    kitty # temporary
+    hyprpicker # color picker :3
   ];
 }

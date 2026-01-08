@@ -6,7 +6,7 @@
   home.stateVersion = "25.05"; # do not change
 
   imports = [
-    ./../../hm/default.nix # Import all your Home Manager modules
+    ./../../hm/importer.nix # Import all your Home Manager modules
   ];
   
   # Let Home Manager install and manage itself.

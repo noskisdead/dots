@@ -374,10 +374,6 @@
         "gnome-keyring-daemon --start --components=secrets"
         "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
-        # Clipboard history
-        "wl-paste --type text --watch cliphist store"
-        "wl-paste --type image --watch cliphist store"
-
         # Auto delete trash 30 days old
         "trash-empty 30"
 

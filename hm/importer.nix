@@ -4,9 +4,11 @@
   imports = [
     ./programs/browser.nix
     ./programs/caelestia.nix
+    ./services/cliphist.nix
     ./programs/defaultapps.nix
-    # ./programs/media.nix
+    ./programs/media.nix
     ./programs/foot.nix
+    ./programs/gammastep.nix
     ./programs/git.nix
     ./programs/hyprland.nix
     ./programs/messaging.nix

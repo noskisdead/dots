@@ -6,6 +6,8 @@ let
   };
 in
 {
+  services.displayManager.defaultSession = "hyprland";
+
   services.displayManager.autoLogin = {
     enable = true;
     user = "kenny";

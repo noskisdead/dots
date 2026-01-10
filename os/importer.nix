@@ -9,6 +9,7 @@
     ./services/geoclue.nix
     ./core/maintenance.nix
     ./core/networking.nix
+    ./programs/portals.nix
     ./core/settings.nix
     ./core/shell.nix
     ./core/time.nix

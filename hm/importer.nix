@@ -18,5 +18,6 @@
     ./programs/neovim.nix
     ./programs/productivity.nix
     ./programs/shell.nix
+    ./programs/tealdeer.nix
   ];
 }

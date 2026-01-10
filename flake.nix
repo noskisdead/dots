@@ -16,7 +16,8 @@
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, nvf, ... }@inputs: {
+
     nixosConfigurations.pen = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
 

@@ -55,7 +55,7 @@
       "$kbCommunication" = "SUPER, D";
       "$kbTodo" = "SUPER, R";
 
-      "$kbTerminal" = "SUPER, T";
+      "$kbTerminal" = "SUPER, Return";
       "$kbBrowser" = "SUPER, B";
       "$kbEditor" = "SUPER, C";
       "$kbFileExplorer" = "SUPER, E";
@@ -74,13 +74,6 @@
       ### Consolidating all `bind` definitions into a single list
       #####################
       bind = [
-	# App binds
-        "$mod, Return, exec, $terminal"
-        "$kbTerminal, exec, $terminal"
-        "$kbBrowser, exec, $browser"
-        "$kbEditor, exec, $editor"
-        "$kbFileExplorer, exec, $fileExplorer"
-
         # Misc
         "$kbCloseWindow, killactive"
 	"$mod, Space, global, caelestia:launcher"
@@ -353,6 +346,9 @@
 
         # Start shell
         "caelestia shell -d"
+
+        # Start discord silently
+        "exec-once = app2unit -- discord"
       ];
 
       general = {
@@ -419,6 +415,7 @@
       };
 
       cursor = {
+        inactive_timeout = 5;
         hotspot_padding = 1;
       };
 

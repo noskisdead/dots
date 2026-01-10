@@ -1,17 +1,13 @@
 { config, pkgs, ... }:
 
 {
-  programs.nvf = {
-    enable = true;
-    settings.vim = {
-      viAlias = false;
-      vimAlias = true;
-      lsp = {
-        enable = true;
-      };
-      theme = {
-      	transparent = true;
-      };
+  programs.nvf.enable = true;
+  programs.nvf.settings.vim = {
+    vimAlias = true;
+    options = {
+      softtabstop = 2;
+      tabstop = 2;
+      shiftwidth = 2;
     };
   };
 }

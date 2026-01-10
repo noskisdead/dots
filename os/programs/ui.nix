@@ -9,6 +9,7 @@
 
   # Things used in my hyprland config
   environment.systemPackages = with pkgs; [
+    app2unit # for clipboards :3
     fuzzel # for clipboards :3
     glib # gsettings
     hyprpicker # color picker :3

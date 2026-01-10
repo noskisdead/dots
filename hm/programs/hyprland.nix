@@ -67,7 +67,7 @@
       "$kbRestoreLock" = "SUPER ALT, L";
 
       # $wsaction variable definition
-      "$wsaction" = "~/.nix/misc/wsaction.sh";
+      "$wsaction" = "~/.nix/misc/scripts/wsaction.sh";
 
       #####################
       ### Binds (General Keybinds)

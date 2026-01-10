@@ -12,7 +12,7 @@
       bar.status = {
         showBattery = false;
       };
-      paths.wallpaperDir = "~/Images";
+      paths.wallpaperDir = "~/.nix/misc/wallpapers";
     };
     cli = {
       enable = true; # Also add caelestia-cli to path

@@ -399,7 +399,8 @@
       };
 
       input = {
-        kb_layout = "us";
+        kb_layout = "us,ca";
+	kb_options = "caps:swapescape,grp:alt_space_toggle";
         numlock_by_default = false;
         repeat_delay = 250;
         repeat_rate = 35;

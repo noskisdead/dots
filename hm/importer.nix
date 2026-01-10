@@ -1,5 +1,3 @@
-{ config, ... }:
-
 {
   imports = [
     ./programs/ark.nix

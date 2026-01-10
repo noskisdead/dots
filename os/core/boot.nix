@@ -1,5 +1,3 @@
-{ config, ... }:
-
 {
   # Bootloader configuration
   boot.loader.systemd-boot.enable = true;

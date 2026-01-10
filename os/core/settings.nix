@@ -1,5 +1,3 @@
-{ config, ... }:
-
 {
   security.apparmor.enable = true;
   nixpkgs.config.allowUnfree = true; # Allow unfree packages

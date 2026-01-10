@@ -1,5 +1,3 @@
-{ config, ... }:
-
 {
   # Updating
   system.autoUpgrade = {

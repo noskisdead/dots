@@ -1,5 +1,3 @@
-{ config, pkgs, ... }:
-
 {
   # Geoclue configured in os
   services.gammastep = {

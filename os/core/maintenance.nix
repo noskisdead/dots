@@ -4,6 +4,7 @@
   # Updating
   system.autoUpgrade = {
     enable = true;
+    allowReboot = false;
     randomizedDelaySec = "45min";
     dates = "daily";
     flake = "github:noskisdead/dots";

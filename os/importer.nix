@@ -15,6 +15,7 @@
     ./core/time.nix
     ./core/users.nix
     ./programs/ui.nix
+    ./services/usb.nix
     ./programs/sddm.nix
     # ./programs/cyber.nix
     # ./programs/gaming.nix

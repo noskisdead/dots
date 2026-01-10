@@ -21,5 +21,6 @@
     ./programs/qbittorrent.nix
     ./programs/shell.nix
     ./programs/tealdeer.nix
+    ./services/udiskie.nix
   ];
 }

@@ -33,9 +33,6 @@
     enable = true;
     shellAbbrs = {
       ani-cli = "ani-cli --skip";
-      g = "git";
-      push = "git add . && git commit -m 'idk fr' && git push";
-      n = "nvim";
       mkdir = "mkdir -p";
       sl = "ls";
       pdw = "pwd";

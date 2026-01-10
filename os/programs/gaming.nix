@@ -22,8 +22,8 @@
     # winboat # Windows VM
     prismlauncher # MC launcher
     heroic        # Epic and GOG game launcher
-    olympus # Celeste Mod Manager
-    scarab # Hollow Knight Mod Manager
+    # olympus # Celeste Mod Manager
+    # scarab # Hollow Knight Mod Manager
   ];
 
 }

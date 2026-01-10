@@ -4,7 +4,7 @@
   imports = [
     ./core/audio.nix
     ./core/boot.nix
-    ./core/env.nix
+    ./programs/env.nix
     ./core/fonts.nix
     ./services/geoclue.nix
     ./core/maintenance.nix

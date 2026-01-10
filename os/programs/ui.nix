@@ -10,8 +10,7 @@
   # Things used in my hyprland config
   environment.systemPackages = with pkgs; [
     fuzzel # for clipboards :3
-    gammastep # night light
-    geoclue2-with-demo-agent # Geo for gammastep
+    glib # gsettings
     hyprpicker # color picker :3
     trash-cli # trash
   ];

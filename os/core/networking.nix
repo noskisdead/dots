@@ -21,6 +21,10 @@
     dnsovertls = "true";
   };
 
+  # Keyring for secure password management
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.sddm.enableGnomeKeyring = true;
+
   # VPN
   # services.mullvad-vpn = {
   #   enable = true;

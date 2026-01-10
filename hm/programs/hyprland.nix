@@ -132,6 +132,7 @@
         "$kbMoveWinToWs, 8, exec, $wsaction movetoworkspace 8"
         "$kbMoveWinToWs, 9, exec, $wsaction movetoworkspace 9"
         "$kbMoveWinToWs, 0, exec, $wsaction movetoworkspace 10"
+
         # Move window to workspace group #
         "$kbMoveWinToWsGroup, 1, exec, $wsaction -g movetoworkspace 1"
         "$kbMoveWinToWsGroup, 2, exec, $wsaction -g movetoworkspace 2"
@@ -143,9 +144,11 @@
         "$kbMoveWinToWsGroup, 8, exec, $wsaction -g movetoworkspace 8"
         "$kbMoveWinToWsGroup, 9, exec, $wsaction -g movetoworkspace 9"
         "$kbMoveWinToWsGroup, 0, exec, $wsaction -g movetoworkspace 10"
+
         # Move window to workspace -1/+1 (mouse binds)
         "Super+Alt, mouse_down, movetoworkspace, -1"
         "Super+Alt, mouse_up, movetoworkspace, +1"
+
         # Move window to/from special workspace
         "Ctrl+Super+Shift, up, movetoworkspace, special:special"
         "Ctrl+Super+Shift, down, movetoworkspace, e+0"
@@ -154,6 +157,7 @@
         # Window groups
         "$kbToggleGroup, togglegroup"
         "$kbUngroup, moveoutofgroup"
+
         # Lock active group (No longer using 'bindl' for this as it's not a lock screen bind)
         "Super+Shift, Comma, lockactivegroup, toggle"
 
@@ -344,36 +348,8 @@
         };
       };
 
-      # ############# Themes ############# (FIXED: Converted multiple definitions into a single list)
-      env = [
-        "QT_QPA_PLATFORMTHEME, qt6ct"
-        "QT_WAYLAND_DISABLE_WINDOWDECORATION, 1"
-        "QT_AUTO_SCREEN_SCALE_FACTOR, 1"
-        "XCURSOR_THEME, $cursorTheme"
-        "XCURSOR_SIZE, $cursorSize"
-
-        # ######## Toolkit backends ########
-        "GDK_BACKEND, wayland,x11"
-        "QT_QPA_PLATFORM, wayland;xcb"
-        "SDL_VIDEODRIVER, wayland,x11,windows"
-        "CLUTTER_BACKEND, wayland"
-        "ELECTRON_OZONE_PLATFORM_HINT, auto"
-
-        # ####### XDG specifications #######
-        "XDG_CURRENT_DESKTOP, Hyprland"
-        "XDG_SESSION_TYPE, wayland"
-        "XDG_SESSION_DESKTOP, Hyprland"
-
-        # ############# Others #############
-        "_JAVA_AWT_WM_NONREPARENTING, 1"
-      ];
-
       # Exec-once directives (FIXED: Converted multiple definitions into a single list)
       "exec-once" = [
-        # Keyring and auth
-        "gnome-keyring-daemon --start --components=secrets"
-        "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-
         # Auto delete trash 30 days old
         "trash-empty 30"
 
@@ -381,13 +357,6 @@
         "hyprctl setcursor $cursorTheme $cursorSize"
         "gsettings set org.gnome.desktop.interface cursor-theme '$cursorTheme'"
         "gsettings set org.gnome.desktop.interface cursor-size $cursorSize"
-
-        # Location provider and night light
-        "/usr/lib/geoclue-2.0/demos/agent"
-        "sleep 1 && gammastep"
-
-        # Forward bluetooth media commands to MPRIS
-        "mpris-proxy"
 
         # Resize and move windows based on matches (e.g. pip)
         "caelestia resizer -d"
@@ -398,9 +367,7 @@
 
       general = {
         layout = "dwindle";
-
         allow_tearing = false; # Allows `immediate` window rule to work
-
         gaps_workspaces = "20";
         gaps_in = "10";
         gaps_out = "40";
@@ -468,22 +435,17 @@
       misc = {
         vfr = true;
         vrr = 1;
-
         animate_manual_resizes = false;
         animate_mouse_windowdragging = false;
-
         disable_hyprland_logo = true;
         force_default_wallpaper = 0;
-
         on_focus_under_fullscreen = 2;
         allow_session_lock_restore = true;
         middle_click_paste = false;
         focus_on_activate = true;
         session_lock_xray = true;
-
         mouse_move_enables_dpms = true;
         key_press_enables_dpms = true;
-
         background_color = "rgb(201f23)";
       };
 

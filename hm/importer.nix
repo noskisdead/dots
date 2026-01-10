@@ -16,7 +16,6 @@
     ./programs/hyprland.nix
     ./services/mpris-proxy.nix
     ./programs/messaging.nix
-    ./programs/neovim.nix
     ./programs/productivity.nix
     # ./programs/thunar.nix
     ./programs/qbittorrent.nix

@@ -10,6 +10,7 @@
     ./services/geoclue.nix
     ./core/maintenance.nix
     ./core/networking.nix
+    ./programs/neovim.nix
     ./programs/portals.nix
     ./core/settings.nix
     ./core/shell.nix

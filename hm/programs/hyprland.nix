@@ -203,9 +203,6 @@
         "Super+Shift+Alt, R, exec, caelestia record -r"
         "Super+Shift, C, exec, hyprpicker -a"
 
-        # Sleep
-        "Super+Shift, L, exec, systemctl suspend-then-hibernate"
-
         # Clipboard and emoji picker
         "Super, V, exec, pkill fuzzel || caelestia clipboard"
         "Super+Alt, V, exec, pkill fuzzel || caelestia clipboard -d"

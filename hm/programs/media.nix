@@ -11,6 +11,7 @@
   home.packages = with pkgs; [
     #ani-cli
     #ani-skip
+    eog
     #obs-studio
     #ffmpeg
     amberol

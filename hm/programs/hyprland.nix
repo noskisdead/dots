@@ -17,8 +17,6 @@
       ### Misc
       #####################
       "$volumeStep" = "10";
-      "$cursorTheme" = "sweet-cursors";
-      "$cursorSize" = "24";
 
       #####################
       ### Modifier
@@ -352,11 +350,6 @@
       "exec-once" = [
         # Auto delete trash 30 days old
         "trash-empty 30"
-
-        # Cursors
-        "hyprctl setcursor $cursorTheme $cursorSize"
-        "gsettings set org.gnome.desktop.interface cursor-theme '$cursorTheme'"
-        "gsettings set org.gnome.desktop.interface cursor-size $cursorSize"
 
         # Resize and move windows based on matches (e.g. pip)
         "caelestia resizer -d"

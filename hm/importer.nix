@@ -5,6 +5,8 @@
     ./programs/browser.nix
     ./programs/caelestia.nix
     ./services/cliphist.nix
+    ./settings/cursor.nix
+    ./settings/darktheme.nix
     ./programs/defaultapps.nix
     ./programs/media.nix
     ./programs/foot.nix

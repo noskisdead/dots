@@ -18,7 +18,5 @@
     _JAVA_AWT_WM_NONREPARENTING = "1";
     MOZ_ENABLE_WAYLAND = "1";
     GDK_SCALE = "1";
-    XCURSOR_THEME = "";
-    XCURSOR_SIZE = "";
   };
 }

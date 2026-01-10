@@ -54,6 +54,7 @@
       ld = "eza -lhD";                                          # long list dirs
       lt = "eza --tree";                                       # list folder as tree
       emacs = "emacs -nw";
+      rm = "trash";
     };
    shellInit = ''
       set -g fish_greeting

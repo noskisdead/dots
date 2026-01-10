@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./programs/ark.nix
     ./programs/browser.nix
     ./programs/caelestia.nix
     ./services/cliphist.nix
@@ -17,7 +18,7 @@
     ./programs/messaging.nix
     ./programs/neovim.nix
     ./programs/productivity.nix
-    ./programs/thunar.nix
+    # ./programs/thunar.nix
     ./programs/qbittorrent.nix
     ./programs/shell.nix
     ./programs/tealdeer.nix

@@ -13,6 +13,10 @@
       name = "Adwaita-dark";
       package = pkgs.gnome-themes-extra;
     };
+    iconTheme = {
+      package = (pkgs.tela-circle-icon-theme.override { colorVariants = [ "dracula" ]; });
+      name = "Tela-circle-dracula-dark";  # exact name matters!
+    };
   };
 
   qt = {

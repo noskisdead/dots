@@ -17,6 +17,7 @@
     ./programs/messaging.nix
     ./programs/neovim.nix
     ./programs/productivity.nix
+    ./programs/qbittorrent.nix
     ./programs/shell.nix
     ./programs/tealdeer.nix
   ];

@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    discord
-    equicord
+    vesktop # gon switch to equibop once it gets updated in nixpkgs
   ];
 }

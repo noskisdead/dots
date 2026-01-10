@@ -74,7 +74,7 @@
       bind = [
         # Misc
         "$kbCloseWindow, killactive"
-	"$mod, Space, global, caelestia:launcher"
+	      "$mod, Space, global, caelestia:launcher"
         "$kbSession, global, caelestia:session"
         "$kbShowPanels, global, caelestia:showall"
         "$kbLock, global, caelestia:lock"

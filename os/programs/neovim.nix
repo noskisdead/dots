@@ -6,14 +6,27 @@
     binds.whichKey.enable = true;
     clipboard.providers.wl-copy.enable = true;
     filetree.neo-tree.enable = true;
+    notes.todo-comments.enable = true;
     lsp.trouble.enable = true;
+    utility.snacks-nvim.enable = true;
+    utility.snacks-nvim.setupOpts = {
+      opts = {
+        indent = { enabled = true; };
+        scope = { enabled = true; };
+        scroll = { enabled = true; };
+        statuscolumn = { enabled = true; };
+        words = { enabled = true; };
+      };
+    };
     tabline.nvimBufferline.enable = true;
     tabline.nvimBufferline.setupOpts.options.always_show_bufferline = false;
-    utility.snacks-nvim.enable = true;
     lsp.enable = true;
     statusline.lualine.enable = true;
     treesitter.enable = true;
+    treesitter.autotagHtml = true;
+    treesitter.indent.enable=true;
     telescope.enable = true;
+    autocomplete.blink-cmp.enable = true;
     ui.noice.enable = true;
     vimAlias = true;
     languages = {
@@ -23,12 +36,13 @@
       python.enable = true;
     };
     mini = {
+      ai.enable = true;
       icons.enable = true;
       pairs.enable = true;
     };
     options = {
-      softtabstop = 2;
       tabstop = 2;
+      softtabstop = 2;
       shiftwidth = 2;
     };
     theme = {

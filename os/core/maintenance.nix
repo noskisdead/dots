@@ -11,7 +11,7 @@
       "nixpkgs"
     ];
   };
-  
+
   # Garbage Collection
   programs.nh = {
     enable = true;

@@ -1,5 +1,5 @@
 {
-  description = "nosk's flake";
+  description = "nosk's everyday dots :3";
 
   inputs = {
     # Flakes
@@ -16,18 +16,24 @@
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { nixpkgs, home-manager, nvf, ... }@inputs: {
-
+  outputs = {
+    nixpkgs,
+    home-manager,
+    nvf,
+    ...
+  } @ inputs: {
     nixosConfigurations.pen = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
 
       modules = [
         ./hosts/pen/configuration.nix
         inputs.nvf.nixosModules.default
-        inputs.home-manager.nixosModules.default { # This block needs its own curly braces
+        inputs.home-manager.nixosModules.default
+        {
+          # This block needs its own curly braces
           home-manager.useGlobalPkgs = true;
-	        home-manager.useUserPackages = true;
-	        home-manager.extraSpecialArgs = { inherit inputs ;};
+          home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = {inherit inputs;};
           home-manager.users.kenny = {
             imports = [
               ./hosts/pen/home.nix

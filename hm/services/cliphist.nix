@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   # Install wl-clipboard as it is a cliphist dependency
   home.packages = with pkgs; [
     wl-clipboard

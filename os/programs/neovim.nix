@@ -10,25 +10,31 @@
     filetree.neo-tree.enable = true;
     filetree.neo-tree.setupOpts.enable_cursor_hijack = true;
     filetree.neo-tree.setupOpts.hide_root_node = true;
-
     notes.todo-comments.enable = true;
-    lsp.trouble.enable = true;
 
+    #utility.leetcode-nvim.enable = true;
+    utility.multicursors.enable = true;
+    utility.images.img-clip.enable = true;
+    utility.preview.markdownPreview.enable = true;
     utility.snacks-nvim.enable = true;
     utility.snacks-nvim.setupOpts = {
-      indent = { enabled = true; };
-      scope = { enabled = true; };
-      scroll = { enabled = true; };
-      statuscolumn = { enabled = true; };
-      words = { enabled = true; };
+      indent = {enabled = true;};
+      gh = {enabled = true;};
+      scope = {enabled = true;};
+      scroll = {enabled = true;};
+      statuscolumn = {enabled = true;};
+      terminal = {enabled = true;};
+      words = {enabled = true;};
     };
 
     tabline.nvimBufferline.enable = true;
     tabline.nvimBufferline.setupOpts.options.always_show_bufferline = false;
 
     lsp.enable = true;
+    lsp.formatOnSave = true;
+    lsp.trouble.enable = true;
+    lsp.otter-nvim.enable = true;
     statusline.lualine.enable = true;
-
     treesitter.enable = true;
     treesitter.autotagHtml = true;
 
@@ -45,6 +51,8 @@
       bash.enable = true;
       nix.enable = true;
       python.enable = true;
+      markdown.enable = true;
+      markdown.extensions.markview-nvim.enable = true;
     };
 
     mini = {
@@ -64,6 +72,21 @@
       shiftwidth = 2;
     };
 
+    diagnostics = {
+      enable = true;
+
+      config = {
+        signs = {
+          text = {
+            "vim.diagnostic.severity.ERROR" = "󰅚 ";
+            "vim.diagnostic.severity.WARN" = "󰀪 ";
+          };
+        };
+
+        update_in_insert = false;
+        virtual_lines = true;
+      };
+    };
     theme = {
       enable = true;
       transparent = true;

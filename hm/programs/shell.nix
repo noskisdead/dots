@@ -1,11 +1,9 @@
-{pkgs, ...}:
-
-{
-  home.packages = [ 
+{pkgs, ...}: {
+  home.packages = [
     pkgs.krabby # Pokemon Colorscripts in rust
   ];
 
- programs.man.generateCaches = false; # Fixes long rebuilds
+  programs.man.generateCaches = false; # Fixes long rebuilds
 
   programs.eza = {
     enable = true;
@@ -18,7 +16,7 @@
     enable = true;
     enableFishIntegration = true;
     options = [
-    "--cmd cd"
+      "--cmd cd"
     ];
   };
 
@@ -45,15 +43,15 @@
       shred = "sudo shred -vzu -n5";
     };
     shellAliases = {
-      l = "eza -lh";                                            # long list
-      ls = "eza -1";                                            # short list
-      ll = "eza -lha --sort=name --group-directories-first";   # long list all
-      ld = "eza -lhD";                                          # long list dirs
-      lt = "eza --tree";                                       # list folder as tree
+      l = "eza -lh"; # long list
+      ls = "eza -1"; # short list
+      ll = "eza -lha --sort=name --group-directories-first"; # long list all
+      ld = "eza -lhD"; # long list dirs
+      lt = "eza --tree"; # list folder as tree
       emacs = "emacs -nw";
       rm = "trash";
     };
-   shellInit = ''
+    shellInit = ''
       set -g fish_greeting
       fish_hybrid_key_bindings
       krabby random 1,3,4,5,7 --no-mega --no-gmax --padding-left 3

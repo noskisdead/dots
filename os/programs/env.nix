@@ -11,7 +11,7 @@
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
     XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_TYPE = "wayland";
-    XDG_SESSION_DESKTOP= "Hyprland";
+    XDG_SESSION_DESKTOP = "Hyprland";
     _JAVA_AWT_WM_NONREPARENTING = "1";
     MOZ_ENABLE_WAYLAND = "1";
     GDK_SCALE = "1";

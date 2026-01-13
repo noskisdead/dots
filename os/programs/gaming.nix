@@ -1,13 +1,11 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   programs.gamemode.enable = true;
   programs.steam = {
     enable = true;
     gamescopeSession.enable = true;
     protontricks.enable = true;
     # extest.enable = true; # Enables Steam Input
-    extraCompatPackages = [ pkgs.proton-ge-bin ];
+    extraCompatPackages = [pkgs.proton-ge-bin];
   };
 
   hardware.graphics = {
@@ -21,9 +19,8 @@
   environment.systemPackages = with pkgs; [
     # winboat # Windows VM
     prismlauncher # MC launcher
-    heroic        # Epic and GOG game launcher
+    heroic # Epic and GOG game launcher
     # olympus # Celeste Mod Manager
     # scarab # Hollow Knight Mod Manager
   ];
-
 }

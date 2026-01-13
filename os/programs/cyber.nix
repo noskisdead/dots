@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   virtualisation.docker = {
     enable = true; # for exegol
     enableOnBoot = false;

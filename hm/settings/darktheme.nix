@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
@@ -15,7 +13,7 @@
     };
     iconTheme = {
       package = pkgs.papirus-icon-theme;
-      name = "Papirus-Dark";  # exact name matters!
+      name = "Papirus-Dark"; # exact name matters!
     };
   };
 

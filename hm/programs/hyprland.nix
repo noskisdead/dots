@@ -74,7 +74,7 @@
       bind = [
         # Misc
         "$kbCloseWindow, killactive"
-	      "$mod, Space, global, caelestia:launcher"
+        "$mod, Space, global, caelestia:launcher"
         "$kbSession, global, caelestia:session"
         "$kbShowPanels, global, caelestia:showall"
         "$kbLock, global, caelestia:lock"
@@ -346,7 +346,7 @@
         "caelestia shell -d"
 
         # Start discord
-        "sleep 15 && app2unit -- discord --start-minimized"
+        "discord --start-minimized"
       ];
 
       general = {
@@ -394,7 +394,7 @@
 
       input = {
         kb_layout = "us,ca";
-	kb_options = "caps:swapescape,grp:alt_space_toggle";
+        kb_options = "caps:swapescape,grp:alt_space_toggle";
         numlock_by_default = false;
         repeat_delay = 250;
         repeat_rate = 35;
@@ -416,7 +416,6 @@
         inactive_timeout = 5;
         hotspot_padding = 1;
       };
-
 
       misc = {
         vfr = true;

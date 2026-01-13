@@ -1,11 +1,12 @@
-{ pkgs, lib, ... }:
-
-let
+{
+  pkgs,
+  lib,
+  ...
+}: let
   sddmTheme = pkgs.sddm-astronaut.override {
     embeddedTheme = "jake_the_dog";
   };
-in
-{
+in {
   services.displayManager.defaultSession = "hyprland";
 
   services.displayManager.autoLogin = {
@@ -29,6 +30,6 @@ in
 
   # Theme goes here so it links to /run/current-system/sw/share/sddm/themes
   environment.systemPackages = [
-      sddmTheme
-    ];
+    sddmTheme
+  ];
 }

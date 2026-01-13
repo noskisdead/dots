@@ -23,11 +23,11 @@
 
       modules = [
         ./hosts/pen/configuration.nix
-	inputs.nvf.nixosModules.default
+        inputs.nvf.nixosModules.default
         inputs.home-manager.nixosModules.default { # This block needs its own curly braces
           home-manager.useGlobalPkgs = true;
-	  home-manager.useUserPackages = true;
-	  home-manager.extraSpecialArgs = { inherit inputs ;};
+	        home-manager.useUserPackages = true;
+	        home-manager.extraSpecialArgs = { inherit inputs ;};
           home-manager.users.kenny = {
             imports = [
               ./hosts/pen/home.nix

@@ -345,8 +345,8 @@
         # Start shell
         "caelestia shell -d"
 
-        # Start discord silently
-        "exec-once = app2unit -- discord"
+        # Start discord (almost) silently
+        "discord --start-minimized"
       ];
 
       general = {

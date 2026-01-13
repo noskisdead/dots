@@ -1,5 +1,6 @@
 {
   programs.nvf.settings.vim = {
+    vimAlias = true;
     git.gitsigns.enable = true;
     dashboard.alpha.enable = true;
     presence.neocord.enable = true;
@@ -7,6 +8,9 @@
     binds.whichKey.setupOpts.preset = "helix";
     clipboard.providers.wl-copy.enable = true;
     filetree.neo-tree.enable = true;
+    filetree.neo-tree.setupOpts.enable_cursor_hijack = true;
+    filetree.neo-tree.setupOpts.hide_root_node = true;
+
     notes.todo-comments.enable = true;
     lsp.trouble.enable = true;
 
@@ -32,7 +36,6 @@
     autocomplete.blink-cmp.enable = true;
 
     ui.noice.enable = true;
-    vimAlias = true;
 
     languages = {
       enableTreesitter = true;

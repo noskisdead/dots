@@ -7,13 +7,13 @@
     ./settings/cursor.nix
     ./settings/darktheme.nix
     ./programs/defaultapps.nix
+    ./programs/discord.nix
     ./programs/media.nix
     ./programs/foot.nix
     ./services/gammastep.nix
     ./programs/git.nix
     ./programs/hyprland.nix
     ./services/mpris-proxy.nix
-    ./programs/messaging.nix
     ./programs/productivity.nix
     # ./programs/thunar.nix
     ./programs/qbittorrent.nix

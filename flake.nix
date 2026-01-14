@@ -16,12 +16,7 @@
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = {
-    nixpkgs,
-    home-manager,
-    nvf,
-    ...
-  } @ inputs: {
+  outputs = {nixpkgs, ...} @ inputs: {
     nixosConfigurations.pen = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
 
@@ -31,14 +26,16 @@
         inputs.home-manager.nixosModules.default
         {
           # This block needs its own curly braces
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = {inherit inputs;};
-          home-manager.users.kenny = {
-            imports = [
-              ./hosts/pen/home.nix
-              inputs.caelestia-shell.homeManagerModules.default
-            ];
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            extraSpecialArgs = {inherit inputs;};
+            users.kenny = {
+              imports = [
+                ./hosts/pen/home.nix
+                inputs.caelestia-shell.homeManagerModules.default
+              ];
+            };
           };
         }
       ];

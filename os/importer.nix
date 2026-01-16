@@ -3,6 +3,7 @@
     ./core/audio.nix
     ./programs/battery.nix
     ./core/boot.nix
+    ./programs/doas.nix
     ./programs/env.nix
     ./core/fonts.nix
     ./services/geoclue.nix

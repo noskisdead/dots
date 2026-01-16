@@ -7,33 +7,37 @@
     binds.whichKey.enable = true;
     binds.whichKey.setupOpts.preset = "helix";
     clipboard.providers.wl-copy.enable = true;
-    filetree.neo-tree.enable = true;
-    filetree.neo-tree.setupOpts.enable_cursor_hijack = true;
-    filetree.neo-tree.setupOpts.hide_root_node = true;
+    filetree.neo-tree = {
+      enable = true;
+    };
     notes.todo-comments.enable = true;
 
     #utility.leetcode-nvim.enable = true;
-    utility.multicursors.enable = true;
-    utility.images.img-clip.enable = true;
-    utility.preview.markdownPreview.enable = true;
-    utility.snacks-nvim.enable = true;
-    utility.snacks-nvim.setupOpts = {
-      indent = {enabled = true;};
-      gh = {enabled = true;};
-      scope = {enabled = true;};
-      scroll = {enabled = true;};
-      statuscolumn = {enabled = true;};
-      terminal = {enabled = true;};
-      words = {enabled = true;};
-    };
+    utility = {
+      snacks-nvim.enable = true;
+      snacks-nvim.setupOpts = {
+        indent = {enabled = true;};
+        gh = {enabled = true;};
+        scope = {enabled = true;};
+        scroll = {enabled = true;};
+        statuscolumn = {enabled = true;};
+        terminal = {enabled = true;};
+        words = {enabled = true;};
+      };
 
+      preview.markdownPreview.enable = true;
+      multicursors.enable = true;
+    };
     tabline.nvimBufferline.enable = true;
     tabline.nvimBufferline.setupOpts.options.always_show_bufferline = false;
 
-    lsp.enable = true;
-    lsp.formatOnSave = true;
-    lsp.trouble.enable = true;
-    lsp.otter-nvim.enable = true;
+    lsp = {
+      enable = true;
+      formatOnSave = true;
+      trouble.enable = true;
+      otter-nvim.enable = true;
+    };
+
     statusline.lualine.enable = true;
     treesitter.enable = true;
     treesitter.autotagHtml = true;

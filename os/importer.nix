@@ -15,6 +15,7 @@
     ./core/shell.nix
     ./programs/thunar.nix
     ./core/time.nix
+    ./core/security.nix
     ./core/users.nix
     ./programs/ui.nix
     ./programs/sddm.nix

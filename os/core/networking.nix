@@ -1,6 +1,5 @@
 {
   networking = {
-    hostName = "pen";
     nameservers = ["1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one"];
     networkmanager = {
       enable = true;
@@ -25,8 +24,8 @@
   services.gnome.gnome-keyring.enable = true;
 
   # VPN
-  # services.mullvad-vpn = {
-  #   enable = true;
-  #   package = pkgs.mullvad-vpn;
-  # };
+  services.mullvad-vpn = {
+    enable = true;
+    package = pkgs.mullvad-vpn;
+  };
 }

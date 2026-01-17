@@ -4,4 +4,5 @@
     ./hardware-configuration.nix
     ../../os/importer.nix
   ];
+  networking.hostName = "pearl";
 }

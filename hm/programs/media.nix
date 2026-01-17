@@ -7,10 +7,9 @@
     ];
   };
   home.packages = with pkgs; [
-    #ani-cli
-    #ani-skip
+    ani-cli
+    ani-skip
     eog
-    #obs-studio
     #ffmpeg
     amberol
     yt-dlp # Video Downloader

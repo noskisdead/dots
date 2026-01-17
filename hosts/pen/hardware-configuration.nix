@@ -11,10 +11,12 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  boot.initrd.availableKernelModules = ["xhci_pci" "ahci" "sd_mod" "rtsx_pci_sdmmc"];
-  boot.initrd.kernelModules = [];
-  boot.kernelModules = ["kvm-intel"];
-  boot.extraModulePackages = [];
+  boot = {
+    initrd.kernelModules = [];
+    extraModulePackages = [];
+    kernelModules = ["kvm-intel"];
+    initrd.availableKernelModules = ["xhci_pci" "ahci" "sd_mod" "rtsx_pci_sdmmc"];
+  };
 
   fileSystems."/" = {
     device = "/dev/mapper/luks-91522ec1-78c1-415d-8140-faf2d546e209";
@@ -22,6 +24,11 @@
   };
 
   boot.initrd.luks.devices."luks-91522ec1-78c1-415d-8140-faf2d546e209".device = "/dev/disk/by-uuid/91522ec1-78c1-415d-8140-faf2d546e209";
+
+  fileSystems."/boot" = {
+    device = "systemd-1";
+    fsType = "autofs";
+  };
 
   swapDevices = [];
 

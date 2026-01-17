@@ -11,5 +11,6 @@
   networking.hostName = "pearl";
 
   # Temporary things since this laptop doesnt have a nix-hardware config
+  services.upower.enable = true;
   services.tlp.enable = lib.mkDefault (!config.services.power-profiles-daemon.enable);
 }

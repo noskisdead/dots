@@ -14,7 +14,6 @@
 
     utility = {
       images.img-clip.enable = true;
-      leetcode-nvim.enable = true;
       snacks-nvim.enable = true;
       snacks-nvim.setupOpts = {
         indent = {enabled = true;};

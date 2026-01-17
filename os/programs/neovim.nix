@@ -12,8 +12,9 @@
     };
     notes.todo-comments.enable = true;
 
-    #utility.leetcode-nvim.enable = true;
     utility = {
+      images.img-clip.enable = true;
+      leetcode-nvim.enable = true;
       snacks-nvim.enable = true;
       snacks-nvim.setupOpts = {
         indent = {enabled = true;};
@@ -80,7 +81,7 @@
       enable = true;
 
       config = {
-        update_in_insert = false;
+        update_in_insert = true;
         virtual_text = true;
       };
     };

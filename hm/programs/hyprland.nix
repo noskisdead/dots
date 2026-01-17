@@ -346,7 +346,7 @@
         "caelestia shell -d"
 
         # Start discord
-        "discord --start-minimized"
+        "sleep 5 && discord --start-minimized"
       ];
 
       general = {

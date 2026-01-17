@@ -6,4 +6,7 @@
     extraGroups = ["networkmanager" "wheel"];
     shell = pkgs.fish;
   };
+
+  # Disable root login for security
+  users.users.root.hashedPassword = "!";
 }

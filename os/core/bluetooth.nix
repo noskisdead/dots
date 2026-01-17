@@ -1,10 +1,4 @@
 {
   hardware.bluetooth.enable = true;
-
-  # Battery status
-  hardware.bluetooth.settings = {
-    General = {
-      Experimental = true;
-    };
-  };
+  hardware.bluetooth.settings.General.Experimental = true; # battery status
 }

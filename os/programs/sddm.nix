@@ -14,6 +14,7 @@ in {
     user = "kenny";
   };
 
+  security.pam.services.sddm.enableGnomeKeyring = true;
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;

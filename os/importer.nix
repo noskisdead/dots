@@ -2,6 +2,7 @@
   imports = [
     ./core/audio.nix
     ./programs/battery.nix
+    ./core/bluetooth.nix
     ./core/boot.nix
     ./programs/env.nix
     ./core/fonts.nix

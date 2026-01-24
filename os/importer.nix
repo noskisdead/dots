@@ -7,8 +7,8 @@
     ./core/fonts.nix
     ./services/geoclue.nix
     ./core/maintenance.nix
-    ./programs/neovim.nix
     ./core/networking.nix
+    ./programs/neovim.nix
     ./programs/portals.nix
     ./core/settings.nix
     ./core/shell.nix

@@ -1,8 +1,4 @@
 {
-  config,
-  lib,
-  ...
-}: {
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -12,5 +8,5 @@
 
   # Temporary things since this laptop doesnt have a nix-hardware config
   services.upower.enable = true;
-  services.tlp.enable = lib.mkDefault (!config.services.power-profiles-daemon.enable);
+  services.power-profiles-daemon.enable = true;
 }

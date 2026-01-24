@@ -23,11 +23,10 @@
 
       modules = [
         ./hosts/pearl/configuration.nix
+        #inputs.nixos-hardware.nixosModules.dell-xps-13-9380
         inputs.nvf.nixosModules.default
         inputs.home-manager.nixosModules.default
-        #inputs.nixos-hardware.nixosModules.dell-xps-13-9380
         {
-          # This block needs its own curly braces
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;

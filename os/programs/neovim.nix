@@ -2,30 +2,22 @@
   programs.nvf.settings.vim = {
     vimAlias = true;
     git.gitsigns.enable = true;
-    dashboard.alpha.enable = true;
     presence.neocord.enable = true;
-    binds.whichKey.enable = true;
-    binds.whichKey.setupOpts.preset = "helix";
     clipboard.providers.wl-copy.enable = true;
-    filetree.neo-tree = {
-      enable = true;
-    };
+    filetree.neo-tree.enable = true;
     notes.todo-comments.enable = true;
 
     utility = {
-      images.img-clip.enable = true;
-      snacks-nvim.enable = true;
-      snacks-nvim.setupOpts = {
-        indent = {enabled = true;};
-        gh = {enabled = true;};
-        scope = {enabled = true;};
-        scroll = {enabled = true;};
-        statuscolumn = {enabled = true;};
-        terminal = {enabled = true;};
-        words = {enabled = true;};
+      snacks-nvim = {
+        enable = true;
+        setupOpts = {
+          indent = {enabled = true;};
+          scroll = {enabled = true;};
+          terminal = {enabled = true;};
+        };
       };
-
       preview.markdownPreview.enable = true;
+      images.img-clip.enable = true;
       multicursors.enable = true;
     };
     tabline.nvimBufferline.enable = true;
@@ -34,8 +26,6 @@
     lsp = {
       enable = true;
       formatOnSave = true;
-      trouble.enable = true;
-      otter-nvim.enable = true;
     };
 
     statusline.lualine.enable = true;
@@ -44,13 +34,14 @@
 
     telescope.enable = true;
     autocomplete.blink-cmp.enable = true;
+    autocomplete.blink-cmp.friendly-snippets.enable = true;
 
     ui.noice.enable = true;
 
     languages = {
-      enableTreesitter = true;
       enableExtraDiagnostics = true;
       enableFormat = true;
+      enableTreesitter = true;
 
       bash.enable = true;
       nix.enable = true;
@@ -60,13 +51,12 @@
     };
 
     mini = {
-      ai.enable = true;
       icons.enable = true;
       pairs.enable = true;
     };
 
     options = {
-      scrolloff = 5;
+      scrolloff = 10;
       autoindent = true;
       tabstop = 2;
       ignorecase = true;

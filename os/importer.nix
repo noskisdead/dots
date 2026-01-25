@@ -17,7 +17,7 @@
     ./core/users.nix
     ./programs/ui.nix
     ./programs/sddm.nix
-    # ./programs/cyber.nix
-    # ./programs/gaming.nix
+    ./programs/cyber.nix
+    ./programs/gaming.nix
   ];
 }

@@ -17,12 +17,12 @@
   # hardware.xone.enable # Enables support for Xbox controllers
 
   environment.systemPackages = with pkgs; [
-    # winboat # Windows VM
     prismlauncher # MC launcher
     heroic # Epic and GOG game launcher
     osu-lazer-bin # Osu!
-    olympus # Celeste Mod Manager
+    # olympus # Celeste Mod Manager
     # scarab # Hollow Knight Mod Manager
+    # winboat # Windows VM
   ];
 
   # Roblox, since Sober is only on flatpak rn

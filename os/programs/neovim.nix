@@ -1,16 +1,21 @@
 {
   programs.nvf.settings.vim = {
     vimAlias = true;
+    binds = {
+      whichKey.enable = true;
+      whichKey.setupOpts.preset = "helix";
+    };
     git.gitsigns.enable = true;
     presence.neocord.enable = true;
+    undoFile.enable = true;
     clipboard.providers.wl-copy.enable = true;
-    filetree.neo-tree.enable = true;
     notes.todo-comments.enable = true;
 
     utility = {
       snacks-nvim = {
         enable = true;
         setupOpts = {
+          explorer = {enabled = true;};
           indent = {enabled = true;};
           scroll = {enabled = true;};
           terminal = {enabled = true;};
@@ -26,6 +31,7 @@
     lsp = {
       enable = true;
       formatOnSave = true;
+      trouble.enable = true;
     };
 
     statusline.lualine.enable = true;

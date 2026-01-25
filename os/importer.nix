@@ -9,6 +9,7 @@
     ./core/maintenance.nix
     ./core/networking.nix
     ./programs/neovim.nix
+    ./programs/neovim-binds.nix
     ./programs/portals.nix
     ./core/settings.nix
     ./core/shell.nix

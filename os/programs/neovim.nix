@@ -44,10 +44,15 @@
       enableTreesitter = true;
 
       bash.enable = true;
+      clang.enable = true;
+      css.enable = true;
+      go.enable = true;
+      html.enable = true;
       nix.enable = true;
-      python.enable = true;
       markdown.enable = true;
       markdown.extensions.markview-nvim.enable = true;
+      python.enable = true;
+      zig.enable = true;
     };
 
     mini = {

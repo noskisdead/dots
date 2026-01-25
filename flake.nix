@@ -26,8 +26,8 @@
         ./hosts/pearl/configuration.nix
         #inputs.nixos-hardware.nixosModules.dell-xps-13-9380
         inputs.nvf.nixosModules.default
+        inputs.nix-flatpak.nixosModules.nix-flatpak
         inputs.home-manager.nixosModules.default
-        inputs.nix-flatpak.nixosModules.default
         {
           home-manager = {
             useGlobalPkgs = true;

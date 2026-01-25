@@ -91,6 +91,115 @@
       name = "catppuccin";
       style = "macchiato";
     };
+    keymaps = [
+      # # # - - - Window Navigation - - - # # #
+      {
+        key = "<leader><tab><tab>";
+        mode = "n";
+        action = "<cmd>tabnew<CR>";
+        desc = "New tab";
+      }
+      {
+        key = "<leader><tab>d";
+        mode = "n";
+        action = "<cmd>tabclose<CR>";
+        desc = "Close tab";
+      }
+      {
+        key = "<leader><tab>[";
+        mode = "n";
+        action = "<cmd>BufferLineCyclePrev<CR>";
+        desc = "Previous tab";
+      }
+      {
+        key = "<leader><tab>]";
+        mode = "n";
+        action = "<cmd>BufferLineCycleNext<CR>";
+        desc = "Next tab";
+      }
+      {
+        key = "<leader><tab>o";
+        mode = "n";
+        action = "<cmd>BufferLineCloseOthers<CR>";
+        desc = "Close other tabs";
+      }
+      {
+        key = "<leader><tab>f";
+        mode = "n";
+        action = "<cmd>tabfirst<CR>";
+        desc = "First tab";
+      }
+      {
+        key = "<leader><tab>l";
+        mode = "n";
+        action = "<cmd>tablast<CR>";
+        desc = "Last tab";
+      }
+
+      {
+        key = "<C-h>";
+        mode = "n";
+        action = "<C-w>h";
+      }
+      {
+        key = "<C-l>";
+        mode = "n";
+        action = "<C-w>l";
+      }
+      {
+        key = "<C-k>";
+        mode = "n";
+        action = "<C-w>k";
+      }
+      {
+        key = "<C-j>";
+        mode = "n";
+        action = "<C-w>j";
+      }
+
+      {
+        key = "<C-S-h>";
+        mode = "n";
+        action = "<C-w><";
+      }
+      {
+        key = "<C-S-l>";
+        mode = "n";
+        action = "<C-w>>";
+      }
+      {
+        key = "<C-S-j>";
+        mode = "n";
+        action = "<C-w>-";
+      }
+      {
+        key = "<C-S-k>";
+        mode = "n";
+        action = "<C-w>+";
+      }
+
+      # # # - - - File Explorer - - - # # #
+      {
+        key = "<leader>e";
+        action = "<CMD> lua require('snacks').explorer() <CR>";
+        desc = "File Explorer";
+        mode = "n";
+      }
+      {
+        key = "<leader>E";
+        action = "<CMD> lua require('snacks').explorer({cwd = vim.loop.cwd() }) <CR>";
+        desc = "File Explorer (cwd)";
+        mode = "n";
+      }
+
+      # # # - - - Terminal - - - # # #
+      {
+        action = "<CMD> lua require('snacks').terminal() <CR>";
+        desc = "Terminal";
+        key = "<leader><CR>";
+        mode = "n";
+      }
+    ];
   };
   programs.nvf.enable = true;
 }

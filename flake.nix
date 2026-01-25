@@ -5,6 +5,7 @@
     # Flakes
     home-manager.url = "github:nix-community/home-manager";
     caelestia-shell.url = "github:caelestia-dots/shell";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     #nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     zen-browser.url = "github:youwen5/zen-browser-flake";
     nvf.url = "github:notashelf/nvf";
@@ -26,6 +27,7 @@
         #inputs.nixos-hardware.nixosModules.dell-xps-13-9380
         inputs.nvf.nixosModules.default
         inputs.home-manager.nixosModules.default
+        inputs.nix-flatpak.nixosModules.default
         {
           home-manager = {
             useGlobalPkgs = true;

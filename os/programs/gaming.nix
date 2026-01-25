@@ -20,7 +20,13 @@
     # winboat # Windows VM
     prismlauncher # MC launcher
     heroic # Epic and GOG game launcher
-    # olympus # Celeste Mod Manager
+    osu-lazer-bin # Osu!
+    olympus # Celeste Mod Manager
     # scarab # Hollow Knight Mod Manager
+  ];
+
+  # Roblox, since Sober is only on flatpak rn
+  services.flatpak.packages = [
+    "org.vinegarhq.Sober"
   ];
 }

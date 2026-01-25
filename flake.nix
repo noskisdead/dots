@@ -2,7 +2,6 @@
   description = "nosk's everyday dots :3";
 
   inputs = {
-    # Flakes
     home-manager.url = "github:nix-community/home-manager";
     caelestia-shell.url = "github:caelestia-dots/shell";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";

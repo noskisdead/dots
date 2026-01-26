@@ -11,6 +11,7 @@
     fuzzel # for clipboards :3
     glib # gsettings
     hyprpicker # color picker :3
+    pavucontrol # for volume control
     trash-cli # trash
   ];
 }

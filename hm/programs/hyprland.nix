@@ -181,8 +181,6 @@
         "$kbEditor, exec, app2unit -- $editor"
         "Super, G, exec, app2unit -- github-desktop"
         "$kbFileExplorer, exec, app2unit -- $fileExplorer"
-        "Super+Alt, E, exec, app2unit -- nemo"
-        "Ctrl+Alt, Escape, exec, app2unit -- qps"
         "Ctrl+Alt, V, exec, app2unit -- pavucontrol"
 
         # Utilities

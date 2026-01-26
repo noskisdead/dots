@@ -6,6 +6,7 @@
     ./programs/env.nix
     ./core/fonts.nix
     ./services/geoclue.nix
+    ./services/kanata.nix
     ./core/maintenance.nix
     ./core/networking.nix
     ./programs/neovim.nix

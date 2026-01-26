@@ -1,9 +1,10 @@
 {pkgs, ...}: {
   programs.mpv = {
     enable = true;
-    scripts = with pkgs; [
-      mpvScripts.thumbfast
-      mpvScripts.modernx-zydezu
+    scripts = with pkgs.mpvScripts; [
+      modernz
+      mpv-discord
+      thumbfast
     ];
   };
   home.packages = with pkgs; [

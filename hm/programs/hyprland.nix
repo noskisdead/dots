@@ -179,7 +179,6 @@
         "$kbTerminal, exec, app2unit -- $terminal"
         "$kbBrowser, exec, app2unit -- $browser"
         "$kbEditor, exec, app2unit -- $editor"
-        "Super, G, exec, app2unit -- github-desktop"
         "$kbFileExplorer, exec, app2unit -- $fileExplorer"
         "Ctrl+Alt, V, exec, app2unit -- pavucontrol"
 
@@ -344,7 +343,7 @@
         "caelestia shell -d"
 
         # Start discord
-        "sleep 5 && discord --start-minimized"
+        "sleep 15 && discord --start-minimized"
       ];
 
       general = {

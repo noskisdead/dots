@@ -196,7 +196,7 @@
       {
         action = "<CMD> lua require('snacks').terminal() <CR>";
         desc = "Terminal";
-        key = "<leader><CR>";
+        key = "<leader>t";
         mode = "n";
       }
     ];

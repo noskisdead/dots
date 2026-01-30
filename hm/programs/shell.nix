@@ -1,6 +1,7 @@
 {pkgs, ...}: {
-  home.packages = [
-    pkgs.krabby # Pokemon Colorscripts in rust
+  home.packages = with pkgs; [
+    krabby # Pokemon Colorscripts in rust
+    wget # Download shi
   ];
 
   programs = {

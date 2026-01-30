@@ -330,6 +330,7 @@
           color = "rgba(131317d4)";
         };
       };
+      ecosystem.no_update_news = true;
 
       # Exec-once directives (FIXED: Converted multiple definitions into a single list)
       "exec-once" = [
@@ -343,7 +344,7 @@
         "caelestia shell -d"
 
         # Start discord
-        "sleep 15 && discord --start-minimized"
+        "app2unit -- discord --start-minimized"
       ];
 
       general = {

@@ -26,7 +26,10 @@
   ];
 
   # Roblox, since Sober is only on flatpak rn
-  services.flatpak.packages = [
-    "org.vinegarhq.Sober"
-  ];
+  services.flatpak = {
+    enable = true;
+    packages = [
+      "org.vinegarhq.Sober"
+    ];
+  };
 }

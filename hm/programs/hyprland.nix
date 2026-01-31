@@ -344,7 +344,7 @@
         "caelestia shell -d"
 
         # Start discord
-        "app2unit -- discord --start-minimized"
+        "app2unit -- equibop -m"
       ];
 
       general = {

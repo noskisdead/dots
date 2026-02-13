@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    cinny-desktop
+    # cinny-desktop currently broken
     equibop
   ];
 }

@@ -7,7 +7,7 @@
     ./settings/cursor.nix
     ./settings/darktheme.nix
     ./programs/defaultapps.nix
-    ./programs/discord.nix
+    ./programs/messaging.nix
     ./programs/media.nix
     ./programs/foot.nix
     ./services/gammastep.nix

@@ -3,6 +3,7 @@
     thunar
     thunar-volman
     thunar-archive-plugin
+    yazi
   ];
 
   services.udisks2.enable = true; # USB

@@ -13,7 +13,7 @@
     ./programs/portals.nix
     ./core/settings.nix
     ./core/shell.nix
-    ./programs/thunar.nix
+    ./programs/files.nix
     ./core/time.nix
     ./core/users.nix
     ./programs/ui.nix

@@ -3,5 +3,5 @@
     enable = true;
   };
 
-  documentation.man.generateCaches = false; # Fixes long build times
+  documentation.man.cache.enable = false; # Fixes long build times
 }

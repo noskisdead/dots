@@ -6,7 +6,9 @@
     yazi
   ];
 
-  services.udisks2.enable = true; # USB
-  services.gvfs.enable = true; # Trash
-  services.tumbler.enable = true; # Thumbnail support for images
+  services = {
+    udisks2.enable = true; # USB
+    gvfs.enable = true; # Trash
+    tumbler.enable = true; # Thumbnail support for images
+  };
 }

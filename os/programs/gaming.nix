@@ -13,7 +13,7 @@
     enable32Bit = true;
   };
 
-  # programs.appimage.enable = true; # For AppImage support (e.g., Slippi)
+  programs.appimage.enable = true; # For AppImage support (e.g., Slippi)
   # hardware.xone.enable # Enables support for Xbox controllers
 
   environment.systemPackages = with pkgs; [

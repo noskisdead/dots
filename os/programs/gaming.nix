@@ -20,7 +20,7 @@
     prismlauncher # MC launcher
     heroic # Epic and GOG game launcher
     osu-lazer-bin # Osu!
-    # olympus # Celeste Mod Manager
+    olympus # Celeste Mod Manager
     # scarab # Hollow Knight Mod Manager
     # winboat # Windows VM
   ];

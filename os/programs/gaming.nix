@@ -17,6 +17,7 @@
   # hardware.xone.enable # Enables support for Xbox controllers
 
   environment.systemPackages = with pkgs; [
+    lunar-client # Another MC client
     prismlauncher # MC launcher
     heroic # Epic and GOG game launcher
     osu-lazer-bin # Osu!

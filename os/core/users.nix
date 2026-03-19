@@ -3,7 +3,7 @@
   users.users.kenny = {
     isNormalUser = true;
     description = "kenny";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "docker"];
     shell = pkgs.fish;
   };
 

@@ -20,7 +20,7 @@
         blink = "yes";
         beam-thickness = 1.5;
       };
-      colors = {
+      colors-dark = {
         alpha = 0.78;
 
         cursor = "181926 f4dbd6";

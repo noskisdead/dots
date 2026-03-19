@@ -1,6 +1,7 @@
-{pkgs}: {
+{pkgs, ...}: {
   virtualisation.docker = {
-    enabled = true;
+    enable = true;
+    rootless.enable = true;
   };
 
   environment.systemPackages = with pkgs; [

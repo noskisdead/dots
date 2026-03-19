@@ -2,6 +2,7 @@
   programs.nvf.settings.vim = {
     vimAlias = true;
     binds = {
+      hardtime-nvim.enable = true;
       whichKey.enable = true;
       whichKey.setupOpts.preset = "helix";
     };

@@ -48,6 +48,7 @@
       shellAbbrs = {
         ani-cli = "ani-cli --skip";
         mkdir = "mkdir -p";
+        g = "git";
         sl = "ls";
         pdw = "pwd";
         ".." = "cd ..";

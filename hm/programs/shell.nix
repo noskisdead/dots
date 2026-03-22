@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     krabby # Pokemon Colorscripts in rust
+    pipes-rs # Cool pipes
     wget # Download shi
   ];
 

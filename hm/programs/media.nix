@@ -10,6 +10,7 @@
   home.packages = with pkgs; [
     amberol
     eog
+    kdePackages.okular
     ffmpeg
     yt-dlp # Video Downloader
   ];

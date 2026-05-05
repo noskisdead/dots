@@ -7,17 +7,13 @@
       environment = [];
     };
     settings = {
-      bar.status = {
-        showBattery = true;
-      };
+      bar.status.showBattery = true;
       paths.wallpaperDir = "~/.nix/misc/wallpapers";
       services.useFahrenheit = false;
     };
     cli = {
       enable = true; # Also add caelestia-cli to path
-      settings = {
-        theme.enableGtk = false;
-      };
+      settings.theme.enableGtk = false;
     };
   };
 }

@@ -1,4 +1,4 @@
 {pkgs, ...}: {
   virtualisation.docker.enable = true;
-  environment.systemPackages = with pkgs; [exegol];
+  environment.systemPackages = with pkgs; [exegol4];
 }

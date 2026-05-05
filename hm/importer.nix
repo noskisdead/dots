@@ -14,6 +14,7 @@
     ./programs/git.nix
     ./programs/hyprland.nix
     ./services/mpris-proxy.nix
+    ./services/syncthing.nix
     ./programs/obs.nix
     ./programs/productivity.nix
     # ./programs/thunar.nix

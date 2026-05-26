@@ -1,5 +1,6 @@
 {
   wayland.windowManager.hyprland = {
+    configType = "hyprlang";
     enable = true;
 
     settings = {
@@ -255,9 +256,6 @@
         "Super+Alt, Page_Down, movetoworkspace, +1"
         "Ctrl+Super+Shift, right, movetoworkspace, +1"
         "Ctrl+Super+Shift, left, movetoworkspace, -1"
-        # Window actions
-        "Super, Minus, splitratio, -0.1"
-        "Super, Equal, splitratio, 0.1"
         # Window groups
         "$kbWindowGroupCycleNext, cyclenext"
         "$kbWindowGroupCyclePrev, cyclenext, prev"
@@ -416,7 +414,6 @@
       };
 
       misc = {
-        vfr = true;
         vrr = 1;
         animate_manual_resizes = false;
         animate_mouse_windowdragging = false;

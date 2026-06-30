@@ -1,6 +1,8 @@
-better importing of shit make a common folder for a lotta shit
-
-impermanence secrets management with sops-nix switch to zsh
-
-stable audio player and video nixos-anywhere custom iso generation luks full
-drive encryption move to niri
+- [ ] better importing
+- [ ] make a common folder
+- [ ] impermanence
+- [ ] secrets sops-nix
+- [ ] switch to zsh
+- [ ] nixos-anywhere custom iso
+- [ ] luks encryption
+- [ ] move to niri with another shell better importing of shit make a common

@@ -21,7 +21,6 @@
 
       modules = [
         ./hosts/pearl/configuration.nix
-        inputs.nvf.nixosModules.default
         inputs.home-manager.nixosModules.default
         {
           home-manager = {

@@ -1,4 +1,5 @@
-{
+{inputs, ...}: {
+  imports = [inputs.nvf.nixosModules.default];
   programs.nvf.settings.vim = {
     vimAlias = true;
     binds = {

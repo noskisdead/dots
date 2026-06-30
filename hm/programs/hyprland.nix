@@ -8,7 +8,7 @@
       ### Apps
       #####################
       "$terminal" = "foot";
-      "$browser" = "zen";
+      "$browser" = "zen-beta";
       "$editor" = "nvim";
       "$fileExplorer" = "thunar";
 
@@ -337,9 +337,6 @@
 
         # Resize and move windows based on matches (e.g. pip)
         "caelestia resizer -d"
-
-        # Start shell
-        "caelestia shell -d"
 
         # Start discord
         "app2unit -- equibop -m"

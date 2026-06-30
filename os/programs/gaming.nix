@@ -1,11 +1,14 @@
 {pkgs, ...}: {
-  programs.gamemode.enable = true;
-  programs.steam = {
-    enable = true;
-    gamescopeSession.enable = true;
-    protontricks.enable = true;
-    # extest.enable = true; # Enables Steam Input
-    extraCompatPackages = [pkgs.proton-ge-bin];
+  programs = {
+    gamemode.enable = true;
+    appimage.enable = true; # For AppImage support (e.g., Slippi)
+    steam = {
+      enable = true;
+      gamescopeSession.enable = true;
+      protontricks.enable = true;
+      # extest.enable = true; # Enables Steam Input
+      extraCompatPackages = [pkgs.proton-ge-bin];
+    };
   };
 
   hardware.graphics = {
@@ -13,7 +16,6 @@
     enable32Bit = true;
   };
 
-  programs.appimage.enable = true; # For AppImage support (e.g., Slippi)
   # hardware.xone.enable # Enables support for Xbox controllers
 
   environment.systemPackages = with pkgs; [
@@ -24,12 +26,4 @@
     # scarab # Hollow Knight Mod Manager
     # winboat # Windows VM
   ];
-
-  # Roblox, since Sober is only on flatpak rn
-  services.flatpak = {
-    enable = true;
-    packages = [
-      "org.vinegarhq.Sober"
-    ];
-  };
 }

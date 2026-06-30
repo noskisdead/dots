@@ -1,7 +1,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../os/importer.nix
+    ../../os/default.nix
   ];
 
   networking.hostName = "pearl";

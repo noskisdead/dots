@@ -1,4 +1,3 @@
-- [ ] switch to zsh
 - [ ] better importing
 - [ ] switch to dank shell
 - [ ] make a common folder

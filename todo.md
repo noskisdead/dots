@@ -1,8 +1,9 @@
+- [ ] switch to zsh
 - [ ] better importing
+- [ ] switch to dank shell
 - [ ] make a common folder
 - [ ] impermanence
 - [ ] secrets sops-nix
-- [ ] switch to zsh
-- [ ] nixos-anywhere custom iso
 - [ ] luks encryption
 - [ ] move to niri with another shell better importing of shit make a common
+- [ ] nixos-anywhere custom iso

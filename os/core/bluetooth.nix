@@ -1,7 +1,7 @@
 {
   hardware.bluetooth = {
     enable = true;
+    powerOnBoot = false;
     settings.General.Experimental = true; # battery status
   };
-  services.blueman.enable = true; # Graphical bluetooth helper
 }

@@ -11,7 +11,6 @@
     ./core/printing.nix
     ./programs/neovim.nix
     #./programs/security.nix
-    ./programs/portals.nix
     ./core/settings.nix
     ./core/shell.nix
     ./programs/files.nix

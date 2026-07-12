@@ -33,7 +33,7 @@
   # hardware.xone.enable # Enables support for Xbox controllers
 
   environment.systemPackages = with pkgs; [
-    inputs.slippi.packages.x86_64-linux.default
+    slippi.packages.x86_64-linux.default
     lunar-client # Another MC client
     prismlauncher # MC launcher
     heroic # Epic and GOG game launcher

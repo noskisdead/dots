@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   home.pointerCursor = {
+    enable = true;
     gtk.enable = true; # GTK apps use it
     x11.enable = true; # X11 apps use it
     package = pkgs.bibata-cursors;

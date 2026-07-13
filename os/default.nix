@@ -4,6 +4,7 @@
     ./core/bluetooth.nix
     ./core/boot.nix
     ./programs/env.nix
+    ./programs/iloader.nix
     ./core/fonts.nix
     ./services/geoclue.nix
     ./core/maintenance.nix

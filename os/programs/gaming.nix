@@ -35,6 +35,7 @@
   environment.systemPackages = with pkgs; [
     inputs.slippi.packages.x86_64-linux.default
     lunar-client # Another MC client
+    parsec-bin
     prismlauncher # MC launcher
     heroic # Epic and GOG game launcher
     olympus # Celeste Mod Manager

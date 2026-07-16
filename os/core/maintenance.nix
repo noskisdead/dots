@@ -16,13 +16,13 @@
   programs.nh = {
     enable = true;
     flake = "/home/kenny/.nix/";
-    clean.enable = true;
-    clean.dates = "weekly";
-    clean.extraArgs = "--keep 3 --keep-since 3d";
+    clean = {
+      enable = true;
+      dates = "weekly";
+      extraArgs = "--keep 3 --keep-since 3d";
+    };
   };
 
   # Nix Store Optimise
-  nix.optimise = {
-    automatic = true;
-  };
+  nix.optimise.automatic = true;
 }

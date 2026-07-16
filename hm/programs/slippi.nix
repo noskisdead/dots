@@ -1,8 +1,14 @@
-{inputs, ...}: {
+{
+  inputs,
+  config,
+  ...
+}: {
   imports = [inputs.slippi.homeManagerModules.default];
 
   slippi-launcher = {
-    isoPath = "/home/kenny/Documents/Games/ROMs/Melee.iso";
-    launchMeleeOnPlay = false;
+    enableJukebox = false;
+    isoPath = "${config.home.homeDirectory}/Documents/Games/Slippi/Melee.iso";
+    rootSlpPath = "${config.home.homeDirectory}/Documents/Games/Slippi";
+    useMonthlySubfolders = true;
   };
 }

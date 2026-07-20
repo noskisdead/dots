@@ -339,7 +339,7 @@
         "caelestia resizer -d"
 
         # Start discord
-        "app2unit -- equibop -m"
+        "app2unit -- discord"
       ];
 
       general = {
@@ -387,6 +387,7 @@
 
       input = {
         kb_layout = "us,ca";
+        kb_options = "caps:swapescape,grp:alt_space_toggle";
         numlock_by_default = false;
         repeat_delay = 250;
         repeat_rate = 35;

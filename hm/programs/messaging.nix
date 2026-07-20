@@ -1,6 +1,8 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    # cinny-desktop currently broken
-    equibop
+    (discord.override {
+      withOpenASAR = true;
+      # withVencord = true; # can do this here too
+    })
   ];
 }

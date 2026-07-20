@@ -1,8 +1,9 @@
-- [ ] better importing
-- [ ] switch to dank shell
 - [ ] make a common folder
 - [ ] impermanence
 - [ ] secrets sops-nix
 - [ ] luks encryption
-- [ ] move to niri with another shell better importing of shit make a common
-- [ ] nixos-anywhere custom iso
+- [ ] nixvirt for kali
+- [ ] move to niri with another shell better importing of shit
+- [ ] make a common
+- [ ] harden security
+- [ ] disko

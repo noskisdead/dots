@@ -22,12 +22,12 @@
       specialArgs = {inherit inputs;};
 
       modules = [
-        ./hosts/pearl/configuration.nix
+        ./hosts/nixos/pearl/configuration.nix
         inputs.home-manager.nixosModules.default
         {
           home-manager = {
             extraSpecialArgs = {inherit inputs;};
-            users.kenny.imports = [./hosts/pearl/home.nix];
+            users.kenny.imports = [./hosts/nixos/pearl/home.nix];
             useGlobalPkgs = true;
             useUserPackages = true;
           };

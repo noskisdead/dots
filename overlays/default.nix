@@ -1,5 +1,3 @@
 {
-  imports = [
-    ./cpplint.nix
-  ];
+  imports = [];
 }

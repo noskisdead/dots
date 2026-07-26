@@ -16,7 +16,7 @@
       };
     };
     steam = {
-      # enable = true;
+      enable = false;
       gamescopeSession.enable = true;
       protontricks.enable = true;
       # extest.enable = true; # Enables Steam Input

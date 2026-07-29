@@ -9,7 +9,7 @@
         letter-spacing = 0;
         # pad = "25x25";
         dpi-aware = "no";
-        bold-text-in-bright = "yes";
+        bold-text-in-bright = "no";
         gamma-correct-blending = "no";
       };
       scrollback = {

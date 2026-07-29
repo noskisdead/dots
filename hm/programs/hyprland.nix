@@ -339,7 +339,7 @@
         "caelestia resizer -d"
 
         # Start discord
-        "app2unit -- discord"
+        "app2unit -- equibop -m"
       ];
 
       general = {
@@ -443,7 +443,7 @@
         "float true, match:class zenity"
         "float true, match:class wev"
         "float true, match:class org\\.gnome\\.FileRoller"
-        "float true, match:class file-roller" # WHY IS THERE TWOOOOOOOOOOOOOOOO
+        "float true, match:class file-roller"
         "float true, match:class blueman-manager"
         "float true, match:class com\\.github\\.GradienceTeam\\.Gradience"
         "float true, match:class feh"

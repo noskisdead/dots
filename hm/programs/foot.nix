@@ -7,9 +7,9 @@
         title = "foot";
         font = "CaskaydiaMono Nerd Font Mono:size=12";
         letter-spacing = 0;
-        dpi-aware = "no";
         # pad = "25x25";
-        bold-text-in-bright = "no";
+        dpi-aware = "no";
+        bold-text-in-bright = "yes";
         gamma-correct-blending = "no";
       };
       scrollback = {
@@ -22,6 +22,7 @@
       };
       colors-dark = {
         alpha = 0.78;
+        blur = "yes";
 
         cursor = "181926 f4dbd6";
         foreground = "cad3f5";

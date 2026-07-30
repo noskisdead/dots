@@ -1,4 +1,4 @@
-- [ ] hyprland colors around active things
+- [ ] hyprland colors around active things and autostart
 - [ ] better importing
 - [ ] switch to dank shell
 - [ ] make a common folder

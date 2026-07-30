@@ -47,7 +47,6 @@ in {
       mod = {_var = "SUPER";};
       kbMoveWinToWs = {_var = "SUPER + SHIFT";};
       kbMoveWinToWsGroup = {_var = "CTRL + SUPER + ALT";};
-      kbGoToWs = {_var = "SUPER";};
       kbGoToWsGroup = {_var = "CTRL + SUPER";};
 
       kbNextWs = {_var = "CTRL + SUPER + right";};
@@ -76,7 +75,6 @@ in {
 
       kbTerminal = {_var = "SUPER + Return";};
       kbBrowser = {_var = "SUPER + B";};
-      kbEditor = {_var = "SUPER + C";};
       kbFileExplorer = {_var = "SUPER + E";};
 
       kbSession = {_var = "CTRL + ALT + Delete";};
@@ -548,187 +546,152 @@ in {
       ### ALL Binds Combined
       #####################
 
-      bind = [
-        # Misc
-        (mkBindLuaKey "kbCloseWindow" "hl.dsp.window.close()")
-        (mkBindLuaKey "mod .. ' + Space'" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:launcher')")
-        (mkBindLuaKey "kbSession" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:session')")
-        (mkBindLuaKey "kbShowPanels" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:showall')")
-        (mkBindLuaKey "kbLock" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:lock')")
+      bind =
+        [
+          # Misc
+          (mkBindLuaKey "kbCloseWindow" "hl.dsp.window.close()")
+          (mkBindLuaKey "mod .. ' + Space'" "hl.dsp.global('caelestia:launcher')")
+          (mkBindLuaKey "kbSession" "hl.dsp.global('caelestia:session')")
+          (mkBindLuaKey "kbShowPanels" "hl.dsp.global('caelestia:showall')")
+          (mkBindLuaKey "kbLock" "hl.dsp.global('caelestia:lock')")
 
-        # Go to workspace
-        (mkBindLuaKey "kbGoToWs .. ' + 1'" "hl.dsp.exec_cmd(wsaction .. ' workspace 1')")
-        (mkBindLuaKey "kbGoToWs .. ' + 2'" "hl.dsp.exec_cmd(wsaction .. ' workspace 2')")
-        (mkBindLuaKey "kbGoToWs .. ' + 3'" "hl.dsp.exec_cmd(wsaction .. ' workspace 3')")
-        (mkBindLuaKey "kbGoToWs .. ' + 4'" "hl.dsp.exec_cmd(wsaction .. ' workspace 4')")
-        (mkBindLuaKey "kbGoToWs .. ' + 5'" "hl.dsp.exec_cmd(wsaction .. ' workspace 5')")
-        (mkBindLuaKey "kbGoToWs .. ' + 6'" "hl.dsp.exec_cmd(wsaction .. ' workspace 6')")
-        (mkBindLuaKey "kbGoToWs .. ' + 7'" "hl.dsp.exec_cmd(wsaction .. ' workspace 7')")
-        (mkBindLuaKey "kbGoToWs .. ' + 8'" "hl.dsp.exec_cmd(wsaction .. ' workspace 8')")
-        (mkBindLuaKey "kbGoToWs .. ' + 9'" "hl.dsp.exec_cmd(wsaction .. ' workspace 9')")
-        (mkBindLuaKey "kbGoToWs .. ' + 0'" "hl.dsp.exec_cmd(wsaction .. ' workspace 10')")
+          # Go to workspace -1/+1 (mouse binds equivalent)
+          (mkBind "SUPER + mouse_down" "hl.dsp.focus({ workspace = '-1' })")
+          (mkBind "SUPER + mouse_up" "hl.dsp.focus({ workspace = '+1' })")
+          (mkBind "CTRL + SUPER + mouse_down" "hl.dsp.focus({ workspace = '-10' })")
+          (mkBind "CTRL + SUPER + mouse_up" "hl.dsp.focus({ workspace = '+10' })")
 
-        # Go to workspace group
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 1'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 1')")
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 2'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 2')")
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 3'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 3')")
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 4'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 4')")
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 5'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 5')")
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 6'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 6')")
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 7'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 7')")
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 8'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 8')")
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 9'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 9')")
-        (mkBindLuaKey "kbGoToWsGroup .. ' + 0'" "hl.dsp.exec_cmd(wsaction .. ' -g workspace 10')")
+          # Toggle special workspace
+          (mkBindLuaKey "kbToggleSpecialWs" "hl.dsp.exec_cmd('caelestia toggle specialws')")
 
-        # Go to workspace -1/+1 (mouse binds equivalent)
-        (mkBind "SUPER + mouse_down" "hl.dsp.focus({ workspace = '-1' })")
-        (mkBind "SUPER + mouse_up" "hl.dsp.focus({ workspace = '+1' })")
-        (mkBind "CTRL + SUPER + mouse_down" "hl.dsp.focus({ workspace = '-10' })")
-        (mkBind "CTRL + SUPER + mouse_up" "hl.dsp.focus({ workspace = '+10' })")
+          # Move window to/from special workspace
+          (mkBind "CTRL + SUPER + SHIFT + up" "hl.dsp.window.move({ workspace = 'special:special' })")
+          (mkBind "CTRL + SUPER + SHIFT + down" "hl.dsp.window.move({ workspace = 'e+0' })")
+          (mkBind "SUPER + ALT + S" "hl.dsp.window.move({ workspace = 'special:special' })")
 
-        # Toggle special workspace
-        (mkBindLuaKey "kbToggleSpecialWs" "hl.dsp.exec_cmd('caelestia toggle specialws')")
+          # Window groups
+          (mkBindLuaKey "kbToggleGroup" "hl.dsp.group.toggle()")
+          (mkBindLuaKey "kbUngroup" "hl.dsp.exec_cmd('hyprctl dispatch moveoutofgroup')")
 
-        # Move window to workspace
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 1'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 1')")
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 2'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 2')")
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 3'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 3')")
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 4'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 4')")
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 5'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 5')")
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 6'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 6')")
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 7'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 7')")
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 8'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 8')")
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 9'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 9')")
-        (mkBindLuaKey "kbMoveWinToWs .. ' + 0'" "hl.dsp.exec_cmd(wsaction .. ' movetoworkspace 10')")
+          # Lock active group
+          (mkBind "SUPER + SHIFT + Comma" "hl.dsp.exec_cmd('hyprctl dispatch lockactivegroup toggle')")
 
-        # Move window to workspace group
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 1'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 1')")
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 2'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 2')")
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 3'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 3')")
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 4'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 4')")
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 5'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 5')")
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 6'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 6')")
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 7'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 7')")
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 8'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 8')")
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 9'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 9')")
-        (mkBindLuaKey "kbMoveWinToWsGroup .. ' + 0'" "hl.dsp.exec_cmd(wsaction .. ' -g movetoworkspace 10')")
+          # Window actions
+          (mkBind "SUPER + left" "hl.dsp.focus({ direction = 'l' })")
+          (mkBind "SUPER + right" "hl.dsp.focus({ direction = 'r' })")
+          (mkBind "SUPER + up" "hl.dsp.focus({ direction = 'u' })")
+          (mkBind "SUPER + down" "hl.dsp.focus({ direction = 'd' })")
+          (mkBind "SUPER + SHIFT + left" "hl.dsp.window.move({ direction = 'l' })")
+          (mkBind "SUPER + SHIFT + right" "hl.dsp.window.move({ direction = 'r' })")
+          (mkBind "SUPER + SHIFT + up" "hl.dsp.window.move({ direction = 'u' })")
+          (mkBind "SUPER + SHIFT + down" "hl.dsp.window.move({ direction = 'd' })")
+          (mkBind "CTRL + SUPER + Backslash" "hl.dsp.exec_cmd('hyprctl dispatch centerwindow 1')")
+          (mkBind "CTRL + SUPER + ALT + Backslash" "hl.dsp.exec_cmd('hyprctl dispatch resizeactive exact 55% 70%')")
+          (mkBindLuaKey "kbWindowPip" "hl.dsp.exec_cmd('caelestia resizer pip')")
+          (mkBindLuaKey "kbPinWindow" "hl.dsp.exec_cmd('hyprctl dispatch pin')")
+          (mkBindLuaKey "kbWindowFullscreen" "hl.dsp.window.fullscreen({ mode = 0 })")
+          (mkBindLuaKey "kbWindowBorderedFullscreen" "hl.dsp.window.fullscreen({ mode = 1 })")
+          (mkBindLuaKey "kbToggleWindowFloating" "hl.dsp.window.float({ action = 'toggle' })")
+          (mkBindLuaKey "kbCloseWindow" "hl.dsp.window.close()")
 
-        # Move window to workspace -1/+1 (mouse binds)
-        (mkBind "SUPER + ALT + mouse_down" "hl.dsp.window.move({ workspace = '-1' })")
-        (mkBind "SUPER + ALT + mouse_up" "hl.dsp.window.move({ workspace = '+1' })")
+          # Special workspace toggles
+          (mkBindLuaKey "kbSystemMonitor" "hl.dsp.exec_cmd('caelestia toggle sysmon')")
+          (mkBindLuaKey "kbMusic" "hl.dsp.exec_cmd('caelestia toggle music')")
+          (mkBindLuaKey "kbCommunication" "hl.dsp.exec_cmd('caelestia toggle communication')")
+          (mkBindLuaKey "kbTodo" "hl.dsp.exec_cmd('caelestia toggle todo')")
 
-        # Move window to/from special workspace
-        (mkBind "CTRL + SUPER + SHIFT + up" "hl.dsp.window.move({ workspace = 'special:special' })")
-        (mkBind "CTRL + SUPER + SHIFT + down" "hl.dsp.window.move({ workspace = 'e+0' })")
-        (mkBind "SUPER + ALT + S" "hl.dsp.window.move({ workspace = 'special:special' })")
+          # Apps
+          (mkBindLuaKey "kbTerminal" "hl.dsp.exec_cmd('app2unit -- ' .. terminal)")
+          (mkBindLuaKey "kbBrowser" "hl.dsp.exec_cmd('app2unit -- ' .. browser)")
+          (mkBindLuaKey "kbFileExplorer" "hl.dsp.exec_cmd('app2unit -- ' .. fileExplorer)")
+          (mkBind "CTRL + ALT + V" "hl.dsp.exec_cmd('app2unit -- pavucontrol')")
 
-        # Window groups
-        (mkBindLuaKey "kbToggleGroup" "hl.dsp.group.toggle()")
-        (mkBindLuaKey "kbUngroup" "hl.dsp.exec_cmd('hyprctl dispatch moveoutofgroup')")
+          # Utilities
+          (mkBind "Print" "hl.dsp.exec_cmd('caelestia screenshot')")
+          (mkBind "SUPER + SHIFT + S" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:screenshotFreeze')")
+          (mkBind "SUPER + SHIFT + ALT + S" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:screenshot')")
+          (mkBind "SUPER + ALT + R" "hl.dsp.exec_cmd('caelestia record -s')")
+          (mkBind "CTRL + ALT + R" "hl.dsp.exec_cmd('caelestia record')")
+          (mkBind "SUPER + SHIFT + ALT + R" "hl.dsp.exec_cmd('caelestia record -r')")
+          (mkBind "SUPER + SHIFT + C" "hl.dsp.exec_cmd('hyprpicker -a')")
 
-        # Lock active group
-        (mkBind "SUPER + SHIFT + Comma" "hl.dsp.exec_cmd('hyprctl dispatch lockactivegroup toggle')")
+          # Clipboard and emoji picker
+          (mkBind "SUPER + V" "hl.dsp.exec_cmd('pkill fuzzel || caelestia clipboard')")
+          (mkBind "SUPER + ALT + V" "hl.dsp.exec_cmd('pkill fuzzel || caelestia clipboard -d')")
+          (mkBind "SUPER + Period" "hl.dsp.exec_cmd('pkill fuzzel || caelestia emoji -p')")
+          (mkBind "CTRL + SHIFT + ALT + V" "hl.dsp.exec_cmd('sleep 0.5s && ydotool type -d 1 \"$(cliphist list | head -1 | cliphist decode)\"')")
 
-        # Window actions
-        (mkBind "SUPER + left" "hl.dsp.focus({ direction = 'l' })")
-        (mkBind "SUPER + right" "hl.dsp.focus({ direction = 'r' })")
-        (mkBind "SUPER + up" "hl.dsp.focus({ direction = 'u' })")
-        (mkBind "SUPER + down" "hl.dsp.focus({ direction = 'd' })")
-        (mkBind "SUPER + SHIFT + left" "hl.dsp.window.move({ direction = 'l' })")
-        (mkBind "SUPER + SHIFT + right" "hl.dsp.window.move({ direction = 'r' })")
-        (mkBind "SUPER + SHIFT + up" "hl.dsp.window.move({ direction = 'u' })")
-        (mkBind "SUPER + SHIFT + down" "hl.dsp.window.move({ direction = 'd' })")
-        (mkBind "CTRL + SUPER + Backslash" "hl.dsp.exec_cmd('hyprctl dispatch centerwindow 1')")
-        (mkBind "CTRL + SUPER + ALT + Backslash" "hl.dsp.exec_cmd('hyprctl dispatch resizeactive exact 55% 70%')")
-        (mkBindLuaKey "kbWindowPip" "hl.dsp.exec_cmd('caelestia resizer pip')")
-        (mkBindLuaKey "kbPinWindow" "hl.dsp.exec_cmd('hyprctl dispatch pin')")
-        (mkBindLuaKey "kbWindowFullscreen" "hl.dsp.window.fullscreen({ mode = 0 })")
-        (mkBindLuaKey "kbWindowBorderedFullscreen" "hl.dsp.window.fullscreen({ mode = 1 })")
-        (mkBindLuaKey "kbToggleWindowFloating" "hl.dsp.window.float({ action = 'toggle' })")
-        (mkBindLuaKey "kbCloseWindow" "hl.dsp.window.close()")
+          # ================================
+          # Mouse Binds (bindm)
+          # ================================
+          (mkMouseBind "SUPER + mouse:272" "hl.dsp.window.drag()")
+          (mkMouseBindLuaKey "kbMoveWindow" "hl.dsp.window.drag()")
+          (mkMouseBind "SUPER + mouse:273" "hl.dsp.window.resize()")
+          (mkMouseBindLuaKey "kbResizeWindow" "hl.dsp.window.resize()")
 
-        # Special workspace toggles
-        (mkBindLuaKey "kbSystemMonitor" "hl.dsp.exec_cmd('caelestia toggle sysmon')")
-        (mkBindLuaKey "kbMusic" "hl.dsp.exec_cmd('caelestia toggle music')")
-        (mkBindLuaKey "kbCommunication" "hl.dsp.exec_cmd('caelestia toggle communication')")
-        (mkBindLuaKey "kbTodo" "hl.dsp.exec_cmd('caelestia toggle todo')")
+          # ================================
+          # Lock-Screen Binds (bindl)
+          # ================================
+          (mkLockedBindLuaKey "kbClearNotifs" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:clearNotifs')")
+          (mkLockedBindLuaKey "kbRestoreLock" "hl.dsp.exec_cmd('caelestia shell -d')")
+          # Brightness
+          (mkLockedBind "XF86MonBrightnessUp" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:brightnessUp')")
+          (mkLockedBind "XF86MonBrightnessDown" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:brightnessDown')")
+          # Media
+          (mkLockedBind "CTRL + SUPER + Space" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaToggle')")
+          (mkLockedBind "XF86AudioPlay" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaToggle')")
+          (mkLockedBind "XF86AudioPause" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaToggle')")
+          (mkLockedBind "CTRL + SUPER + Equal" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaNext')")
+          (mkLockedBind "XF86AudioNext" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaNext')")
+          (mkLockedBind "CTRL + SUPER + Minus" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaPrev')")
+          (mkLockedBind "XF86AudioPrev" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaPrev')")
+          (mkLockedBind "XF86AudioStop" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaStop')")
+          # Volume
+          (mkLockedBind "XF86AudioMicMute" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle')")
+          (mkLockedBind "XF86AudioMute" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle')")
+          (mkLockedBind "SUPER + SHIFT + M" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle')")
+          (mkLockedBind "XF86AudioRaiseVolume" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ 0; wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ ' .. volumeStep .. '%+')")
+          (mkLockedBind "XF86AudioLowerVolume" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ 0; wpctl set-volume @DEFAULT_AUDIO_SINK@ ' .. volumeStep .. '%-')")
 
-        # Apps
-        (mkBindLuaKey "kbTerminal" "hl.dsp.exec_cmd('app2unit -- ' .. terminal)")
-        (mkBindLuaKey "kbBrowser" "hl.dsp.exec_cmd('app2unit -- ' .. browser)")
-        (mkBindLuaKey "kbEditor" "hl.dsp.exec_cmd('app2unit -- ' .. editor)")
-        (mkBindLuaKey "kbFileExplorer" "hl.dsp.exec_cmd('app2unit -- ' .. fileExplorer)")
-        (mkBind "CTRL + ALT + V" "hl.dsp.exec_cmd('app2unit -- pavucontrol')")
+          # ================================
+          # Continuous Binds (binde)
+          # ================================
+          (mkRepeatBindLuaKey "kbPrevWs" "hl.dsp.focus({ workspace = '-1' })")
+          (mkRepeatBindLuaKey "kbNextWs" "hl.dsp.focus({ workspace = '+1' })")
+          (mkRepeatBind "SUPER + Page_Up" "hl.dsp.focus({ workspace = '-1' })")
+          (mkRepeatBind "SUPER + Page_Down" "hl.dsp.focus({ workspace = '+1' })")
+          (mkRepeatBind "SUPER + ALT + Page_Up" "hl.dsp.window.move({ workspace = '-1' })")
+          (mkRepeatBind "SUPER + ALT + Page_Down" "hl.dsp.window.move({ workspace = '+1' })")
+          (mkRepeatBind "CTRL + SUPER + SHIFT + right" "hl.dsp.window.move({ workspace = '+1' })")
+          (mkRepeatBind "CTRL + SUPER + SHIFT + left" "hl.dsp.window.move({ workspace = '-1' })")
+          (mkRepeatBindLuaKey "kbWindowGroupCycleNext" "hl.dsp.exec_cmd('hyprctl dispatch cyclenext')")
+          (mkRepeatBindLuaKey "kbWindowGroupCyclePrev" "hl.dsp.exec_cmd('hyprctl dispatch cyclenext prev')")
+          (mkRepeatBind "CTRL + ALT + Tab" "hl.dsp.exec_cmd('hyprctl dispatch changegroupactive f')")
+          (mkRepeatBind "CTRL + SHIFT + ALT + Tab" "hl.dsp.exec_cmd('hyprctl dispatch changegroupactive b')")
 
-        # Utilities
-        (mkBind "Print" "hl.dsp.exec_cmd('caelestia screenshot')")
-        (mkBind "SUPER + SHIFT + S" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:screenshotFreeze')")
-        (mkBind "SUPER + SHIFT + ALT + S" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:screenshot')")
-        (mkBind "SUPER + ALT + R" "hl.dsp.exec_cmd('caelestia record -s')")
-        (mkBind "CTRL + ALT + R" "hl.dsp.exec_cmd('caelestia record')")
-        (mkBind "SUPER + SHIFT + ALT + R" "hl.dsp.exec_cmd('caelestia record -r')")
-        (mkBind "SUPER + SHIFT + C" "hl.dsp.exec_cmd('hyprpicker -a')")
-
-        # Clipboard and emoji picker
-        (mkBind "SUPER + V" "hl.dsp.exec_cmd('pkill fuzzel || caelestia clipboard')")
-        (mkBind "SUPER + ALT + V" "hl.dsp.exec_cmd('pkill fuzzel || caelestia clipboard -d')")
-        (mkBind "SUPER + Period" "hl.dsp.exec_cmd('pkill fuzzel || caelestia emoji -p')")
-        (mkBind "CTRL + SHIFT + ALT + V" "hl.dsp.exec_cmd('sleep 0.5s && ydotool type -d 1 \"$(cliphist list | head -1 | cliphist decode)\"')")
-
-        # ================================
-        # Mouse Binds (bindm)
-        # ================================
-        (mkMouseBind "SUPER + mouse:272" "hl.dsp.window.drag()")
-        (mkMouseBindLuaKey "kbMoveWindow" "hl.dsp.window.drag()")
-        (mkMouseBind "SUPER + mouse:273" "hl.dsp.window.resize()")
-        (mkMouseBindLuaKey "kbResizeWindow" "hl.dsp.window.resize()")
-
-        # ================================
-        # Lock-Screen Binds (bindl)
-        # ================================
-        (mkLockedBindLuaKey "kbClearNotifs" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:clearNotifs')")
-        (mkLockedBindLuaKey "kbRestoreLock" "hl.dsp.exec_cmd('caelestia shell -d')")
-        # Brightness
-        (mkLockedBind "XF86MonBrightnessUp" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:brightnessUp')")
-        (mkLockedBind "XF86MonBrightnessDown" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:brightnessDown')")
-        # Media
-        (mkLockedBind "CTRL + SUPER + Space" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaToggle')")
-        (mkLockedBind "XF86AudioPlay" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaToggle')")
-        (mkLockedBind "XF86AudioPause" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaToggle')")
-        (mkLockedBind "CTRL + SUPER + Equal" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaNext')")
-        (mkLockedBind "XF86AudioNext" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaNext')")
-        (mkLockedBind "CTRL + SUPER + Minus" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaPrev')")
-        (mkLockedBind "XF86AudioPrev" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaPrev')")
-        (mkLockedBind "XF86AudioStop" "hl.dsp.exec_cmd('hyprctl dispatch global caelestia:mediaStop')")
-        # Volume
-        (mkLockedBind "XF86AudioMicMute" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle')")
-        (mkLockedBind "XF86AudioMute" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle')")
-        (mkLockedBind "SUPER + SHIFT + M" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle')")
-        (mkLockedBind "XF86AudioRaiseVolume" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ 0; wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ ' .. volumeStep .. '%+')")
-        (mkLockedBind "XF86AudioLowerVolume" "hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ 0; wpctl set-volume @DEFAULT_AUDIO_SINK@ ' .. volumeStep .. '%-')")
-
-        # ================================
-        # Continuous Binds (binde)
-        # ================================
-        (mkRepeatBindLuaKey "kbPrevWs" "hl.dsp.focus({ workspace = '-1' })")
-        (mkRepeatBindLuaKey "kbNextWs" "hl.dsp.focus({ workspace = '+1' })")
-        (mkRepeatBind "SUPER + Page_Up" "hl.dsp.focus({ workspace = '-1' })")
-        (mkRepeatBind "SUPER + Page_Down" "hl.dsp.focus({ workspace = '+1' })")
-        (mkRepeatBind "SUPER + ALT + Page_Up" "hl.dsp.window.move({ workspace = '-1' })")
-        (mkRepeatBind "SUPER + ALT + Page_Down" "hl.dsp.window.move({ workspace = '+1' })")
-        (mkRepeatBind "CTRL + SUPER + SHIFT + right" "hl.dsp.window.move({ workspace = '+1' })")
-        (mkRepeatBind "CTRL + SUPER + SHIFT + left" "hl.dsp.window.move({ workspace = '-1' })")
-        (mkRepeatBindLuaKey "kbWindowGroupCycleNext" "hl.dsp.exec_cmd('hyprctl dispatch cyclenext')")
-        (mkRepeatBindLuaKey "kbWindowGroupCyclePrev" "hl.dsp.exec_cmd('hyprctl dispatch cyclenext prev')")
-        (mkRepeatBind "CTRL + ALT + Tab" "hl.dsp.exec_cmd('hyprctl dispatch changegroupactive f')")
-        (mkRepeatBind "CTRL + SHIFT + ALT + Tab" "hl.dsp.exec_cmd('hyprctl dispatch changegroupactive b')")
-
-        # ================================
-        # Restart/Kill Binds (bindr)
-        # ================================
-        (mkReleaseBind "CTRL + SUPER + SHIFT + R" "hl.dsp.exec_cmd('qs -c caelestia kill')")
-        (mkReleaseBind "CTRL + SUPER + ALT + R" "hl.dsp.exec_cmd('qs -c caelestia kill; caelestia shell -d')")
-      ];
+          # ================================
+          # Restart/Kill Binds (bindr)
+          # ================================
+          (mkReleaseBind "CTRL + SUPER + SHIFT + R" "hl.dsp.exec_cmd('qs -c caelestia kill')")
+          (mkReleaseBind "CTRL + SUPER + ALT + R" "hl.dsp.exec_cmd('qs -c caelestia kill; caelestia shell -d')")
+        ]
+        ++ (
+          builtins.concatLists (builtins.genList (
+              i: let
+                ws = toString (i + 1);
+                key =
+                  if ws == "10"
+                  then "0"
+                  else ws;
+              in [
+                (mkBindLuaKey "kbMoveWinToWs .. ' + ${key}'" "hl.dsp.window.move({ workspace = ${ws} })")
+                (mkBindLuaKey "kbMoveWinToWsGroup .. ' + ${key}'" "hl.dsp.window.move({ workspace = ${ws}, group = true })")
+                (mkBindLuaKey "mod .. ' + ${key}'" "hl.dsp.focus({ workspace = ${ws} })")
+                (mkBindLuaKey "kbGoToWsGroup .. ' + ${key}'" "hl.dsp.focus({ workspace = ${ws}, group = true })")
+              ]
+            )
+            10)
+        );
     };
   };
 }
